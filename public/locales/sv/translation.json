@@ -154,26 +154,30 @@
   "contact": {
     "hero": {
       "title": "Kontakta oss",
-      "subtitle": "Första kontakten är alltid konfidentiell och utan förpliktelser."
+      "subtitle": "Vi står redo att hjälpa dig genom denna utmanande tid"
+    },
+    "intro": {
+      "title": "Professionell hjälp när du behöver den som mest",
+      "description": "Vi förstår att ekonomiska svårigheter kan vara överväldigande. Därför erbjuder vi konfidentiella, förutsättningslösa konsultationer för att hjälpa dig förstå dina alternativ. Kontakta oss idag - alla samtal hålls i fullständig sekretess."
     },
     "form": {
       "title": "Skicka oss ett meddelande",
-      "description": "Fyll i formuläret nedan så kontaktar vi dig inom kort för en konfidentiell konsultation. Alla samtal sker i förtroende och utan förpliktelser.",
+      "subtitle": "Alla förfrågningar behandlas konfidentiellt och utan förpliktelser",
       "name": "Namn",
       "email": "E-post",
       "phone": "Telefon",
       "company": "Företag",
       "message": "Meddelande",
       "message_placeholder": "Berätta om din situation och hur vi kan hjälpa dig. Alla uppgifter behandlas konfidentiellt...",
-      "submit": "Skicka meddelande",
-      "confidentiality_note": "Alla uppgifter behandlas strikt konfidentiellt och i förtroende"
+      "privacy_notice": "All information du lämnar behandlas med fullständig konfidentialitet och utan förpliktelser.",
+      "submit": "Skicka konfidentiellt meddelande"
     },
     "info": {
       "title": "Kontaktuppgifter",
       "phone": {
         "title": "Telefon",
         "hours": "Måndag-fredag, 08.00-20.00\nLördag-söndag, 08:00-18:00",
-        "note": "Förutsättningslösa samtal"
+        "note": "Konfidentiell konsultation tillgänglig"
       },
       "email": {
         "title": "E-post",
@@ -183,12 +187,6 @@
       "address": {
         "title": "Kontor"
       }
-    },
-    "callback": {
-      "title": "Vill du att vi ringer upp dig?",
-      "description": "Lämna ditt telefonnummer så ringer vi upp dig inom kort för en konfidentiell konsultation.",
-      "button": "Be om återuppringning",
-      "guarantee": "Konfidentiellt • Utan förpliktelser • Professionell rådgivning"
     }
   },
   "bankID": {
@@ -198,7 +196,10 @@
     "qrCodeLoading": "Laddar QR-kod...",
     "scanQrInstructions": "Skanna QR-koden med din BankID-app för att logga in",
     "security": {
-      "note": "Din personliga information skyddas med banknivåsäkerhet"
+      "title": "Säkerhetsinformation",
+      "encrypted": "All kommunikation är krypterad",
+      "noStorage": "Vi lagrar inte dina BankID-uppgifter",
+      "official": "Officiell BankID-integration"
     },
     "messages": {
       "authenticationFailed": "Autentisering misslyckades",

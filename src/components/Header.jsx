@@ -57,13 +57,15 @@ function Header() {
         <div className="flex items-center justify-between">
           {/* Site Logo/Title */}
           <div className="flex items-center">
-            <h1 className="font-sans font-bold text-lg text-brand-black leading-tight" data-cy="site-title">
-              <div className="flex flex-col">
-                <span>Internationella</span>
-                <span>Rekonstruktions</span>
-                <span>Gruppen</span>
-              </div>
-            </h1>
+            <Link to="/" data-cy="site-title-link" className="hover:opacity-80 transition-opacity">
+              <h1 className="font-sans font-bold text-lg text-brand-black leading-tight" data-cy="site-title">
+                <div className="flex flex-col">
+                  <span>Internationella</span>
+                  <span>Rekonstruktions</span>
+                  <span>Gruppen</span>
+                </div>
+              </h1>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
