@@ -42,9 +42,9 @@ function Home() {
             </div>
             <div className="hidden md:block">
               <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=926&q=80"
-                alt="Företagsrekonstruktion"
-                className="shadow-xl"
+                src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt={t('landing.hero.image_alt', 'Professionell affärskonsultation och företagsrekonstruktion')}
+                className="shadow-xl object-cover h-96 w-full"
               />
             </div>
           </div>
@@ -126,9 +126,9 @@ function Home() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-                alt="Rekonstruktionsgruppen team"
-                className="shadow-lg"
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt={t('landing.about.team_image_alt', 'Professionellt team som arbetar med företagsrekonstruktion')}
+                className="shadow-lg object-cover h-80 w-full"
               />
             </div>
           </div>

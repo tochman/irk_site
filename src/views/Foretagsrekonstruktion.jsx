@@ -7,15 +7,24 @@ function Foretagsrekonstruktion() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-brand-charcoal to-brand-umber text-brand-linen py-16">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative bg-gradient-to-br from-brand-charcoal to-brand-umber text-brand-linen py-16">
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)'
+          }}
+        ></div>
+        <div className="relative max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {t('reconstruction.hero.title', 'Företagsrekonstruktion')}
-            </h1>
-            <p className="text-xl text-brand-linen opacity-90">
-              {t('reconstruction.hero.subtitle', 'En andra chans för ditt företag att bli lönsamt igen')}
-            </p>
+            <div className="bg-black bg-opacity-40 backdrop-blur-sm px-8 py-12 border border-white border-opacity-20">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                {t('reconstruction.hero.title', 'Företagsrekonstruktion')}
+              </h1>
+              <p className="text-xl text-white opacity-95">
+                {t('reconstruction.hero.subtitle', 'En andra chans för ditt företag att bli lönsamt igen')}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -30,6 +39,15 @@ function Foretagsrekonstruktion() {
             <p className="text-brand-charcoal mb-8">
               {t('reconstruction.what_is.description', 'Företagsrekonstruktion är en juridisk process som ger företag med tillfälliga ekonomiska svårigheter möjlighet att komma tillbaka på fötter utan att gå i konkurs. Genom rekonstruktionen får företaget skydd från fordringsägare och tid att omstrukturera sin verksamhet.')}
             </p>
+
+            {/* Visual break with image */}
+            <div className="my-12">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt={t('reconstruction.process_image_alt', 'Professionellt team som arbetar med företagsrekonstruktion')}
+                className="w-full h-64 object-cover shadow-lg"
+              />
+            </div>
 
             <h2 className="text-3xl font-bold text-brand-black mb-6">
               {t('reconstruction.process.title', 'Så går processen till')}

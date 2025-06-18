@@ -28,15 +28,24 @@ function Kontakt() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-brand-charcoal to-brand-umber text-brand-linen py-16">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative bg-gradient-to-br from-brand-charcoal to-brand-umber text-brand-linen py-16">
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)'
+          }}
+        ></div>
+        <div className="relative max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {t('contact.hero.title', 'Kontakta oss')}
-            </h1>
-            <p className="text-xl text-brand-linen opacity-90">
-              {t('contact.hero.subtitle', 'Vi står redo att hjälpa dig genom denna utmanande tid')}
-            </p>
+            <div className="bg-black bg-opacity-40 backdrop-blur-sm px-8 py-12 border border-white border-opacity-20">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                {t('contact.hero.title', 'Kontakta oss')}
+              </h1>
+              <p className="text-xl text-white opacity-95">
+                {t('contact.hero.subtitle', 'Vi står redo att hjälpa dig genom denna utmanande tid')}
+              </p>
+            </div>
           </div>
         </div>
       </section>

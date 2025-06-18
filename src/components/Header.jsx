@@ -58,13 +58,14 @@ function Header() {
           {/* Site Logo/Title */}
           <div className="flex items-center">
             <Link to="/" data-cy="site-title-link" className="hover:opacity-80 transition-opacity">
-              <h1 className="font-sans font-bold text-lg text-brand-black leading-tight" data-cy="site-title">
-                <div className="flex flex-col">
-                  <span>Internationella</span>
-                  <span>Rekonstruktions</span>
-                  <span>Gruppen</span>
-                </div>
-              </h1>
+              <div className="text-left">
+                <h1 className="font-sans font-bold text-xl text-brand-black leading-tight" data-cy="site-title">
+                  {t('brand.name', 'Reconstructor')}
+                </h1>
+                <p className="text-xs text-brand-charcoal font-medium leading-tight">
+                  {t('brand.tagline', 'Specialister på internationell företagsrekonstruktion')}
+                </p>
+              </div>
             </Link>
           </div>
 
@@ -85,49 +86,51 @@ function Header() {
             </button>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:gap-6">
-            <Link 
-              to="/" 
-              data-cy="nav-home"
-              className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
-            >
-              {t('navigation.home', 'Hem')}
-            </Link>
-            <Link 
-              to="/foretagsrekonstruktion" 
-              data-cy="nav-reconstruction"
-              className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
-            >
-              {t('navigation.reconstruction', 'Företagsrekonstruktion')}
-            </Link>
-            <Link 
-              to="/om-oss" 
-              data-cy="nav-about"
-              className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
-            >
-              {t('navigation.about', 'Om oss')}
-            </Link>
-            <Link 
-              to="/kontakt" 
-              data-cy="nav-contact"
-              className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
-            >
-              {t('navigation.contact', 'Kontakt')}
-            </Link>
-            {/* Login button - commented out for now, will use later
-            <Link 
-              to="/authentication" 
-              data-cy="nav-authentication"
-              className="bg-brand-umber text-brand-linen px-4 py-2 font-medium hover:bg-brand-black transition-colors"
-            >
-              {t('navigation.login', 'Logga in')}
-            </Link>
-            */}
-          </div>
+          {/* Desktop Navigation and Language Switcher */}
+          <div className="hidden md:flex md:items-center md:gap-8">
+            {/* Navigation Links */}
+            <div className="flex items-center gap-6">
+              <Link 
+                to="/" 
+                data-cy="nav-home"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+              >
+                {t('navigation.home', 'Hem')}
+              </Link>
+              <Link 
+                to="/foretagsrekonstruktion" 
+                data-cy="nav-reconstruction"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+              >
+                {t('navigation.reconstruction', 'Företagsrekonstruktion')}
+              </Link>
+              <Link 
+                to="/om-oss" 
+                data-cy="nav-about"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+              >
+                {t('navigation.about', 'Om oss')}
+              </Link>
+              <Link 
+                to="/kontakt" 
+                data-cy="nav-contact"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+              >
+                {t('navigation.contact', 'Kontakt')}
+              </Link>
+              {/* Login button - commented out for now, will use later
+              <Link 
+                to="/authentication" 
+                data-cy="nav-authentication"
+                className="bg-brand-umber text-brand-linen px-4 py-2 font-medium hover:bg-brand-black transition-colors"
+              >
+                {t('navigation.login', 'Logga in')}
+              </Link>
+              */}
+            </div>
 
-          {/* Language Switcher Dropdown */}
-          <div data-cy="language-switcher" className="relative hidden md:block" ref={dropdownRef}>
+            {/* Language Switcher Dropdown */}
+            <div data-cy="language-switcher" className="relative" ref={dropdownRef}>
             <button
               data-cy="language-dropdown-button"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -178,6 +181,7 @@ function Header() {
                 </button>
               </div>
             )}
+            </div>
           </div>
         </div>
 

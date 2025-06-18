@@ -7,45 +7,55 @@ function OmOss() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-brand-charcoal to-brand-umber text-brand-linen py-16">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="relative bg-gradient-to-br from-brand-charcoal to-brand-umber text-brand-linen py-16">
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)'
+          }}
+        ></div>
+        <div className="relative max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              {t('about.hero.title', 'Om Internationella Rekonstruktions Gruppen')}
-            </h1>
-            <p className="text-xl text-brand-linen opacity-90">
-              {t('about.hero.subtitle', 'Ledande experter inom företagsrekonstruktion och affärsåterhämtning')}
-            </p>
+            <div className="bg-black bg-opacity-40 backdrop-blur-sm px-8 py-12 border border-white border-opacity-20">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                {t('about.hero.title', 'Om Reconstructor')}
+              </h1>
+              <p className="text-xl text-white opacity-95">
+                {t('about.hero.subtitle', 'Vi minskar antalet onödiga konkurser genom professionell rådgivning')}
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Mission Section */}
       <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
-              {t('about.mission.title', 'Vårt uppdrag')}
-            </h2>
-            <p className="text-lg text-brand-charcoal leading-relaxed">
-              {t('about.mission.description', 'Vi hjälper företag i ekonomiska svårigheter att rekonstruera och återhämta sig genom professionell, konfidentiell vägledning. Vårt mål är att bevara arbeitsplatser, affärsvärde och möjliggöra hållbar tillväxt.')}
-            </p>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
+                {t('about.mission.title', 'Vår mission')}
+              </h2>
+              <p className="text-lg text-brand-charcoal leading-relaxed mb-6">
+                {t('about.mission.description', 'Reconstructor är specialiserade på att bistå företag i olika branscher som befinner sig i ekonomisk kris. Vi förstår att varje situation är unik och utformar därför skräddarsydda juridiska lösningar som syftar till att göra ditt företag lönsamt igen.')}
+              </p>
+              <p className="text-lg text-brand-charcoal leading-relaxed">
+                {t('about.mission.description2', 'Vi är en trygg partner som arbetar hårt för att uppnå dina mål och behov. Vårt mål är att minska antalet onödiga konkurser genom att erbjuda professionell rådgivning och stöd.')}
+              </p>
+            </div>
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt={t('about.mission.image_alt', 'Professionell konsultation och rådgivning')}
+                className="shadow-lg object-cover h-80 w-full"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Team Image Section */}
-      <section className="py-8">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center">
-            <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1326&q=80" 
-              alt={t('about.team.image_alt', 'Vårt team av rekonstruktionsexperter')}
-              className="shadow-lg mx-auto"
-            />
-          </div>
-        </div>
-      </section>
+
 
       {/* Expertise Section */}
       <section className="py-16 bg-brand-linen">

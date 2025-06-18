@@ -8,6 +8,10 @@
     "authentication": "Autentisering",
     "language": "Språk"
   },
+  "brand": {
+    "name": "Reconstructor",
+    "tagline": "Specialister på internationell företagsrekonstruktion"
+  },
   "landing": {
     "hero": {
       "title": "Gör en rekonstruktion- undvik konkurs",
@@ -31,8 +35,8 @@
       }
     },
     "about": {
-      "title": "Internationella Rekonstruktions Gruppen",
-      "subtitle": "Din pålitliga partner för företagsrekonstruktion och affärsåterhämtning",
+      "title": "Reconstructor",
+      "subtitle": "Specialister på internationell företagsrekonstruktion och affärsutveckling",
       "description": "Vi är specialister på företagsrekonstruktion med omfattande erfarenhet av att hjälpa företag att övervinna ekonomiska svårigheter. Vårt tillvägagångssätt är alltid konfidentiellt, professionellt och skräddarsytt för varje klients unika situation.",
       "cta": "Kontakta oss"
     },
@@ -102,12 +106,12 @@
   },
   "about": {
     "hero": {
-      "title": "Om Internationella Rekonstruktions Gruppen",
+      "title": "Om Reconstructor",
       "subtitle": "Vi minskar antalet onödiga konkurser genom professionell rådgivning"
     },
     "mission": {
       "title": "Vår mission",
-      "description": "Internationella Rekonstruktions Gruppen är specialiserade på att bistå företag i olika branscher som befinner sig i ekonomisk kris. Vi förstår att varje situation är unik och utformar därför skräddarsydda juridiska lösningar som syftar till att göra ditt företag lönsamt igen.",
+      "description": "Reconstructor är specialiserade på att bistå företag i olika branscher som befinner sig i ekonomisk kris. Vi förstår att varje situation är unik och utformar därför skräddarsydda juridiska lösningar som syftar till att göra ditt företag lönsamt igen.",
       "description2": "Vi är en trygg partner som arbetar hårt för att uppnå dina mål och behov. Vårt mål är att minska antalet onödiga konkurser genom att erbjuda professionell rådgivning och stöd."
     },
     "expertise": {

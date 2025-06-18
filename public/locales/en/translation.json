@@ -7,6 +7,10 @@
     "login": "Login",
     "language": "Language"
   },
+  "brand": {
+    "name": "Reconstructor",
+    "tagline": "International restructuring and turnaround specialists"
+  },
   "landing": {
     "hero": {
       "title": "Corporate Restructuring - Avoid Bankruptcy",
@@ -30,8 +34,8 @@
       }
     },
     "about": {
-      "title": "Internationella Rekonstruktions Gruppen",
-      "subtitle": "Your trusted partner for corporate restructuring and business recovery",
+      "title": "Reconstructor",
+      "subtitle": "International restructuring and turnaround specialists",
       "description": "We are specialists in corporate restructuring with extensive experience helping companies overcome financial difficulties. Our approach is always confidential, professional, and tailored to each client's unique situation.",
       "cta": "Contact Us"
     },
@@ -101,12 +105,12 @@
   },
   "about": {
     "hero": {
-      "title": "About Internationella Rekonstruktions Gruppen",
+      "title": "About Reconstructor",
       "subtitle": "We reduce unnecessary bankruptcies through professional advice"
     },
     "mission": {
       "title": "Our Mission",
-      "description": "Internationella Rekonstruktions Gruppen specializes in assisting companies across various industries facing financial crises. We understand that every situation is unique and therefore design tailored legal solutions aimed at making your business profitable again.",
+      "description": "Reconstructor specializes in assisting companies across various industries facing financial crises. We understand that every situation is unique and therefore design tailored legal solutions aimed at making your business profitable again.",
       "description2": "We are a trusted partner who works hard to achieve your goals and needs. Our mission is to reduce unnecessary bankruptcies by offering professional advice and support."
     },
     "expertise": {
