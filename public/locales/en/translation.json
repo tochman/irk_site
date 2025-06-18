@@ -1,0 +1,243 @@
+{
+  "navigation": {
+    "home": "Home",
+    "reconstruction": "Corporate Restructuring",
+    "about": "About Us",
+    "contact": "Contact",
+    "login": "Login",
+    "language": "Language"
+  },
+  "landing": {
+    "hero": {
+      "title": "Corporate Restructuring - Avoid Bankruptcy",
+      "subtitle": "We help companies with temporary financial difficulties become profitable again. Give your business a second chance.",
+      "cta_primary": "Get Help Now",
+      "cta_secondary": "Learn More"
+    },
+    "benefits": {
+      "title": "Corporate restructuring is the solution for companies with temporary financial problems",
+      "debt_reduction": {
+        "title": "Debt reduction and bankruptcy protection",
+        "description": "We help you reduce debt and avoid bankruptcy through professional guidance."
+      },
+      "comprehensive": {
+        "title": "Complete solutions for you and your business",
+        "description": "Tailored legal solutions that fit your specific business and situation."
+      },
+      "specialists": {
+        "title": "Corporate restructuring specialists",
+        "description": "Experienced expertise in corporate restructuring and legal solutions."
+      }
+    },
+    "about": {
+      "title": "Internationella Rekonstruktions Gruppen",
+      "subtitle": "Your trusted partner for corporate restructuring and business recovery",
+      "description": "We are specialists in corporate restructuring with extensive experience helping companies overcome financial difficulties. Our approach is always confidential, professional, and tailored to each client's unique situation.",
+      "cta": "Contact Us"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions About Restructuring",
+      "what_is": {
+        "question": "What is restructuring?",
+        "answer": "Restructuring is a process where a business owner with a viable business idea, but facing financial problems, can restructure their operations without going bankrupt."
+      },
+      "why_important": {
+        "question": "Why is restructuring important?",
+        "answer": "Restructuring is important for business owners facing financial problems who still believe in their business idea and want to save their company."
+      },
+      "who_can_apply": {
+        "question": "Who can apply for restructuring?",
+        "answer": "Any business owner facing financial problems who believes in their business idea can apply for restructuring."
+      }
+    },
+    "cta": {
+      "title": "Ready to save your business?",
+      "subtitle": "We're here to help you through this challenging time. All consultations are confidential and without obligation.",
+      "button": "Contact Us",
+      "guarantee": "Confidential • No obligation • Professional advice"
+    }
+  },
+  "reconstruction": {
+    "hero": {
+      "title": "Corporate Restructuring",
+      "subtitle": "A second chance for your business to become profitable again"
+    },
+    "what_is": {
+      "title": "What is Corporate Restructuring?",
+      "description": "Corporate restructuring is a legal process that gives companies with temporary financial difficulties the opportunity to get back on track without bankruptcy. Through restructuring, the company receives protection from creditors and time to reorganize operations."
+    },
+    "process": {
+      "title": "How the Process Works",
+      "step1": {
+        "title": "1. Application",
+        "description": "The company applies for restructuring with the district court. We help you prepare the application and all necessary documentation."
+      },
+      "step2": {
+        "title": "2. Assessment",
+        "description": "The court assesses whether the company has the prerequisites for successful restructuring and appoints a restructuring administrator."
+      },
+      "step3": {
+        "title": "3. Restructuring Plan",
+        "description": "A detailed plan is developed for how the company will recover financially and become profitable again."
+      },
+      "step4": {
+        "title": "4. Implementation",
+        "description": "The plan is implemented under supervision of the restructuring administrator. We continuously monitor the process."
+      }
+    },
+    "benefits": {
+      "title": "Benefits of Restructuring",
+      "benefit1": "Protection against bankruptcy and liquidation",
+      "benefit2": "Moratorium on debt payments",
+      "benefit3": "Opportunity to negotiate debt reduction",
+      "benefit4": "Retain business operations and employees",
+      "benefit5": "Professional guidance throughout the entire process"
+    },
+    "cta": {
+      "title": "Need help with restructuring?",
+      "description": "Contact us for a confidential consultation and let us help you save your company.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Internationella Rekonstruktions Gruppen",
+      "subtitle": "We reduce unnecessary bankruptcies through professional advice"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Internationella Rekonstruktions Gruppen specializes in assisting companies across various industries facing financial crises. We understand that every situation is unique and therefore design tailored legal solutions aimed at making your business profitable again.",
+      "description2": "We are a trusted partner who works hard to achieve your goals and needs. Our mission is to reduce unnecessary bankruptcies by offering professional advice and support."
+    },
+    "expertise": {
+      "title": "Our Expertise",
+      "subtitle": "We have deep knowledge in several areas critical to successful corporate restructuring",
+      "legal": {
+        "title": "Legal Expertise",
+        "description": "Deep knowledge in restructuring law and insolvency procedures"
+      },
+      "financial": {
+        "title": "Financial Analysis",
+        "description": "Comprehensive economic analysis and business restructuring"
+      },
+      "business": {
+        "title": "Business Development",
+        "description": "Strategic advisory for sustainable growth and profitability"
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "transparency": {
+        "title": "Transparency",
+        "description": "We work with open communication and clear pricing throughout the entire process."
+      },
+      "expertise": {
+        "title": "Expertise",
+        "description": "Our team consists of experienced lawyers and business advisors with deep knowledge."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "We are dedicated to helping companies through difficult times and creating sustainable solutions."
+      },
+      "results": {
+        "title": "Results",
+        "description": "We focus on concrete results and successful restructurings."
+      }
+    },
+    "cta": {
+      "title": "Ready to discuss your situation?",
+      "description": "Contact us for a confidential consultation where we can discuss your specific situation and how we can help you.",
+      "button": "Contact Us"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "We're ready to help you through this challenging time"
+    },
+    "intro": {
+      "title": "Professional help when you need it most",
+      "description": "We understand that financial difficulties can be overwhelming. That's why we offer confidential, no-obligation consultations to help you understand your options. Contact us today - all conversations are held in complete confidence."
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "All inquiries are handled confidentially and without obligation",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "message": "Message",
+      "message_placeholder": "Tell us about your situation and how we can help. All information is treated confidentially...",
+      "privacy_notice": "All information you provide is handled with complete confidentiality and without obligation.",
+      "submit": "Send confidential message"
+    },
+    "info": {
+      "title": "Contact Information",
+      "phone": {
+        "title": "Phone",
+        "hours": "Monday-Friday, 08:00-20:00\nSaturday-Sunday, 08:00-18:00",
+        "note": "Confidential consultation available"
+      },
+      "email": {
+        "title": "Email",
+        "response": "Response within 1 hour (Monday-Sunday)",
+        "note": "Confidential correspondence"
+      },
+      "address": {
+        "title": "Offices"
+      }
+    }
+  },
+  "bankID": {
+    "authentication": "BankID Authentication",
+    "header": "BankID Login",
+    "qrCodeAlt": "BankID QR code for authentication",
+    "qrCodeLoading": "Loading QR code...",
+    "scanQrInstructions": "Scan the QR code with your BankID app to log in",
+    "security": {
+      "title": "Security Information",
+      "encrypted": "All communication is encrypted",
+      "noStorage": "We do not store your BankID credentials",
+      "official": "Official BankID integration"
+    },
+    "messages": {
+      "authenticationFailed": "Authentication failed",
+      "tryAgain": "Try again",
+      "startBankID": "Start BankID",
+      "networkError": "Authentication is not possible right now. Try again later",
+      "waitingForQrCode": "Waiting for QR code...",
+      "loggedIn": "Logged in!",
+      "welcome": "Welcome {{first_name}}!",
+      "error": "An error occurred during authentication",
+      "scanning": "Scanning...",
+      "waitingForBankID": "Waiting for BankID app",
+      "openBankIDApp": "Open your BankID app",
+      "signIn": "Sign in your BankID app",
+      "processing": "Processing your request...",
+      "cancelled": "Authentication cancelled",
+      "timeout": "Authentication timed out",
+      "userCancel": "You cancelled the authentication",
+      "startFailed": "Could not start BankID"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "close": "Close",
+      "retry": "Try again"
+    },
+    "status": {
+      "pending": "Waiting for user interaction",
+      "started": "BankID has started",
+      "userSign": "Waiting for you to sign",
+      "complete": "Authentication completed",
+      "failed": "Authentication failed"
+    }
+  },
+  "general": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "close": "Close",
+    "retry": "Try again"
+  }
+}

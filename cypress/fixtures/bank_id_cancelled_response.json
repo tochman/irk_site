@@ -1,0 +1,6 @@
+{
+  "event": "failure",
+  "message": "Operation was cancelled by user",
+  "hintCode": "userCancel",
+  "orderRef": "45765d2f-442b-4356-9348-caa4bad09eb1"
+}

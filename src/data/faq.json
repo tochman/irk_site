@@ -1,0 +1,128 @@
+{
+  "faq": {
+    "title": "Vanliga frågor och svar om rekonstruktion",
+    "description": "Här hittar du svar på de vanligaste frågorna om företagsrekonstruktion",
+    "questions": [
+      {
+        "id": "what-is-reconstruction",
+        "question": "Vad är en rekonstruktion?",
+        "answer": "Rekonstruktion är en process där en företagare som bedöms ha en god affärsidé, men som har drabbats av ekonomiska problem, kan rekonstruera sin verksamhet utan att gå i konkurs. Genom en rekonstruktion ges företaget ett moratorium med betalning av förfallna skulder, vilket ger möjlighet att se över verksamheten och återfå en god likviditet.",
+        "category": "grundläggande"
+      },
+      {
+        "id": "why-important",
+        "question": "Varför är en rekonstruktion viktig?",
+        "answer": "Rekonstruktion är en viktig process för företagare som har drabbats av ekonomiska problem, men som fortfarande tror på sin affärsidé och vill rädda sin verksamhet. Genom rekonstruktionen ges möjlighet att återfå en god ekonomisk ställning och fortsätta verksamheten på lång sikt.",
+        "category": "betydelse"
+      },
+      {
+        "id": "who-can-apply",
+        "question": "Vem kan ansöka om rekonstruktion?",
+        "answer": "Alla företagare som har drabbats av ekonomiska problem och som tror på sin affärsidé kan ansöka om rekonstruktion. Det är dock viktigt att notera att rekonstruktion inte är lämpligt för alla företag, och att det är viktigt att söka råd från en kvalificerad rådgivare innan man ansöker om rekonstruktion.",
+        "category": "ansökan"
+      },
+      {
+        "id": "process-steps",
+        "question": "Hur går en rekonstruktion till?",
+        "answer": "En rekonstruktion går till på följande sätt: 1. Företaget ansöker om företagsrekonstruktion. 2. En rådgivare bedömer företagets ekonomiska ställning och affärsidé. 3. Om företaget bedöms lämpligt för rekonstruktion, inleds en rekonstruktionsprocess. 4. Under rekonstruktionsprocessen arbetar företaget tillsammans med en rådgivare för att se över verksamheten och ta fram en plan för att återfå en god ekonomisk ställning. 5. När planen är klar, godkänns den av en domare och företaget börjar arbeta enligt den godkända planen.",
+        "category": "process"
+      },
+      {
+        "id": "company-impact",
+        "question": "Påverkan på företaget",
+        "answer": "Likviditetsförbättringar: En rekonstruktion kan hjälpa företaget att återfå god likviditet, genom att moratorium ges på förfallna skulder och genom en omprövning av företagets ekonomi. Detta kan leda till att företaget får en mer hållbar ekonomi i framtiden. Strategisk omprövning: Under en företagsrekonstruktion får företaget en möjlighet att se över sin verksamhet och strategi. Detta kan leda till nya affärsmöjligheter och förbättringar av befintliga verksamheter. Långsiktig hållbarhet: Genom att förbättra sin ekonomi och strategi kan en företagsrekonstruktion bidra till företagets långsiktiga hållbarhet.",
+        "category": "påverkan"
+      },
+      {
+        "id": "employee-impact",
+        "question": "Påverkan på anställda",
+        "answer": "Säkerhet för anställningen: En rekonstruktion kan bidra till säkerhet för anställningarna eftersom företaget får en möjlighet att återfå en god likviditet och hållbar ekonomi. Förbättrade arbetsförhållanden: En företagsrekonstruktion kan också leda till förbättringar av arbetsförhållanden, till exempel genom en mer effektiv och hållbar verksamhet. Stabilitet och trygghet: Genom en mer stabil och trygg ekonomi kan företagsrekonstruktionen bidra till stabilitet och trygghet för anställda. Det är viktigt att notera att en rekonstruktion inte alltid garanterar framgång för företaget och dess anställda, men det är en möjlighet att förbättra sin situation och återfå en god likviditet och hållbar ekonomi.",
+        "category": "anställda"
+      },
+      {
+        "id": "what-does-reconstruction-mean",
+        "question": "Vad innebär rekonstruktion av ett företag?",
+        "answer": "Rekonstruktion av ett företag innebär en juridisk process där företaget får skydd från sina borgenärer och möjlighet att omstrukturera sin verksamhet för att återfå lönsamhet och ekonomisk stabilitet.",
+        "category": "grundläggande"
+      },
+      {
+        "id": "reconstruction-duration",
+        "question": "Hur länge kan ett företag vara i rekonstruktion?",
+        "answer": "En rekonstruktion kan pågå upp till tre månader initialt, men kan förlängas med ytterligare tre månader om det behövs. I särskilda fall kan ytterligare förlängning beviljas av domstolen.",
+        "category": "tid"
+      },
+      {
+        "id": "reconstruction-cost",
+        "question": "Vad kostar en rekonstruktion?",
+        "answer": "Kostnaden för en rekonstruktion varierar beroende på företagets storlek och komplexitet. Vi genomför en noggrann analys och uppskattar uppdragets omfattning innan vi presenterar olika betalningsalternativ - löpande debitering eller fast förskottsbetalning.",
+        "category": "kostnad"
+      },
+      {
+        "id": "why-reconstruction",
+        "question": "Varför gör man en rekonstruktion?",
+        "answer": "Man gör en rekonstruktion för att undvika konkurs och ge företaget en möjlighet att återhämta sig ekonomiskt, behålla verksamheten och anställda, samt skapa en hållbar framtid för företaget.",
+        "category": "syfte"
+      },
+      {
+        "id": "reconstruction-for-employees",
+        "question": "Vad innebär en rekonstruktion för anställda?",
+        "answer": "För anställda innebär en rekonstruktion ökad säkerhet för anställningen, möjlighet till förbättrade arbetsförhållanden och större stabilitet och trygghet genom företagets förbättrade ekonomiska situation.",
+        "category": "anställda"
+      },
+      {
+        "id": "staff-during-reconstruction",
+        "question": "Vad händer med personal vid en rekonstruktion?",
+        "answer": "Under en rekonstruktion får personalen behålla sina anställningar och företaget kan fortsätta sin verksamhet. Målet är att säkra arbeitsplatserna genom att förbättra företagets ekonomiska situation.",
+        "category": "anställda"
+      },
+      {
+        "id": "shareholders-impact",
+        "question": "Vad innebär en rekonstruktion för aktieägare?",
+        "answer": "För aktieägare innebär en rekonstruktion att företaget får möjlighet att återhämta sig utan att gå i konkurs, vilket kan bevara värdet i deras aktieinnehav jämfört med en konkurssituation.",
+        "category": "aktieägare"
+      },
+      {
+        "id": "debt-settlement",
+        "question": "Vad är skulduppgörelse?",
+        "answer": "Skulduppgörelse är en överenskommelse mellan företaget och dess borgenärer om hur skulder ska hanteras, ofta genom nedsättning av skuldbelopp eller förändrade betalningsvillkor.",
+        "category": "skulder"
+      },
+      {
+        "id": "debt-settlement-reconstruction",
+        "question": "Vad innebär skulduppgörelse vid företagsrekonstruktion?",
+        "answer": "Vid företagsrekonstruktion innebär skulduppgörelse att företaget kan förhandla med sina borgenärer om skuldreduktion eller nya betalningsplaner som gör det möjligt för företaget att fortsätta sin verksamhet.",
+        "category": "skulder"
+      },
+      {
+        "id": "after-reconstruction",
+        "question": "Vad händer efter en rekonstruktion?",
+        "answer": "Efter en avslutad rekonstruktion ska företaget följa den godkända rekonstruktionsplanen och arbeta enligt de överenskomna villkoren för att säkerställa fortsatt lönsamhet och ekonomisk stabilitet.",
+        "category": "efteråt"
+      },
+      {
+        "id": "who-appoints-reconstructor",
+        "question": "Vem utser en rekonstruktör?",
+        "answer": "En rekonstruktör utses av tingsrätten när domstolen godkänner ansökan om företagsrekonstruktion. Rekonstruktören ska vara en oberoende expert som övervakar processen.",
+        "category": "juridiskt"
+      },
+      {
+        "id": "requirements-reconstruction",
+        "question": "Vad krävs för att jag ska kunna genomföra en rekonstruktion?",
+        "answer": "För att kunna genomföra en rekonstruktion krävs att företaget har en livskraftig affärsidé, att det finns förutsättningar för återhämtning, och att företaget inte är på obestånd. En bedömning görs av företagets potential för framgång.",
+        "category": "krav"
+      },
+      {
+        "id": "automatic-bankruptcy",
+        "question": "Går bolaget automatiskt i konkurs om rekonstruktionen avbryts?",
+        "answer": "Nej, ett företag går inte automatiskt i konkurs om rekonstruktionen avbryts. Däremot försvinner det skydd som rekonstruktionen gav, och borgenärer kan åter driva sina fordringar.",
+        "category": "juridiskt"
+      },
+      {
+        "id": "success-factors",
+        "question": "Vad avgör om en rekonstruktion lyckas?",
+        "answer": "En rekonstruktions framgång avgörs av faktorer som företagets grundläggande affärsmodell, marknadssituation, ledningens engagemang, borgenärernas samarbete och hur väl rekonstruktionsplanen genomförs.",
+        "category": "framgång"
+      }
+    ]
+  }
+}

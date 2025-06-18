@@ -1,0 +1,243 @@
+{
+  "navigation": {
+    "home": "Hem",
+    "reconstruction": "Företagsrekonstruktion",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "login": "Logga in",
+    "authentication": "Autentisering",
+    "language": "Språk"
+  },
+  "landing": {
+    "hero": {
+      "title": "Gör en rekonstruktion- undvik konkurs",
+      "subtitle": "Vi hjälper företag med tillfälliga ekonomiska problem att bli lönsamma igen. Ge ditt företag en andra chans.",
+      "cta_primary": "Få hjälp nu",
+      "cta_secondary": "Mer om företagsrekonstruktion"
+    },
+    "benefits": {
+      "title": "En rekonstruktion är lösningen för företag med tillfälliga ekonomiska problem",
+      "debt_reduction": {
+        "title": "Skuldnedskrivningar och skydd mot konkurs",
+        "description": "Vi hjälper dig att minska skulder och undvika konkurs genom professionell rådgivning."
+      },
+      "comprehensive": {
+        "title": "Helhetslösningar för dig och ditt företag",
+        "description": "Skräddarsydda juridiska lösningar som passar just din verksamhet och situation."
+      },
+      "specialists": {
+        "title": "Specialister på rekonstruktion av företag",
+        "description": "Erfaren expertis inom företagsrekonstruktion och juridiska lösningar."
+      }
+    },
+    "about": {
+      "title": "Specialister på rekonstruktion och juridiska lösningar",
+      "description": "Rekonstruktionsgruppen är specialiserade på att bistå företag i olika branscher som befinner sig i ekonomisk kris. Vi förstår att varje situation är unik och utformar därför skräddarsydda juridiska lösningar som syftar till att göra ditt företag lönsamt igen.",
+      "description2": "Vi är en trygg partner som arbetar hårt för att uppnå dina mål och behov.",
+      "cta": "Läs mer om oss"
+    },
+    "faq": {
+      "title": "Vanliga frågor och svar om rekonstruktion",
+      "what_is": {
+        "question": "Vad är en rekonstruktion?",
+        "answer": "Rekonstruktion är en process där en företagare som bedöms ha en god affärsidé, men som har drabbats av ekonomiska problem, kan rekonstruera sin verksamhet utan att gå i konkurs."
+      },
+      "why_important": {
+        "question": "Varför är en rekonstruktion viktig?",
+        "answer": "Rekonstruktion är en viktig process för företagare som har drabbats av ekonomiska problem, men som fortfarande tror på sin affärsidé och vill rädda sin verksamhet."
+      },
+      "who_can_apply": {
+        "question": "Vem kan ansöka om rekonstruktion?",
+        "answer": "Alla företagare som har drabbats av ekonomiska problem och som tror på sin affärsidé kan ansöka om rekonstruktion."
+      }
+    },
+    "cta": {
+      "title": "Redo att rädda ditt företag?",
+      "subtitle": "Vi står redo att hjälpa dig genom denna utmanande tid. Första samtalet är alltid konfidentiellt och utan förpliktelser.",
+      "button": "Kontakta oss",
+      "guarantee": "Konfidentiellt • Utan förpliktelser • Professionell rådgivning"
+    }
+  },
+  "reconstruction": {
+    "hero": {
+      "title": "Företagsrekonstruktion",
+      "subtitle": "En andra chans för ditt företag att bli lönsamt igen"
+    },
+    "what_is": {
+      "title": "Vad är företagsrekonstruktion?",
+      "description": "Företagsrekonstruktion är en juridisk process som ger företag med tillfälliga ekonomiska svårigheter möjlighet att komma tillbaka på fötter utan att gå i konkurs. Genom rekonstruktionen får företaget skydd från fordringsägare och tid att omstrukturera sin verksamhet."
+    },
+    "process": {
+      "title": "Så går processen till",
+      "step1": {
+        "title": "1. Ansökan",
+        "description": "Företaget ansöker om rekonstruktion hos tingsrätten. Vi hjälper dig att förbereda ansökan och all nödvändig dokumentation."
+      },
+      "step2": {
+        "title": "2. Bedömning",
+        "description": "Domstolen bedömer om företaget har förutsättningar för en framgångsrik rekonstruktion och utser en rekonstruktör."
+      },
+      "step3": {
+        "title": "3. Rekonstruktionsplan",
+        "description": "En detaljerad plan tas fram för hur företaget ska återhämta sig ekonomiskt och bli lönsamt igen."
+      },
+      "step4": {
+        "title": "4. Genomförande",
+        "description": "Planen genomförs under övervakning av rekonstruktören. Vi följer upp processen kontinuerligt."
+      }
+    },
+    "benefits": {
+      "title": "Fördelar med rekonstruktion",
+      "benefit1": "Skydd mot konkurs och avveckling",
+      "benefit2": "Moratorium på betalning av skulder",
+      "benefit3": "Möjlighet att förhandla ned skulder",
+      "benefit4": "Behålla verksamheten och anställda",
+      "benefit5": "Professionell vägledning genom hela processen"
+    },
+    "cta": {
+      "title": "Behöver du hjälp med rekonstruktion?",
+      "description": "Kontakta oss för en konfidentiell konsultation och låt oss hjälpa dig att rädda ditt företag.",
+      "button": "Kontakta oss"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Om Internationella Rekonstruktions Gruppen",
+      "subtitle": "Vi minskar antalet onödiga konkurser genom professionell rådgivning"
+    },
+    "mission": {
+      "title": "Vår mission",
+      "description": "Internationella Rekonstruktions Gruppen är specialiserade på att bistå företag i olika branscher som befinner sig i ekonomisk kris. Vi förstår att varje situation är unik och utformar därför skräddarsydda juridiska lösningar som syftar till att göra ditt företag lönsamt igen.",
+      "description2": "Vi är en trygg partner som arbetar hårt för att uppnå dina mål och behov. Vårt mål är att minska antalet onödiga konkurser genom att erbjuda professionell rådgivning och stöd."
+    },
+    "expertise": {
+      "title": "Vår expertis",
+      "subtitle": "Vi har djup kunskap inom flera områden som är kritiska för framgångsrik företagsrekonstruktion",
+      "legal": {
+        "title": "Juridisk expertis",
+        "description": "Djup kunskap inom rekonstruktionsrätt och insolvensförfaranden"
+      },
+      "financial": {
+        "title": "Finansiell analys",
+        "description": "Omfattande ekonomisk analys och omstrukturering av verksamheter"
+      },
+      "business": {
+        "title": "Affärsutveckling",
+        "description": "Strategisk rådgivning för hållbar tillväxt och lönsamhet"
+      }
+    },
+    "values": {
+      "title": "Våra värderingar",
+      "transparency": {
+        "title": "Transparens",
+        "description": "Vi arbetar med öppen kommunikation och tydlig prissättning genom hela processen."
+      },
+      "expertise": {
+        "title": "Expertis",
+        "description": "Vårt team består av erfarna jurister och affärsrådgivare med djup kunskap."
+      },
+      "commitment": {
+        "title": "Engagemang",
+        "description": "Vi är dedikerade till att hjälpa företag genom svåra tider och skapa hållbara lösningar."
+      },
+      "results": {
+        "title": "Resultat",
+        "description": "Vi fokuserar på konkreta resultat och framgångsrika rekonstruktioner."
+      }
+    },
+    "cta": {
+      "title": "Redo att diskutera din situation?",
+      "description": "Kontakta oss för en konfidentiell konsultation där vi kan diskutera din specifika situation och hur vi kan hjälpa dig.",
+      "button": "Kontakta oss"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontakta oss",
+      "subtitle": "Första kontakten är alltid konfidentiell och utan förpliktelser."
+    },
+    "form": {
+      "title": "Skicka oss ett meddelande",
+      "description": "Fyll i formuläret nedan så kontaktar vi dig inom kort för en konfidentiell konsultation. Alla samtal sker i förtroende och utan förpliktelser.",
+      "name": "Namn",
+      "email": "E-post",
+      "phone": "Telefon",
+      "company": "Företag",
+      "message": "Meddelande",
+      "message_placeholder": "Berätta om din situation och hur vi kan hjälpa dig. Alla uppgifter behandlas konfidentiellt...",
+      "submit": "Skicka meddelande",
+      "confidentiality_note": "Alla uppgifter behandlas strikt konfidentiellt och i förtroende"
+    },
+    "info": {
+      "title": "Kontaktuppgifter",
+      "phone": {
+        "title": "Telefon",
+        "hours": "Måndag-fredag, 08.00-20.00\nLördag-söndag, 08:00-18:00",
+        "note": "Förutsättningslösa samtal"
+      },
+      "email": {
+        "title": "E-post",
+        "response": "Svar inom 1h (måndag-söndag)",
+        "note": "Konfidentiell korrespondens"
+      },
+      "address": {
+        "title": "Kontor"
+      }
+    },
+    "callback": {
+      "title": "Vill du att vi ringer upp dig?",
+      "description": "Lämna ditt telefonnummer så ringer vi upp dig inom kort för en konfidentiell konsultation.",
+      "button": "Be om återuppringning",
+      "guarantee": "Konfidentiellt • Utan förpliktelser • Professionell rådgivning"
+    }
+  },
+  "bankID": {
+    "authentication": "BankID Autentisering",
+    "header": "BankID Inloggning",
+    "qrCodeAlt": "BankID QR-kod för autentisering",
+    "qrCodeLoading": "Laddar QR-kod...",
+    "scanQrInstructions": "Skanna QR-koden med din BankID-app för att logga in",
+    "security": {
+      "note": "Din personliga information skyddas med banknivåsäkerhet"
+    },
+    "messages": {
+      "authenticationFailed": "Autentisering misslyckades",
+      "tryAgain": "Försök igen",
+      "startBankID": "Starta BankID",
+      "networkError": "Autentisering är inte möjlig just nu. Försök igen senare",
+      "waitingForQrCode": "Väntar på QR-kod...",
+      "loggedIn": "Inloggad!",
+      "welcome": "Välkommen {{first_name}}!",
+      "error": "Ett fel uppstod under autentiseringen",
+      "scanning": "Skannar...",
+      "waitingForBankID": "Väntar på BankID-appen",
+      "openBankIDApp": "Öppna din BankID-app",
+      "signIn": "Signera i din BankID-app",
+      "processing": "Bearbetar din begäran...",
+      "cancelled": "Autentisering avbruten",
+      "timeout": "Tiden för autentisering gick ut",
+      "userCancel": "Du avbröt autentiseringen",
+      "startFailed": "Kunde inte starta BankID"
+    },
+    "buttons": {
+      "cancel": "Avbryt",
+      "close": "Stäng",
+      "retry": "Försök igen"
+    },
+    "status": {
+      "pending": "Väntar på användarinteraktion",
+      "started": "BankID har startats",
+      "userSign": "Väntar på att du signerar",
+      "complete": "Autentisering slutförd",
+      "failed": "Autentisering misslyckades"
+    }
+  },
+  "general": {
+    "loading": "Laddar...",
+    "error": "Fel",
+    "success": "Framgång",
+    "cancel": "Avbryt",
+    "close": "Stäng",
+    "retry": "Försök igen"
+  }
+}

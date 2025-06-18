@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "data": {
+    "id": 51,
+    "first_name": "Thomas",
+    "last_name": "Ochman",
+    "identification_number": "197111241111",
+    "role": "user",
+    "email": null,
+    "provider": "bank_id",
+    "uid": "197111241111",
+    "allow_password_change": false,
+    "created_at": "2025-06-02T21:52:00.160+02:00",
+    "updated_at": "2025-06-02T22:03:38.911+02:00",
+    "declaration_present": false,
+    "phone_number": null,
+    "nurse": false,
+    "driving_licence": null,
+    "licence_restriction": null
+  }
+}
