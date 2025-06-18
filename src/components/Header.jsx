@@ -113,6 +113,7 @@ function Header() {
             >
               {t('navigation.contact', 'Kontakt')}
             </Link>
+            {/* Login button - commented out for now, will use later
             <Link 
               to="/authentication" 
               data-cy="nav-authentication"
@@ -120,6 +121,7 @@ function Header() {
             >
               {t('navigation.login', 'Logga in')}
             </Link>
+            */}
           </div>
 
           {/* Language Switcher Dropdown */}
@@ -213,6 +215,7 @@ function Header() {
               >
                 {t('navigation.contact', 'Kontakt')}
               </Link>
+              {/* Mobile login button - commented out for now, will use later
               <Link 
                 to="/authentication" 
                 data-cy="mobile-nav-authentication"
@@ -221,6 +224,7 @@ function Header() {
               >
                 {t('navigation.login', 'Logga in')}
               </Link>
+              */}
               
               {/* Mobile Language Switcher */}
               <div data-cy="mobile-language-switcher" className="pt-2 border-t border-brand-khaki border-opacity-30">
