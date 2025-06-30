@@ -1,7 +1,8 @@
 {
   "navigation": {
-    "home": "Home",
-    "reconstruction": "Corporate Restructuring",
+    "reconstruction": "Restructuring",
+    "ackord": "Composition",
+    "foretagskop": "Company Acquisition",
     "about": "About Us",
     "contact": "Contact",
     "login": "Login",
@@ -13,46 +14,104 @@
   },
   "landing": {
     "hero": {
-      "title": "Corporate Restructuring - Avoid Bankruptcy",
-      "subtitle": "We help companies with temporary financial difficulties become profitable again. Give your business a second chance.",
-      "cta_primary": "Get Help Now",
-      "cta_secondary": "Learn More"
+      "title": "Solutions for Companies in Financial Difficulties",
+      "subtitle": "We help companies with financial problems through reconstruction, composition or company acquisition. Give your business a second chance. Bankruptcy can be avoided.",
+      "cta_primary": "Contact Us",
+      "cta_secondary": "See Our Solutions",
+      "image_alt": "Professional solutions for companies in financial difficulties"
     },
-    "benefits": {
-      "title": "Corporate restructuring is the solution for companies with temporary financial problems",
-      "debt_reduction": {
-        "title": "Debt reduction and bankruptcy protection",
-        "description": "We help you reduce debt and avoid bankruptcy through professional guidance."
+    "services": {
+      "title": "Our Solutions for Companies in Financial Difficulties",
+      "subtitle": "We offer three different paths forward depending on your company's situation and needs.",
+      "reconstruction": {
+        "title": "Restructuring",
+        "description": "A legal process that gives your company protection from creditors and time to recover financially without going bankrupt."
       },
-      "comprehensive": {
-        "title": "Complete solutions for you and your business",
-        "description": "Tailored legal solutions that fit your specific business and situation."
+      "settlement": {
+        "title": "Composition - arrangement with creditors",
+        "description": "An agreement with creditors to pay part of the debt, allowing the company to continue operations."
       },
-      "specialists": {
-        "title": "Corporate restructuring specialists",
-        "description": "Experienced expertise in corporate restructuring and legal solutions."
+      "acquisition": {
+        "title": "We Buy Your Company",
+        "description": "When restructuring is not possible, we buy your company and ensure that operations and jobs are preserved."
+      }
+    },
+    "services_details": {
+      "title": "Three Paths Forward",
+      "subtitle": "Depending on your company's situation and debt structure, we recommend different strategies. Read about the legal and practical aspects of each solution.",
+      "reconstruction": {
+        "title": "Restructuring",
+        "description": "Restructuring is a legal process that gives companies with temporary financial difficulties the opportunity to recover without going bankrupt. During the restructuring period, the company receives protection from creditors and can focus on restoring profitability.",
+        "details": "The process begins with an application to the district court and requires the company to show realistic possibilities for recovery. We help you through the entire process from application to implementation of the restructuring plan.",
+        "benefits_title": "Benefits of restructuring:",
+        "benefit1": "Protection from bankruptcy and creditors",
+        "benefit2": "Opportunity to negotiate down debts",
+        "benefit3": "Retain operations and employees",
+        "learn_more": "Learn more about restructuring"
+      },
+      "settlement": {
+        "title": "Composition - arrangement with creditors",
+        "description": "Composition is an agreement between the company and its creditors to pay part of the debt instead of the full amount. This gives the company the opportunity to free itself from unsustainable debts and continue operations.",
+        "details": "A composition requires that the majority of creditors approve the proposal. We help you prepare a credible composition proposal and negotiate with creditors to reach a sustainable solution.",
+        "benefits_title": "Benefits of composition:",
+        "benefit1": "Significantly reduce debt burden",
+        "benefit2": "Faster process than restructuring",
+        "benefit3": "Less formal than legal process",
+        "learn_more": "Learn more about composition"
+      },
+      "acquisition": {
+        "title": "We Buy Your Company",
+        "description": "When restructuring or composition are not possible alternatives, we offer to buy your company. This ensures that operations can continue and jobs are preserved, while giving you as an entrepreneur a controlled exit.",
+        "details": "We evaluate the company's value and potential to offer a fair purchase price. The goal is to both secure the company's future and give you as a seller a dignified end to your entrepreneurship.",
+        "benefits_title": "Benefits of company acquisition:",
+        "benefit1": "Preserve jobs and operations",
+        "benefit2": "Controlled and secure transition",
+        "benefit3": "Fair valuation and purchase price",
+        "learn_more": "Learn more about company acquisition"
+      }
+    },
+    "who_we_help": {
+      "title": "Who Do We Help?",
+      "description": "Our services are primarily aimed at limited companies, but we also help entrepreneurs who run partnerships and sole proprietorships.",
+      "companies": {
+        "title": "Limited Companies",
+        "description": "Our main focus and area of expertise. We help limited companies through all types of financial challenges."
+      },
+      "partnerships": {
+        "title": "Partnerships",
+        "description": "We help partners in partnerships manage both the company's and personal financial exposure."
+      },
+      "sole_proprietorship": {
+        "title": "Sole Proprietorships",
+        "description": "Individual business owners who need help with debt restructuring and financial reorganization."
       }
     },
     "about": {
       "title": "Reconstructor",
-      "subtitle": "International restructuring and turnaround specialists",
-      "description": "We are specialists in corporate restructuring with extensive experience helping companies overcome financial difficulties. Our approach is always confidential, professional, and tailored to each client's unique situation.",
-      "cta": "Contact Us"
+      "subtitle": "Your reliable partner for corporate restructuring and business recovery",
+      "human_factor": "We understand. It's tough being an entrepreneur, especially during difficult times. We can help and take over a large part of the burden.",
+      "description": "We are specialists in corporate restructuring with extensive experience helping companies overcome financial difficulties.",
+      "expertise": "We are particularly specialists in the area of personal board liability where we can often reduce exposure, risk and personal payment responsibility.",
+      "cta": "Contact Us",
+      "team_image_alt": "Professional team working with corporate restructuring"
     },
-    "faq": {
-      "title": "Frequently Asked Questions About Restructuring",
-      "what_is": {
-        "question": "What is restructuring?",
-        "answer": "Restructuring is a process where a business owner with a viable business idea, but facing financial problems, can restructure their operations without going bankrupt."
+    "liability_expertise": {
+      "title": "Specialists in Personal Board Liability",
+      "subtitle": "One of our most important areas of expertise is minimizing your personal exposure and risk.",
+      "protection": {
+        "title": "Protection for You as a Board Member",
+        "description": "As a board member or CEO, you may become personally liable for the company's debts under certain circumstances. We help you understand and minimize these risks.",
+        "benefit1": "Reduce personal exposure and risk",
+        "benefit2": "Limit personal payment responsibility",
+        "benefit3": "Legal expertise in board liability"
       },
-      "why_important": {
-        "question": "Why is restructuring important?",
-        "answer": "Restructuring is important for business owners facing financial problems who still believe in their business idea and want to save their company."
-      },
-      "who_can_apply": {
-        "question": "Who can apply for restructuring?",
-        "answer": "Any business owner facing financial problems who believes in their business idea can apply for restructuring."
-      }
+      "quote": "\"We take over the burden so you can focus on what's most important – saving your company.\""
+    },
+    "cta_early": {
+      "title": "Ready to save your business?",
+      "subtitle": "We're here to help you through this challenging time. The first consultation is always confidential and without obligation.",
+      "free": "And free!",
+      "button": "Contact us today"
     },
     "cta": {
       "title": "Ready to save your business?",
@@ -243,5 +302,120 @@
     "cancel": "Cancel",
     "close": "Close",
     "retry": "Try again"
+  },
+  "ackord": {
+    "hero": {
+      "title": "Composition",
+      "subtitle": "Negotiate an agreement with creditors"
+    },
+    "what_is": {
+      "title": "What is composition?",
+      "description": "Composition is an agreement between a company and its creditors whereby creditors accept a lower payment than what was originally owed. This can be an effective solution for companies experiencing financial difficulties but still having the potential to become profitable."
+    },
+    "process_image_alt": "Professional team working on composition negotiations",
+    "how_it_works": {
+      "title": "How does composition work?"
+    },
+    "step1": {
+      "title": "1. Analysis and preparation",
+      "description": "We conduct a thorough analysis of the company's financial situation and identify opportunities for a successful composition agreement."
+    },
+    "step2": {
+      "title": "2. Negotiation with creditors",
+      "description": "We negotiate with creditors to reach an agreement that is both acceptable to them and sustainable for the company."
+    },
+    "step3": {
+      "title": "3. Implementation and follow-up",
+      "description": "Once the agreement is in place, we help with implementation and monitor that the company lives up to its commitments."
+    },
+    "benefits": {
+      "title": "Benefits of composition",
+      "1": "Avoids bankruptcy and its negative consequences",
+      "2": "Reduces debt burden and improves cash flow",
+      "3": "Maintains control over the company",
+      "4": "Faster process than restructuring",
+      "5": "Less formal and expensive than other alternatives"
+    },
+    "when_suitable": {
+      "title": "When is composition suitable?",
+      "description": "Composition is particularly suitable when:"
+    },
+    "suitable": {
+      "1": "The company has temporary financial difficulties",
+      "2": "There is a clear plan for recovery",
+      "3": "Creditors are open to negotiation",
+      "4": "The company wants to avoid formal processes"
+    },
+    "cta": {
+      "title": "Need help with composition?",
+      "description": "Contact us for a free consultation on how composition can help your company.",
+      "button": "Contact us today"
+    }
+  },
+  "foretagskop": {
+    "hero": {
+      "title": "We buy your company",
+      "subtitle": "A fast and professional solution when you need to sell"
+    },
+    "why_sell": {
+      "title": "Why sell your company to us?",
+      "description": "When financial difficulties threaten your company, a quick sale may be the best solution. We offer a professional and discreet process that can save value and give you a fresh start."
+    },
+    "handshake_image_alt": "Professional handshake during company sale",
+    "our_approach": {
+      "title": "Our approach"
+    },
+    "step1": {
+      "title": "1. Quick evaluation",
+      "description": "We conduct a quick but thorough evaluation of your company and its assets to establish a fair value."
+    },
+    "step2": {
+      "title": "2. Transparent process",
+      "description": "We are transparent with our offer and process. You always know what's happening and why."
+    },
+    "step3": {
+      "title": "3. Quick settlement",
+      "description": "When we reach an agreement, the transaction can be completed quickly, giving you the opportunity to move forward."
+    },
+    "what_we_buy": {
+      "title": "What do we buy?",
+      "description": "We are interested in buying companies in various industries, particularly:"
+    },
+    "sectors": {
+      "1": "Manufacturing industry",
+      "2": "Retail sector",
+      "3": "Service industry",
+      "4": "Technology companies",
+      "5": "Real estate companies"
+    },
+    "advantages": {
+      "title": "Advantages of selling to us",
+      "1": "Fast and efficient process",
+      "2": "Professional handling of all documentation",
+      "3": "Discreet and confidential treatment",
+      "4": "Fair valuations based on market prices",
+      "5": "Opportunity to save value before bankruptcy",
+      "6": "Avoids lengthy legal processes"
+    },
+    "when_suitable": {
+      "title": "When is company sale the right choice?",
+      "description": "Company sale can be the right choice when:"
+    },
+    "suitable": {
+      "1": "Financial difficulties threaten the company's survival",
+      "2": "You want to avoid bankruptcy and its consequences",
+      "3": "There are valuable assets to save",
+      "4": "You need a quick solution",
+      "5": "Other alternatives are not feasible"
+    },
+    "confidentiality": {
+      "title": "Confidentiality and discretion",
+      "description": "We understand that company sale can be a sensitive process. All our discussions and negotiations are handled with the utmost confidentiality and professionalism."
+    },
+    "cta": {
+      "title": "Interested in selling your company?",
+      "description": "Contact us for a confidential discussion about your company and its opportunities.",
+      "button": "Contact us confidentially"
+    }
   }
 }

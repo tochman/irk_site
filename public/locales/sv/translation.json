@@ -1,7 +1,9 @@
 {
   "navigation": {
     "home": "Hem",
-    "reconstruction": "Företagsrekonstruktion",
+    "reconstruction": "Rekonstruktion",
+    "ackord": "Ackord", 
+    "foretagskop": "Företagsköp",
     "about": "Om oss",
     "contact": "Kontakt",
     "login": "Logga in",
@@ -14,46 +16,104 @@
   },
   "landing": {
     "hero": {
-      "title": "Gör en rekonstruktion- undvik konkurs",
-      "subtitle": "Vi hjälper företag med tillfälliga ekonomiska problem att bli lönsamma igen. Ge ditt företag en andra chans.",
-      "cta_primary": "Få hjälp nu",
-      "cta_secondary": "Mer om företagsrekonstruktion"
+      "title": "Lösningar för företag i ekonomiska svårigheter",
+      "subtitle": "Vi hjälper företag med ekonomiska problem genom rekonstruktion, ackord eller företagsköp. Ge ditt företag en andra chans. Det går att undvika konkurs.",
+      "cta_primary": "Kontakta oss",
+      "cta_secondary": "Se våra lösningar",
+      "image_alt": "Professionella lösningar för företag i ekonomiska svårigheter"
     },
-    "benefits": {
-      "title": "En rekonstruktion är lösningen för företag med tillfälliga ekonomiska problem",
-      "debt_reduction": {
-        "title": "Skuldnedskrivningar och skydd mot konkurs",
-        "description": "Vi hjälper dig att minska skulder och undvika konkurs genom professionell rådgivning."
+    "services": {
+      "title": "Våra lösningar för företag i ekonomiska svårigheter",
+      "subtitle": "Vi erbjuder tre olika vägar framåt beroende på ditt företags situation och behov.",
+      "reconstruction": {
+        "title": "Rekonstruktion",
+        "description": "En juridisk process som ger ditt företag skydd från borgenärer och tid att återhämta sig ekonomiskt utan att gå i konkurs."
       },
-      "comprehensive": {
-        "title": "Helhetslösningar för dig och ditt företag",
-        "description": "Skräddarsydda juridiska lösningar som passar just din verksamhet och situation."
+      "settlement": {
+        "title": "Ackord",
+        "description": "En överenskommelse med borgenärer om att betala en del av skulderna, vilket ger företaget möjlighet att fortsätta verksamheten."
       },
-      "specialists": {
-        "title": "Specialister på rekonstruktion av företag",
-        "description": "Erfaren expertis inom företagsrekonstruktion och juridiska lösningar."
+      "acquisition": {
+        "title": "Vi köper ditt företag",
+        "description": "När rekonstruktion inte är möjligt köper vi ditt företag och säkerställer att verksamheten och arbetstillfällen bevaras."
+      }
+    },
+    "services_details": {
+      "title": "Tre vägar framåt",
+      "subtitle": "Beroende på ditt företags situation och skuldsättning rekommenderar vi olika strategier. Läs om de juridiska och praktiska aspekterna av varje lösning.",
+      "reconstruction": {
+        "title": "Rekonstruktion",
+        "description": "Rekonstruktion är en juridisk process som ger företag med tillfälliga ekonomiska svårigheter möjlighet att återhämta sig utan att gå i konkurs. Under rekonstruktionsperioden får företaget skydd från borgenärer och kan fokusera på att återställa lönsamheten.",
+        "details": "Processen inleds med en ansökan till tingsrätten och kräver att företaget kan visa på realistiska möjligheter att återhämta sig. Vi hjälper dig genom hela processen från ansökan till genomförande av rekonstruktionsplanen.",
+        "benefits_title": "Fördelar med rekonstruktion:",
+        "benefit1": "Skydd från konkurs och borgenärer",
+        "benefit2": "Möjlighet att förhandla ned skulder",
+        "benefit3": "Behålla verksamheten och anställda",
+        "learn_more": "Läs mer om rekonstruktion"
+      },
+      "settlement": {
+        "title": "Ackord",
+        "description": "Ackord är en överenskommelse mellan företaget och dess borgenärer om att betala en del av skulderna istället för hela beloppet. Detta ger företaget möjlighet att befria sig från ohållbara skulder och fortsätta verksamheten.",
+        "details": "Ett ackord kräver att majoriteten av borgenärerna godkänner förslaget. Vi hjälper dig att förbereda ett trovärdigt ackordsförslag och förhandla med borgenärerna för att nå en hållbar lösning.",
+        "benefits_title": "Fördelar med ackord:",
+        "benefit1": "Reducera skuldbördan avsevärt",
+        "benefit2": "Snabbare process än rekonstruktion",
+        "benefit3": "Mindre formell än rättslig process",
+        "learn_more": "Läs mer om ackord"
+      },
+      "acquisition": {
+        "title": "Vi köper ditt företag",
+        "description": "När rekonstruktion eller ackord inte är möjliga alternativ erbjuder vi att köpa ditt företag. Detta säkerställer att verksamheten kan fortsätta och att arbetstillfällen bevaras, samtidigt som du som företagare får en kontrollerad avveckling.",
+        "details": "Vi utvärderar företagets värde och potential för att erbjuda en rättvis köpeskilling. Målet är att både säkra företagets framtid och ge dig som säljare en värdigt avslut på ditt entreprenörskap.",
+        "benefits_title": "Fördelar med företagsköp:",
+        "benefit1": "Bevara arbetstillfällen och verksamhet",
+        "benefit2": "Kontrollerad och trygg övergång",
+        "benefit3": "Rättvis värdering och köpeskilling",
+        "learn_more": "Läs mer om företagsköp"
+      }
+    },
+    "who_we_help": {
+      "title": "Vilka hjälper vi?",
+      "description": "Våra tjänster riktar sig företrädesvis mot aktiebolag, men vi hjälper även företagare som driver handelsbolag och enskilda firmor.",
+      "companies": {
+        "title": "Aktiebolag",
+        "description": "Vårt huvudsakliga fokus och expertområde. Vi hjälper aktiebolag genom alla typer av ekonomiska utmaningar."
+      },
+      "partnerships": {
+        "title": "Handelsbolag",
+        "description": "Vi hjälper delägare i handelsbolag att hantera både företagets och den personliga ekonomiska exponeringen."
+      },
+      "sole_proprietorship": {
+        "title": "Enskilda firmor",
+        "description": "Enskilda näringsidkare som behöver hjälp med skuldsanering och ekonomisk omstrukturering."
       }
     },
     "about": {
       "title": "Reconstructor",
-      "subtitle": "Specialister på internationell företagsrekonstruktion och affärsutveckling",
-      "description": "Vi är specialister på företagsrekonstruktion med omfattande erfarenhet av att hjälpa företag att övervinna ekonomiska svårigheter. Vårt tillvägagångssätt är alltid konfidentiellt, professionellt och skräddarsytt för varje klients unika situation.",
-      "cta": "Kontakta oss"
+      "subtitle": "Din pålitliga partner för företagsrekonstruktion och affärsåterhämtning",
+      "human_factor": "Vi förstår. Det är tufft att vara företagare och speciellt i tuffa tider. Vi kan hjälpa till och ta över en stor del av bördan.",
+      "description": "Vi är specialister på företagsrekonstruktion med omfattande erfarenhet av att hjälpa företag att övervinna ekonomiska svårigheter.",
+      "expertise": "Vi är särskilt specialister inom området personligt styrelseansvar där vi ofta kan minska exponering, risk och personligt betalningsansvar.",
+      "cta": "Kontakta oss",
+      "team_image_alt": "Professionellt team som arbetar med företagsrekonstruktion"
     },
-    "faq": {
-      "title": "Vanliga frågor och svar om rekonstruktion",
-      "what_is": {
-        "question": "Vad är en rekonstruktion?",
-        "answer": "Rekonstruktion är en process där en företagare som bedöms ha en god affärsidé, men som har drabbats av ekonomiska problem, kan rekonstruera sin verksamhet utan att gå i konkurs."
+    "liability_expertise": {
+      "title": "Specialister på personligt styrelseansvar",
+      "subtitle": "Ett av våra viktigaste expertområden är att minimera din personliga exponering och risk.",
+      "protection": {
+        "title": "Skydd för dig som styrelseledamot",
+        "description": "Som styrelseledamot eller VD kan du bli personligt ansvarig för företagets skulder under vissa omständigheter. Vi hjälper dig att förstå och minimera dessa risker.",
+        "benefit1": "Minska personlig exponering och risk",
+        "benefit2": "Begränsa personligt betalningsansvar",
+        "benefit3": "Juridisk expertis inom styrelseansvar"
       },
-      "why_important": {
-        "question": "Varför är en rekonstruktion viktig?",
-        "answer": "Rekonstruktion är en viktig process för företagare som har drabbats av ekonomiska problem, men som fortfarande tror på sin affärsidé och vill rädda sin verksamhet."
-      },
-      "who_can_apply": {
-        "question": "Vem kan ansöka om rekonstruktion?",
-        "answer": "Alla företagare som har drabbats av ekonomiska problem och som tror på sin affärsidé kan ansöka om rekonstruktion."
-      }
+      "quote": "\"Vi tar över bördan så att du kan fokusera på det viktigaste – att rädda ditt företag.\""
+    },
+    "cta_early": {
+      "title": "Redo att rädda ditt företag?",
+      "subtitle": "Vi står redo att hjälpa dig genom denna utmanande tid. Första samtalet är alltid konfidentiellt och utan förpliktelser.",
+      "free": "Och gratis!",
+      "button": "Kontakta oss redan idag"
     },
     "cta": {
       "title": "Redo att rädda ditt företag?",
@@ -244,5 +304,120 @@
     "cancel": "Avbryt",
     "close": "Stäng",
     "retry": "Försök igen"
+  },
+  "ackord": {
+    "hero": {
+      "title": "Ackord",
+      "subtitle": "Förhandla fram en överenskommelse med borgenärer"
+    },
+    "what_is": {
+      "title": "Vad är ackord?",
+      "description": "Ackord är en överenskommelse mellan ett företag och dess borgenärer som innebär att borgenärerna accepterar en lägre betalning än vad som ursprungligen var skyldig. Detta kan vara en effektiv lösning för företag som har ekonomiska svårigheter men som fortfarande har potential att bli lönsamma."
+    },
+    "process_image_alt": "Professionellt team som arbetar med ackordsförhandlingar",
+    "how_it_works": {
+      "title": "Hur fungerar ackord?"
+    },
+    "step1": {
+      "title": "1. Analys och förberedelse",
+      "description": "Vi gör en grundlig analys av företagets ekonomiska situation och identifierar möjligheterna för en framgångsrik ackordsöverenskommelse."
+    },
+    "step2": {
+      "title": "2. Förhandling med borgenärer",
+      "description": "Vi förhandlar med borgenärerna för att nå en överenskommelse som både är acceptabel för dem och hållbar för företaget."
+    },
+    "step3": {
+      "title": "3. Genomförande och uppföljning",
+      "description": "När överenskommelsen är på plats hjälper vi till med genomförandet och följer upp att företaget lever upp till sina åtaganden."
+    },
+    "benefits": {
+      "title": "Fördelar med ackord",
+      "1": "Undviker konkurs och dess negativa konsekvenser",
+      "2": "Minskar skuldbördan och förbättrar kassaflödet",
+      "3": "Behåller kontrollen över företaget",
+      "4": "Snabbare process än rekonstruktion",
+      "5": "Mindre formell och kostsam än andra alternativ"
+    },
+    "when_suitable": {
+      "title": "När är ackord lämpligt?",
+      "description": "Ackord är särskilt lämpligt när:"
+    },
+    "suitable": {
+      "1": "Företaget har tillfälliga ekonomiska svårigheter",
+      "2": "Det finns en klar plan för återhämtning",
+      "3": "Borgenärerna är öppna för förhandling",
+      "4": "Företaget vill undvika de formella processerna"
+    },
+    "cta": {
+      "title": "Behöver du hjälp med ackord?",
+      "description": "Kontakta oss för en kostnadsfri konsultation om hur ackord kan hjälpa ditt företag.",
+      "button": "Kontakta oss idag"
+    }
+  },
+  "foretagskop": {
+    "hero": {
+      "title": "Vi köper ditt företag",
+      "subtitle": "En snabb och professionell lösning när du behöver sälja"
+    },
+    "why_sell": {
+      "title": "Varför sälja ditt företag till oss?",
+      "description": "När ekonomiska svårigheter hotar ditt företag kan en snabb försäljning vara den bästa lösningen. Vi erbjuder en professionell och diskret process som kan rädda värden och ge dig en ny start."
+    },
+    "handshake_image_alt": "Professionell handskaning vid företagsförsäljning",
+    "our_approach": {
+      "title": "Vår metod"
+    },
+    "step1": {
+      "title": "1. Snabb utvärdering",
+      "description": "Vi gör en snabb men grundlig utvärdering av ditt företag och dess tillgångar för att fastställa ett rättvist värde."
+    },
+    "step2": {
+      "title": "2. Transparent process",
+      "description": "Vi är transparenta med vårt erbjudande och processen. Du vet alltid vad som händer och varför."
+    },
+    "step3": {
+      "title": "3. Snabb avveckling",
+      "description": "När vi kommer överens kan transaktionen genomföras snabbt, vilket ger dig möjlighet att gå vidare."
+    },
+    "what_we_buy": {
+      "title": "Vad köper vi?",
+      "description": "Vi är intresserade av att köpa företag inom olika branscher, särskilt:"
+    },
+    "sectors": {
+      "1": "Tillverkningsindustri",
+      "2": "Handelssektorn",
+      "3": "Servicebranschen",
+      "4": "Teknologiföretag",
+      "5": "Fastighetsbolag"
+    },
+    "advantages": {
+      "title": "Fördelar med att sälja till oss",
+      "1": "Snabb och effektiv process",
+      "2": "Professionell hantering av all dokumentation",
+      "3": "Diskret och konfidentiell behandling",
+      "4": "Rättvisa värderingar baserade på marknadspriser",
+      "5": "Möjlighet att rädda värden innan konkurs",
+      "6": "Undviker långdragna juridiska processer"
+    },
+    "when_suitable": {
+      "title": "När är företagsförsäljning rätt val?",
+      "description": "Företagsförsäljning kan vara det rätta valet när:"
+    },
+    "suitable": {
+      "1": "Ekonomiska svårigheter hotar företagets fortlevnad",
+      "2": "Du vill undvika konkurs och dess konsekvenser",
+      "3": "Det finns värdefulla tillgångar att rädda",
+      "4": "Du behöver en snabb lösning",
+      "5": "Andra alternativ inte är genomförbara"
+    },
+    "confidentiality": {
+      "title": "Konfidentialitet och diskretion",
+      "description": "Vi förstår att företagsförsäljning kan vara en känslig process. Alla våra diskussioner och förhandlingar hanteras med största konfidentialitet och professionalism."
+    },
+    "cta": {
+      "title": "Intresserad av att sälja ditt företag?",
+      "description": "Kontakta oss för en konfidentiell diskussion om ditt företag och dess möjligheter.",
+      "button": "Kontakta oss konfidentiellt"
+    }
   }
 }

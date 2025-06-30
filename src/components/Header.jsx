@@ -58,13 +58,24 @@ function Header() {
           {/* Site Logo/Title */}
           <div className="flex items-center">
             <Link to="/" data-cy="site-title-link" className="hover:opacity-80 transition-opacity">
-              <div className="text-left">
-                <h1 className="font-sans font-bold text-xl text-brand-black leading-tight" data-cy="site-title">
-                  {t('brand.name', 'Reconstructor')}
-                </h1>
-                <p className="text-xs text-brand-charcoal font-medium leading-tight">
-                  {t('brand.tagline', 'Specialister på internationell företagsrekonstruktion')}
-                </p>
+              <div className="flex items-center gap-2">
+                {/* R Logo */}
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img 
+                    src="/images/logo_r.svg" 
+                    alt="Reconstructor Logo" 
+                    className="w-full h-full object-contain hover:opacity-80 transition-opacity"
+                  />
+                </div>
+                
+                <div className="text-left">
+                  <h1 className="font-sans font-bold text-xl text-brand-black leading-tight" data-cy="site-title">
+                    {t('brand.name', 'Reconstructor')}
+                  </h1>
+                  <p className="text-xs text-brand-charcoal font-medium leading-tight">
+                    {t('brand.tagline', 'Specialister på internationell företagsrekonstruktion')}
+                  </p>
+                </div>
               </div>
             </Link>
           </div>
@@ -91,18 +102,25 @@ function Header() {
             {/* Navigation Links */}
             <div className="flex items-center gap-6">
               <Link 
-                to="/" 
-                data-cy="nav-home"
-                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
-              >
-                {t('navigation.home', 'Hem')}
-              </Link>
-              <Link 
-                to="/foretagsrekonstruktion" 
+                to="/rekonstruktion" 
                 data-cy="nav-reconstruction"
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
               >
-                {t('navigation.reconstruction', 'Företagsrekonstruktion')}
+                {t('navigation.reconstruction', 'Rekonstruktion')}
+              </Link>
+              <Link 
+                to="/ackord" 
+                data-cy="nav-ackord"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+              >
+                {t('navigation.ackord', 'Ackord')}
+              </Link>
+              <Link 
+                to="/foretagskop" 
+                data-cy="nav-foretagskop"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+              >
+                {t('navigation.foretagskop', 'Företagsköp')}
               </Link>
               <Link 
                 to="/om-oss" 
@@ -190,20 +208,28 @@ function Header() {
           <div className="md:hidden mt-4 py-4 border-t border-brand-khaki" data-cy="mobile-menu">
             <div className="flex flex-col gap-4">
               <Link 
-                to="/" 
-                data-cy="mobile-nav-home"
-                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t('navigation.home', 'Hem')}
-              </Link>
-              <Link 
-                to="/foretagsrekonstruktion" 
+                to="/rekonstruktion" 
                 data-cy="mobile-nav-reconstruction"
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation.reconstruction', 'Företagsrekonstruktion')}
+                {t('navigation.reconstruction', 'Rekonstruktion')}
+              </Link>
+              <Link 
+                to="/ackord" 
+                data-cy="mobile-nav-ackord"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.ackord', 'Ackord')}
+              </Link>
+              <Link 
+                to="/foretagskop" 
+                data-cy="mobile-nav-foretagskop"
+                className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t('navigation.foretagskop', 'Företagsköp')}
               </Link>
               <Link 
                 to="/om-oss" 
