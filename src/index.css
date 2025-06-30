@@ -5,6 +5,11 @@
 
 /* Clean, minimal design overrides */
 @layer base {
+  /* Add smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
   /* Ensure sharp corners on all elements by default */
   * {
     border-radius: 0;

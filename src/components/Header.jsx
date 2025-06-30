@@ -6,7 +6,9 @@ function Header() {
   const { t, i18n } = useTranslation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
   const dropdownRef = useRef(null);
+  const headerRef = useRef(null);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -51,8 +53,31 @@ function Header() {
     };
   }, []);
 
+  // Handle scroll for scroll-to-top button
+  useEffect(() => {
+    const handleScroll = () => {
+      if (headerRef.current) {
+        const headerBottom = headerRef.current.offsetTop + headerRef.current.offsetHeight;
+        const scrollY = window.scrollY;
+        setShowScrollToTop(scrollY > headerBottom);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Smooth scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
-    <header data-cy="main-header" className="bg-brand-linen shadow-md">
+    <>
+      <header ref={headerRef} data-cy="main-header" className="bg-brand-linen shadow-md">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Site Logo/Title */}
@@ -285,6 +310,20 @@ function Header() {
         )}
       </nav>
     </header>
+
+      {/* Scroll to Top Button */}
+      {showScrollToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-brand-umber text-brand-linen p-3 rounded-full shadow-lg hover:bg-brand-black transition-all duration-300 z-50 hover:scale-110"
+          aria-label={t('scroll_to_top', 'Scroll to top')}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
+      )}
+    </>
   );
 }
 
