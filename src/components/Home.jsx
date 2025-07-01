@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+import EmergencyConsultation from './EmergencyConsultation';
 
 function Home() {
   const { t } = useTranslation();
+  const [showEmergencyModal, setShowEmergencyModal] = useState(false);
 
   return (
     <div className="bg-white">
@@ -177,6 +180,45 @@ function Home() {
           >
             {t('landing.cta_early.button', 'Kontakta oss redan idag')}
           </Link>
+        </div>
+      </section>
+
+      {/* Emergency Consultation Section */}
+      <section className="bg-gradient-to-br from-brand-umber to-brand-black text-brand-linen py-16">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              {t('emergency.title', 'Akut situation?')}
+            </h2>
+            
+            <p className="text-xl mb-8 opacity-90">
+              {t('emergency.description', 'Om ditt företag står inför en akut finansiell kris, kontakta oss omedelbart för konfidentiell akutkonsultation.')}
+            </p>
+
+            <div className="space-y-6">
+              <h3 className="text-2xl font-semibold mb-4">
+                {t('emergency.consultation_title', 'Akutkonsultation')}
+              </h3>
+              
+              <p className="text-lg mb-6 opacity-90">
+                {t('emergency.callback_question', 'Vill du att vi ringer upp dig?')}
+              </p>
+              
+              <p className="mb-8 opacity-90">
+                {t('emergency.callback_description', 'Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.')}
+              </p>
+
+              <button
+                onClick={() => setShowEmergencyModal(true)}
+                className="bg-brand-linen text-brand-umber px-8 py-4 font-bold text-lg hover:bg-brand-khaki hover:bg-opacity-90 transition-colors duration-300 inline-flex items-center gap-3"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                {t('emergency.request_callback', 'Begär konfidentiell återuppringning')}
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -466,6 +508,15 @@ function Home() {
           </Link>
         </div>
       </section>
+
+      {/* Emergency Modal */}
+      {showEmergencyModal && (
+        <EmergencyConsultation 
+          isOpen={showEmergencyModal}
+          type="emergency"
+          onClose={() => setShowEmergencyModal(false)} 
+        />
+      )}
     </div>
   );
 }

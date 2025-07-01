@@ -418,5 +418,46 @@
       "description": "Contact us for a confidential discussion about your company and its opportunities.",
       "button": "Contact us confidentially"
     }
+  },
+  "emergency": {
+    "title": "Emergency situation?",
+    "description": "If your company is facing an acute financial crisis, contact us immediately for confidential emergency consultation.",
+    "consultation_title": "Emergency consultation",
+    "callback_title": "Request callback",
+    "callback_question": "Would you like us to call you?",
+    "callback_description": "Leave your phone number and we'll call you shortly for an unconditional and confidential consultation. The call is confidential and without obligations.",
+    "request_callback": "Request confidential callback"
+  },
+  "form": {
+    "title": "Request callback",
+    "close": "Close",
+    "name_label": "Name",
+    "name_placeholder": "Your name",
+    "phone_label": "Phone number",
+    "phone_placeholder": "+46 70-123 45 67",
+    "time_label": "Preferred time for callback",
+    "time_asap": "As soon as possible",
+    "time_hour": "Within an hour",
+    "time_today": "Sometime today",
+    "time_tomorrow": "Tomorrow",
+    "gdpr_text": "I agree that my personal data is processed according to GDPR to conduct this consultation. The data will be deleted after completed contact.",
+    "submit": "Send request",
+    "submitting": "Sending...",
+    "alternative": "Or call us directly:",
+    "errors": {
+      "name_required": "Name is required",
+      "phone_required": "Phone number is required",
+      "phone_invalid": "Please enter a valid phone number",
+      "gdpr_required": "You must agree to the processing of personal data",
+      "submit_failed": "Something went wrong. Please try again or call us directly."
+    }
+  },
+  "confirmation": {
+    "title": "Thank you for your request!",
+    "message": "We have received your callback request.",
+    "next_steps": "One of our specialists will contact you shortly for a confidential consultation. Please keep your phone available.",
+    "confidential": "The call is completely confidential and without obligations. We are here to help you find the best solution for your company.",
+    "close": "Close",
+    "urgent": "Need urgent help? Call:"
   }
 }

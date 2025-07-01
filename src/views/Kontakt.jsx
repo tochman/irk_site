@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import EmergencyConsultation from '../components/EmergencyConsultation';
 
 function Kontakt() {
   const { t } = useTranslation();
@@ -10,6 +11,8 @@ function Kontakt() {
     company: '',
     message: ''
   });
+  const [showEmergencyModal, setShowEmergencyModal] = useState(false);
+  const [showCallbackModal, setShowCallbackModal] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -181,7 +184,7 @@ function Kontakt() {
                       {t('contact.info.phone.title', 'Telefon')}
                     </h3>
                     <p className="text-brand-charcoal mb-1">
-                      <a href="tel:+46102040401" className="hover:text-brand-umber">010 20 40 401</a>
+                      <a href="tel:+46708281225" className="hover:text-brand-umber">+46 708 281225</a>
                     </p>
                     <p className="text-sm text-brand-charcoal opacity-80">
                       {t('contact.info.phone.hours', 'Måndag-fredag, 08.00-20.00\nLördag-söndag, 08:00-18:00')}
@@ -203,7 +206,7 @@ function Kontakt() {
                       {t('contact.info.email.title', 'E-post')}
                     </h3>
                     <p className="text-brand-charcoal mb-1">
-                      <a href="mailto:info@rekonstruktionsgruppen.se" className="hover:text-brand-umber">info@rekonstruktionsgruppen.se</a>
+                      <a href="mailto:info@reconstructor.se" className="hover:text-brand-umber">info@reconstructor.se</a>
                     </p>
                     <p className="text-sm text-brand-charcoal opacity-80">
                       {t('contact.info.email.response', 'Svar inom 1h (måndag-söndag)')}
@@ -214,6 +217,7 @@ function Kontakt() {
                   </div>
                 </div>
 
+                {/* Address section commented out for now
                 <div className="flex items-start">
                   <div className="bg-brand-khaki bg-opacity-30 p-3 mr-4">
                     <svg className="w-6 h-6 text-brand-umber" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -229,7 +233,7 @@ function Kontakt() {
                       <div>
                         <p className="font-medium text-brand-black">Stockholm</p>
                         <p>Stureplan 15, 114 35 Stockholm</p>
-                        <p>Tel: 010 20 40 401</p>
+                        <p>Tel: +46 708 281225</p>
                       </div>
                       <div>
                         <p className="font-medium text-brand-black">Göteborg</p>
@@ -239,6 +243,7 @@ function Kontakt() {
                     </div>
                   </div>
                 </div>
+                */}
               </div>
 
               {/* Emergency Contact */}
@@ -249,7 +254,10 @@ function Kontakt() {
                 <p className="text-brand-charcoal mb-4">
                   {t('contact.emergency.description', 'Om ditt företag står inför en akut finansiell kris, kontakta oss omedelbart för konfidentiell akutkonsultation.')}
                 </p>
-                <button className="bg-brand-umber text-brand-linen px-6 py-2 font-semibold hover:bg-brand-black transition-colors">
+                <button 
+                  onClick={() => setShowEmergencyModal(true)}
+                  className="bg-brand-umber text-brand-linen px-6 py-2 font-semibold hover:bg-brand-black transition-colors"
+                >
                   {t('contact.emergency.button', 'Akutkonsultation')}
                 </button>
               </div>
@@ -262,7 +270,10 @@ function Kontakt() {
                 <p className="text-brand-charcoal mb-4">
                   {t('contact.callback.description', 'Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.')}
                 </p>
-                <button className="bg-brand-khaki text-brand-black px-6 py-2 font-semibold hover:bg-opacity-80 transition-colors">
+                <button 
+                  onClick={() => setShowCallbackModal(true)}
+                  className="bg-brand-khaki text-brand-black px-6 py-2 font-semibold hover:bg-opacity-80 transition-colors"
+                >
                   {t('contact.callback.button', 'Begär konfidentiell återuppringning')}
                 </button>
               </div>
@@ -270,6 +281,20 @@ function Kontakt() {
           </div>
         </div>
       </section>
+
+      {/* Emergency Consultation Modal */}
+      <EmergencyConsultation 
+        isOpen={showEmergencyModal}
+        onClose={() => setShowEmergencyModal(false)}
+        type="emergency"
+      />
+
+      {/* Callback Modal */}
+      <EmergencyConsultation 
+        isOpen={showCallbackModal}
+        onClose={() => setShowCallbackModal(false)}
+        type="callback"
+      />
     </div>
   );
 }

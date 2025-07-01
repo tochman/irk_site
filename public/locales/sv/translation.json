@@ -420,5 +420,46 @@
       "description": "Kontakta oss för en konfidentiell diskussion om ditt företag och dess möjligheter.",
       "button": "Kontakta oss konfidentiellt"
     }
+  },
+  "emergency": {
+    "title": "Akut situation?",
+    "description": "Om ditt företag står inför en akut finansiell kris, kontakta oss omedelbart för konfidentiell akutkonsultation.",
+    "consultation_title": "Akutkonsultation",
+    "callback_title": "Begär återuppringning",
+    "callback_question": "Vill du att vi ringer upp dig?",
+    "callback_description": "Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.",
+    "request_callback": "Begär konfidentiell återuppringning"
+  },
+  "form": {
+    "title": "Begär återuppringning",
+    "close": "Stäng",
+    "name_label": "Namn",
+    "name_placeholder": "Ditt namn",
+    "phone_label": "Telefonnummer",
+    "phone_placeholder": "070-123 45 67",
+    "time_label": "Önskad tid för uppringning",
+    "time_asap": "Så snart som möjligt",
+    "time_hour": "Inom en timme",
+    "time_today": "Någon gång idag",
+    "time_tomorrow": "Imorgon",
+    "gdpr_text": "Jag godkänner att mina personuppgifter behandlas enligt GDPR för att genomföra denna konsultation. Uppgifterna raderas efter avslutad kontakt.",
+    "submit": "Skicka begäran",
+    "submitting": "Skickar...",
+    "alternative": "Eller ring oss direkt på:",
+    "errors": {
+      "name_required": "Namn är obligatoriskt",
+      "phone_required": "Telefonnummer är obligatoriskt",
+      "phone_invalid": "Ange ett giltigt telefonnummer",
+      "gdpr_required": "Du måste godkänna behandling av personuppgifter",
+      "submit_failed": "Något gick fel. Försök igen eller ring oss direkt."
+    }
+  },
+  "confirmation": {
+    "title": "Tack för din förfrågan!",
+    "message": "Vi har mottagit din begäran om återuppringning.",
+    "next_steps": "En av våra specialister kommer att kontakta dig inom kort för en konfidentiell konsultation. Håll telefonen tillgänglig.",
+    "confidential": "Samtalet är helt konfidentiellt och utan förbindelser. Vi är här för att hjälpa dig hitta den bästa lösningen för ditt företag.",
+    "close": "Stäng",
+    "urgent": "Behöver du hjälp akut? Ring:"
   }
 }
