@@ -27,10 +27,9 @@ import PhoneNumber from '../components/PhoneNumber';
 
 ## Recommendations for Future Development
 1. **CI/CD Integration**: Add a step to your CI pipeline to run `check-translations.js` to ensure both files stay in sync
-2. **ESLint Rule**: Consider adding an ESLint rule to prevent fallback strings in t() calls
-3. **Cleanup**: Consider removing unused translation keys for better maintainability, or document why they're kept
-4. **Documentation**: Update your developer guidelines to include best practices for translations
-5. **RTL Testing**: Always test the application in RTL languages to ensure proper display of content
+2. **Cleanup**: Consider removing unused translation keys for better maintainability, or document why they're kept
+3. **Documentation**: Update your developer guidelines to include best practices for translations
+4. **RTL Testing**: Always test the application in RTL languages to ensure proper display of content
 
 ## Running the Translation Scripts
 ```bash
