@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import EmergencyConsultation from '../components/EmergencyConsultation';
+import PhoneNumber from '../components/PhoneNumber';
 
 function Kontakt() {
   const { t } = useTranslation();
@@ -43,10 +44,10 @@ function Kontakt() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-black bg-opacity-40 backdrop-blur-sm px-8 py-12 border border-white border-opacity-20">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                {t('contact.hero.title', 'Kontakta oss')}
+                {t('contact.hero.title')}
               </h1>
               <p className="text-xl text-white opacity-95">
-                {t('contact.hero.subtitle', 'Vi står redo att hjälpa dig genom denna utmanande tid')}
+                {t('contact.hero.subtitle')}
               </p>
             </div>
           </div>
@@ -57,10 +58,10 @@ function Kontakt() {
       <section className="py-16 bg-brand-linen">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-brand-black mb-6">
-            {t('contact.intro.title', 'Professionell hjälp när du behöver den som mest')}
+            {t('contact.intro.title')}
           </h2>
           <p className="text-lg text-brand-charcoal leading-relaxed">
-            {t('contact.intro.description', 'Vi förstår att ekonomiska svårigheter kan vara överväldigande. Därför erbjuder vi konfidentiella, förutsättningslösa konsultationer för att hjälpa dig förstå dina alternativ. Kontakta oss idag - alla samtal hålls i fullständig sekretess.')}
+            {t('contact.intro.description')}
           </p>
         </div>
       </section>
@@ -72,16 +73,16 @@ function Kontakt() {
             {/* Contact Form */}
             <div>
               <h2 className="text-3xl font-bold text-brand-black mb-6">
-                {t('contact.form.title', 'Skicka oss ett meddelande')}
+                {t('contact.form.title')}
               </h2>
               <p className="text-brand-charcoal mb-8">
-                {t('contact.form.subtitle', 'Alla förfrågningar behandlas konfidentiellt och utan förpliktelser')}
+                {t('contact.form.subtitle')}
               </p>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.name', 'Namn')} *
+                    {t('contact.form.name')} *
                   </label>
                   <input
                     type="text"
@@ -96,7 +97,7 @@ function Kontakt() {
                 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.email', 'E-post')} *
+                    {t('contact.form.email')} *
                   </label>
                   <input
                     type="email"
@@ -111,7 +112,7 @@ function Kontakt() {
                 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.phone', 'Telefon')}
+                    {t('contact.form.phone')}
                   </label>
                   <input
                     type="tel"
@@ -125,7 +126,7 @@ function Kontakt() {
                 
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.company', 'Företag')}
+                    {t('contact.form.company')}
                   </label>
                   <input
                     type="text"
@@ -139,7 +140,7 @@ function Kontakt() {
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.message', 'Meddelande')} *
+                    {t('contact.form.message')} *
                   </label>
                   <textarea
                     id="message"
@@ -148,20 +149,20 @@ function Kontakt() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder={t('contact.form.message_placeholder', 'Berätta om din situation och hur vi kan hjälpa dig. Alla uppgifter behandlas konfidentiellt...')}
+                    placeholder={t('contact.form.message_placeholder')}
                     className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
                   />
                 </div>
                 
                 <div className="bg-brand-linen p-4 text-sm text-brand-charcoal">
-                  {t('contact.form.privacy_notice', 'All information du lämnar behandlas med fullständig konfidentialitet och utan förpliktelser.')}
+                  {t('contact.form.privacy_notice')}
                 </div>
                 
                 <button
                   type="submit"
                   className="w-full bg-brand-umber text-brand-linen px-8 py-3 font-semibold hover:bg-brand-black transition-colors"
                 >
-                  {t('contact.form.submit', 'Skicka konfidentiellt meddelande')}
+                  {t('contact.form.submit')}
                 </button>
               </form>
             </div>
@@ -169,7 +170,7 @@ function Kontakt() {
             {/* Contact Information */}
             <div>
               <h2 className="text-3xl font-bold text-brand-black mb-6">
-                {t('contact.info.title', 'Kontaktuppgifter')}
+                {t('contact.info.title')}
               </h2>
               
               <div className="space-y-8">
@@ -181,16 +182,16 @@ function Kontakt() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2 text-brand-black">
-                      {t('contact.info.phone.title', 'Telefon')}
+                      {t('contact.info.phone.title')}
                     </h3>
                     <p className="text-brand-charcoal mb-1">
-                      <a href="tel:+46708281225" className="hover:text-brand-umber">+46 708 281225</a>
+                      <PhoneNumber number="+46 708 281225" isLink={true} className="hover:text-brand-umber" />
                     </p>
                     <p className="text-sm text-brand-charcoal opacity-80">
-                      {t('contact.info.phone.hours', 'Måndag-fredag, 08.00-20.00\nLördag-söndag, 08:00-18:00')}
+                      {t('contact.info.phone.hours')}
                     </p>
                     <p className="text-sm text-brand-umber font-medium">
-                      {t('contact.info.phone.note', 'Konfidentiell konsultation tillgänglig')}
+                      {t('contact.info.phone.note')}
                     </p>
                   </div>
                 </div>
@@ -203,16 +204,16 @@ function Kontakt() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2 text-brand-black">
-                      {t('contact.info.email.title', 'E-post')}
+                      {t('contact.info.email.title')}
                     </h3>
                     <p className="text-brand-charcoal mb-1">
                       <a href="mailto:info@reconstructor.se" className="hover:text-brand-umber">info@reconstructor.se</a>
                     </p>
                     <p className="text-sm text-brand-charcoal opacity-80">
-                      {t('contact.info.email.response', 'Svar inom 1h (måndag-söndag)')}
+                      {t('contact.info.email.response')}
                     </p>
                     <p className="text-sm text-brand-umber font-medium">
-                      {t('contact.info.email.note', 'Alla e-postmeddelanden behandlas konfidentiellt')}
+                      {t('contact.info.email.note')}
                     </p>
                   </div>
                 </div>
@@ -227,18 +228,18 @@ function Kontakt() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2 text-brand-black">
-                      {t('contact.info.address.title', 'Kontor')}
+                      {t('contact.info.address.title')}
                     </h3>
                     <div className="text-brand-charcoal space-y-4">
                       <div>
                         <p className="font-medium text-brand-black">Stockholm</p>
                         <p>Stureplan 15, 114 35 Stockholm</p>
-                        <p>Tel: +46 708 281225</p>
+                        <p>Tel: <PhoneNumber number="+46 708 281225" /></p>
                       </div>
                       <div>
                         <p className="font-medium text-brand-black">Göteborg</p>
                         <p>Avenyn 42, 411 36 Göteborg</p>
-                        <p>Tel: 010 20 40 402</p>
+                        <p>Tel: <PhoneNumber number="010 20 40 402" /></p>
                       </div>
                     </div>
                   </div>
@@ -249,32 +250,32 @@ function Kontakt() {
               {/* Emergency Contact */}
               <div className="mt-12 bg-brand-umber bg-opacity-10 p-6">
                 <h3 className="font-semibold text-lg mb-2 text-brand-black">
-                  {t('contact.emergency.title', 'Akut situation?')}
+                  {t('contact.emergency.title')}
                 </h3>
                 <p className="text-brand-charcoal mb-4">
-                  {t('contact.emergency.description', 'Om ditt företag står inför en akut finansiell kris, kontakta oss omedelbart för konfidentiell akutkonsultation.')}
+                  {t('contact.emergency.description')}
                 </p>
                 <button 
                   onClick={() => setShowEmergencyModal(true)}
                   className="bg-brand-umber text-brand-linen px-6 py-2 font-semibold hover:bg-brand-black transition-colors"
                 >
-                  {t('contact.emergency.button', 'Akutkonsultation')}
+                  {t('contact.emergency.button')}
                 </button>
               </div>
 
               {/* Call-to-Action */}
               <div className="mt-12 bg-brand-khaki bg-opacity-20 p-6">
                 <h3 className="font-semibold text-lg mb-2 text-brand-black">
-                  {t('contact.callback.title', 'Vill du att vi ringer upp dig?')}
+                  {t('contact.callback.title')}
                 </h3>
                 <p className="text-brand-charcoal mb-4">
-                  {t('contact.callback.description', 'Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.')}
+                  {t('contact.callback.description')}
                 </p>
                 <button 
                   onClick={() => setShowCallbackModal(true)}
                   className="bg-brand-khaki text-brand-black px-6 py-2 font-semibold hover:bg-opacity-80 transition-colors"
                 >
-                  {t('contact.callback.button', 'Begär konfidentiell återuppringning')}
+                  {t('contact.callback.button')}
                 </button>
               </div>
             </div>

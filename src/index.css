@@ -10,6 +10,15 @@
     scroll-behavior: smooth;
   }
   
+  /* RTL Support */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+  
+  [dir="ltr"] {
+    direction: ltr;
+  }
+  
   /* Ensure sharp corners on all elements by default */
   * {
     border-radius: 0;
@@ -35,5 +44,19 @@
   /* Sharp shadow for cards and elements */
   .shadow-sharp {
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* RTL-specific styles */
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+  
+  /* RTL font support */
+  [dir="rtl"] {
+    font-family: 'Noto Sans Arabic', 'Tahoma', sans-serif;
   }
 }

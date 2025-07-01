@@ -19,10 +19,10 @@ function OmOss() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-black bg-opacity-40 backdrop-blur-sm px-8 py-12 border border-white border-opacity-20">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                {t('about.hero.title', 'Om Reconstructor')}
+                {t('about.hero.title')}
               </h1>
               <p className="text-xl text-white opacity-95">
-                {t('about.hero.subtitle', 'Vi minskar antalet onödiga konkurser genom professionell rådgivning')}
+                {t('about.hero.subtitle')}
               </p>
             </div>
           </div>
@@ -35,19 +35,19 @@ function OmOss() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-6">
-                {t('about.mission.title', 'Vår mission')}
+                {t('about.mission.title')}
               </h2>
               <p className="text-lg text-brand-charcoal leading-relaxed mb-6">
-                {t('about.mission.description', 'Reconstructor är specialiserade på att bistå företag i olika branscher som befinner sig i ekonomisk kris. Vi förstår att varje situation är unik och utformar därför skräddarsydda juridiska lösningar som syftar till att göra ditt företag lönsamt igen.')}
+                {t('about.mission.description')}
               </p>
               <p className="text-lg text-brand-charcoal leading-relaxed">
-                {t('about.mission.description2', 'Vi är en trygg partner som arbetar hårt för att uppnå dina mål och behov. Vårt mål är att minska antalet onödiga konkurser genom att erbjuda professionell rådgivning och stöd.')}
+                {t('about.mission.description2')}
               </p>
             </div>
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt={t('about.mission.image_alt', 'Professionell konsultation och rådgivning')}
+                alt={t('about.mission.image_alt')}
                 className="shadow-lg object-cover h-80 w-full"
               />
             </div>
@@ -62,10 +62,10 @@ function OmOss() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
-              {t('about.expertise.title', 'Vår expertis')}
+              {t('about.expertise.title')}
             </h2>
             <p className="text-lg text-brand-charcoal">
-              {t('about.expertise.subtitle', 'Djup kunskap och mångårig erfarenhet inom företagsrekonstruktion')}
+              {t('about.expertise.subtitle')}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -76,10 +76,10 @@ function OmOss() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-brand-black">
-                {t('about.expertise.legal.title', 'Juridisk expertis')}
+                {t('about.expertise.legal.title')}
               </h3>
               <p className="text-brand-charcoal">
-                {t('about.expertise.legal.description', 'Djup kunskap inom rekonstruktionsrätt och insolvensförfaranden')}
+                {t('about.expertise.legal.description')}
               </p>
             </div>
             <div className="text-center">
@@ -89,10 +89,10 @@ function OmOss() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-brand-black">
-                {t('about.expertise.financial.title', 'Finansiell analys')}
+                {t('about.expertise.financial.title')}
               </h3>
               <p className="text-brand-charcoal">
-                {t('about.expertise.financial.description', 'Omfattande ekonomisk analys och omstrukturering av verksamheter')}
+                {t('about.expertise.financial.description')}
               </p>
             </div>
             <div className="text-center">
@@ -102,10 +102,10 @@ function OmOss() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-brand-black">
-                {t('about.expertise.strategic.title', 'Strategisk rådgivning')}
+                {t('about.expertise.strategic.title')}
               </h3>
               <p className="text-brand-charcoal">
-                {t('about.expertise.strategic.description', 'Långsiktig strategisk planering för hållbar affärsåterhämtning')}
+                {t('about.expertise.strategic.description')}
               </p>
             </div>
           </div>
@@ -117,51 +117,51 @@ function OmOss() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-brand-linen p-8 mb-16">
             <h2 className="text-3xl font-bold text-brand-black mb-6 text-center">
-              {t('about.approach.title', 'Vårt tillvägagångssätt')}
+              {t('about.approach.title')}
             </h2>
             <p className="text-lg text-brand-charcoal leading-relaxed text-center">
-              {t('about.approach.description', 'Vi tror att varje företag förtjänar en andra chans. Vårt tillvägagångssätt är alltid konfidentiellt, professionellt och skräddarsytt för varje klients unika situation. Vi arbetar nära våra klienter för att utveckla realistiska och hållbara lösningar.')}
+              {t('about.approach.description')}
             </p>
           </div>
 
           {/* Team Section */}
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-brand-black mb-6">
-              {t('about.team.title', 'Vårt team')}
+              {t('about.team.title')}
             </h2>
             <p className="text-lg text-brand-charcoal max-w-3xl mx-auto">
-              {t('about.team.description', 'Vårt team består av erfarna professionella inom juridik, ekonomi och affärsutveckling. Vi har framgångsrikt hjälpt hundratals företag genom svåra ekonomiska situationer.')}
+              {t('about.team.description')}
             </p>
           </div>
 
           {/* Values Section */}
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-brand-black mb-12">
-              {t('about.values.title', 'Våra värderingar')}
+              {t('about.values.title')}
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-3 text-brand-black">
-                  {t('about.values.value1.title', 'Konfidentialitet')}
+                  {t('about.values.value1.title')}
                 </h3>
                 <p className="text-brand-charcoal">
-                  {t('about.values.value1.description', 'Alla våra konsultationer och processer är helt konfidentiella.')}
+                  {t('about.values.value1.description')}
                 </p>
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-3 text-brand-black">
-                  {t('about.values.value2.title', 'Professionalism')}
+                  {t('about.values.value2.title')}
                 </h3>
                 <p className="text-brand-charcoal">
-                  {t('about.values.value2.description', 'Vi upprätthåller högsta professionella standarder i allt vårt arbete.')}
+                  {t('about.values.value2.description')}
                 </p>
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-3 text-brand-black">
-                  {t('about.values.value3.title', 'Resultat')}
+                  {t('about.values.value3.title')}
                 </h3>
                 <p className="text-brand-charcoal">
-                  {t('about.values.value3.description', 'Vi fokuserar på att leverera konkreta resultat för våra klienter.')}
+                  {t('about.values.value3.description')}
                 </p>
               </div>
             </div>
@@ -170,16 +170,16 @@ function OmOss() {
           {/* CTA Section */}
           <div className="text-center">
             <h2 className="text-3xl font-bold text-brand-black mb-4">
-              {t('about.cta.title', 'Redo att samarbeta med oss?')}
+              {t('about.cta.title')}
             </h2>
             <p className="text-lg text-brand-charcoal mb-8">
-              {t('about.cta.description', 'Kontakta oss idag för en konfidentiell, förutsättningslös konsultation om hur vi kan hjälpa ditt företag.')}
+              {t('about.cta.description')}
             </p>
             <Link
               to="/kontakt"
               className="bg-brand-umber text-brand-linen px-8 py-3 font-semibold hover:bg-brand-black transition-colors"
             >
-              {t('about.cta.button', 'Få kostnadsfri konsultation')}
+              {t('about.cta.button')}
             </Link>
           </div>
         </div>

@@ -53,7 +53,7 @@ const BankIDModal = ({
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-brand-black">
-            {t("bankID.header", "BankID Inloggning")}
+            {t("bankID.header")}
           </h2>
           <button
             onClick={onClose}
@@ -75,7 +75,7 @@ const BankIDModal = ({
                 <QRCode data={qrCodeData} />
               </div>
               <p className="text-sm text-brand-charcoal">
-                {t("bankID.scanQrInstructions", "Skanna QR-koden med din BankID-app för att logga in")}
+                {t("bankID.scanQrInstructions")}
               </p>
             </div>
           )}
@@ -85,7 +85,7 @@ const BankIDModal = ({
             <div className="text-center py-8">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-brand-umber mx-auto mb-4"></div>
               <p className="text-brand-charcoal">
-                {t("bankID.qrCodeLoading", "Laddar QR-kod...")}
+                {t("bankID.qrCodeLoading")}
               </p>
             </div>
           )}
@@ -136,12 +136,12 @@ const BankIDModal = ({
           {/* Security Notice */}
           <div className="bg-brand-linen p-4 border-l-4 border-brand-umber">
             <h4 className="font-semibold text-brand-black text-sm mb-2">
-              {t("bankID.security.title", "Säkerhetsinformation")}
+              {t("bankID.security.title")}
             </h4>
             <ul className="text-xs text-brand-charcoal space-y-1">
-              <li>• {t("bankID.security.encrypted", "All kommunikation är krypterad")}</li>
-              <li>• {t("bankID.security.noStorage", "Vi lagrar inte dina BankID-uppgifter")}</li>
-              <li>• {t("bankID.security.official", "Officiell BankID-integration")}</li>
+              <li>• {t("bankID.security.encrypted")}</li>
+              <li>• {t("bankID.security.noStorage")}</li>
+              <li>• {t("bankID.security.official")}</li>
             </ul>
           </div>
         </div>

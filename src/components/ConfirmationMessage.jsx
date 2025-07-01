@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import PhoneNumber from './PhoneNumber';
 
 function ConfirmationMessage({ onClose }) {
   const { t } = useTranslation();
@@ -13,20 +14,20 @@ function ConfirmationMessage({ onClose }) {
         </div>
         
         <h3 className="text-2xl font-bold mb-4">
-          {t('confirmation.title', 'Tack för din förfrågan!')}
+          {t('confirmation.title')}
         </h3>
         
         <p className="text-lg mb-4">
-          {t('confirmation.message', 'Vi har mottagit din begäran om återuppringning.')}
+          {t('confirmation.message')}
         </p>
         
         <p className="mb-6 opacity-90">
-          {t('confirmation.next_steps', 'En av våra specialister kommer att kontakta dig inom kort för en konfidentiell konsultation. Håll telefonen tillgänglig.')}
+          {t('confirmation.next_steps')}
         </p>
         
         <div className="bg-brand-linen bg-opacity-20 p-4 rounded mb-6">
           <p className="text-sm opacity-90">
-            {t('confirmation.confidential', 'Samtalet är helt konfidentiellt och utan förbindelser. Vi är här för att hjälpa dig hitta den bästa lösningen för ditt företag.')}
+            {t('confirmation.confidential')}
           </p>
         </div>
       </div>
@@ -35,11 +36,11 @@ function ConfirmationMessage({ onClose }) {
         onClick={onClose}
         className="bg-brand-linen text-brand-umber px-6 py-3 font-medium hover:bg-brand-khaki hover:bg-opacity-90 transition-colors duration-300"
       >
-        {t('confirmation.close', 'Stäng')}
+        {t('confirmation.close')}
       </button>
       
       <div className="mt-4 text-sm opacity-80">
-        <p>{t('confirmation.urgent', 'Behöver du hjälp akut? Ring:')} <strong>+46 708 281225</strong></p>
+        <p>{t('confirmation.urgent')} <strong><PhoneNumber number="+46 708 281225" /></strong></p>
       </div>
     </div>
   );

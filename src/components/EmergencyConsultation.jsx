@@ -38,16 +38,16 @@ function EmergencyConsultation({ isOpen, onClose, type = 'emergency' }) {
 
   const getTitle = () => {
     if (type === 'callback') {
-      return t('emergency.callback_title', 'Begär återuppringning');
+      return t('emergency.callback_title');
     }
-    return t('emergency.title', 'Akut situation?');
+    return t('emergency.title');
   };
 
   const getDescription = () => {
     if (type === 'callback') {
-      return t('emergency.callback_description', 'Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.');
+      return t('emergency.callback_description');
     }
-    return t('emergency.description', 'Om ditt företag står inför en akut finansiell kris, kontakta oss omedelbart för konfidentiell akutkonsultation.');
+    return t('emergency.description');
   };
 
   return (
@@ -76,15 +76,15 @@ function EmergencyConsultation({ isOpen, onClose, type = 'emergency' }) {
             {!showForm && type === 'emergency' ? (
               <div className="space-y-6">
                 <h3 className="text-2xl font-semibold mb-4">
-                  {t('emergency.consultation_title', 'Akutkonsultation')}
+                  {t('emergency.consultation_title')}
                 </h3>
                 
                 <p className="text-lg mb-6 opacity-90">
-                  {t('emergency.callback_question', 'Vill du att vi ringer upp dig?')}
+                  {t('emergency.callback_question')}
                 </p>
                 
                 <p className="mb-8 opacity-90">
-                  {t('emergency.callback_description', 'Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.')}
+                  {t('emergency.callback_description')}
                 </p>
 
                 <button
@@ -94,7 +94,7 @@ function EmergencyConsultation({ isOpen, onClose, type = 'emergency' }) {
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
-                  {t('emergency.request_callback', 'Begär konfidentiell återuppringning')}
+                  {t('emergency.request_callback')}
                 </button>
               </div>
             ) : (

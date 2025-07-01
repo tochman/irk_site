@@ -68,10 +68,10 @@ const Authentication = () => {
       <section className="bg-gradient-to-br from-brand-charcoal to-brand-umber text-brand-linen py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t('bankID.authentication', 'BankID Autentisering')}
+            {t('bankID.authentication')}
           </h1>
           <p className="text-xl text-brand-linen opacity-90">
-            {t('bankID.header', 'Säker inloggning med BankID')}
+            {t('bankID.header')}
           </p>
         </div>
       </section>
@@ -82,7 +82,7 @@ const Authentication = () => {
           <div className="bg-white p-8 shadow-lg">
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-brand-black mb-4">
-                {t('bankID.header', 'BankID Inloggning')}
+                {t('bankID.header')}
               </h2>
               <p className="text-brand-charcoal">
                 Logga in säkert med ditt BankID för att komma åt ditt konto.
@@ -123,12 +123,12 @@ const Authentication = () => {
                     {qrCode && (
                       <div className="mt-6">
                         <p className="text-sm text-brand-charcoal mb-4">
-                          {t('bankID.scanQrInstructions', 'Skanna QR-koden med din BankID-app för att logga in')}
+                          {t('bankID.scanQrInstructions')}
                         </p>
                         <div className="bg-white p-4 inline-block">
                           <img 
                             src={`data:image/png;base64,${qrCode}`} 
-                            alt={t('bankID.qrCodeAlt', 'BankID QR-kod för autentisering')}
+                            alt={t('bankID.qrCodeAlt')}
                             className="mx-auto"
                           />
                         </div>
@@ -186,12 +186,12 @@ const Authentication = () => {
             {/* Security Notice */}
             <div className="mt-8 p-4 bg-brand-linen border-l-4 border-brand-umber">
               <h4 className="font-semibold text-brand-black mb-2">
-                {t('bankID.security.title', 'Säkerhetsinformation')}
+                {t('bankID.security.title')}
               </h4>
               <ul className="text-sm text-brand-charcoal space-y-1">
-                <li>• {t('bankID.security.encrypted', 'All kommunikation är krypterad')}</li>
-                <li>• {t('bankID.security.noStorage', 'Vi lagrar inte dina BankID-uppgifter')}</li>
-                <li>• {t('bankID.security.official', 'Officiell BankID-integration')}</li>
+                <li>• {t('bankID.security.encrypted')}</li>
+                <li>• {t('bankID.security.noStorage')}</li>
+                <li>• {t('bankID.security.official')}</li>
               </ul>
             </div>
           </div>

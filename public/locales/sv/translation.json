@@ -96,7 +96,46 @@
       "description": "Vi är specialister på företagsrekonstruktion med omfattande erfarenhet av att hjälpa företag att övervinna ekonomiska svårigheter.",
       "expertise": "Vi är särskilt specialister inom området personligt styrelseansvar där vi ofta kan minska exponering, risk och personligt betalningsansvar.",
       "cta": "Kontakta oss",
-      "team_image_alt": "Professionellt team som arbetar med företagsrekonstruktion"
+      "team_image_alt": "Professionellt team som arbetar med företagsrekonstruktion",
+      "approach": {
+        "title": "Vårt tillvägagångssätt",
+        "description": "Vi tror att varje företag förtjänar en andra chans. Vårt tillvägagångssätt är alltid konfidentiellt, professionellt och skräddarsytt för varje klients unika situation. Vi arbetar nära våra klienter för att utveckla realistiska och hållbara lösningar."
+      },
+      "team": {
+        "title": "Vårt team",
+        "description": "Vårt team består av erfarna professionella inom juridik, ekonomi och affärsutveckling. Vi har framgångsrikt hjälpt hundratals företag genom svåra ekonomiska situationer."
+      },
+      "values": {
+        "title": "Våra värderingar",
+        "value1": {
+          "title": "Konfidentialitet",
+          "description": "Alla våra konsultationer och processer är helt konfidentiella."
+        },
+        "value2": {
+          "title": "Professionalism", 
+          "description": "Vi upprätthåller högsta professionella standarder i allt vårt arbete."
+        },
+        "value3": {
+          "title": "Resultat",
+          "description": "Vi fokuserar på att leverera konkreta resultat för våra klienter."
+        },
+        "transparency": {
+          "title": "Transparens",
+          "description": "Vi arbetar med öppen kommunikation och tydlig prissättning genom hela processen."
+        },
+        "expertise": {
+          "title": "Expertis",
+          "description": "Vårt team består av erfarna jurister och affärsrådgivare med djup kunskap."
+        },
+        "commitment": {
+          "title": "Engagemang",
+          "description": "Vi är dedikerade till att hjälpa företag genom svåra tider och skapa hållbara lösningar."
+        },
+        "results": {
+          "title": "Resultat",
+          "description": "Vi fokuserar på konkreta resultat och framgångsrika rekonstruktioner."
+        }
+      }
     },
     "liability_expertise": {
       "title": "Specialister på personligt styrelseansvar",
@@ -132,6 +171,7 @@
       "title": "Vad är företagsrekonstruktion?",
       "description": "Företagsrekonstruktion är en juridisk process som ger företag med tillfälliga ekonomiska svårigheter möjlighet att komma tillbaka på fötter utan att gå i konkurs. Genom rekonstruktionen får företaget skydd från fordringsägare och tid att omstrukturera sin verksamhet."
     },
+    "process_image_alt": "Professionellt team som arbetar med företagsrekonstruktion",
     "process": {
       "title": "Så går processen till",
       "step1": {
@@ -173,11 +213,12 @@
     "mission": {
       "title": "Vår mission",
       "description": "Reconstructor är specialiserade på att bistå företag i olika branscher som befinner sig i ekonomisk kris. Vi förstår att varje situation är unik och utformar därför skräddarsydda juridiska lösningar som syftar till att göra ditt företag lönsamt igen.",
-      "description2": "Vi är en trygg partner som arbetar hårt för att uppnå dina mål och behov. Vårt mål är att minska antalet onödiga konkurser genom att erbjuda professionell rådgivning och stöd."
+      "description2": "Vi är en trygg partner som arbetar hårt för att uppnå dina mål och behov. Vårt mål är att minska antalet onödiga konkurser genom att erbjuda professionell rådgivning och stöd.",
+      "image_alt": "Professionell konsultation och rådgivning"
     },
     "expertise": {
       "title": "Vår expertis",
-      "subtitle": "Vi har djup kunskap inom flera områden som är kritiska för framgångsrik företagsrekonstruktion",
+      "subtitle": "Djup kunskap och mångårig erfarenhet inom företagsrekonstruktion",
       "legal": {
         "title": "Juridisk expertis",
         "description": "Djup kunskap inom rekonstruktionsrätt och insolvensförfaranden"
@@ -186,13 +227,33 @@
         "title": "Finansiell analys",
         "description": "Omfattande ekonomisk analys och omstrukturering av verksamheter"
       },
-      "business": {
-        "title": "Affärsutveckling",
-        "description": "Strategisk rådgivning för hållbar tillväxt och lönsamhet"
+      "strategic": {
+        "title": "Strategisk rådgivning",
+        "description": "Långsiktig strategisk planering för hållbar affärsåterhämtning"
       }
+    },
+    "approach": {
+      "title": "Vårt tillvägagångssätt",
+      "description": "Vi tror att varje företag förtjänar en andra chans. Vårt tillvägagångssätt är alltid konfidentiellt, professionellt och skräddarsytt för varje klients unika situation. Vi arbetar nära våra klienter för att utveckla realistiska och hållbara lösningar."
+    },
+    "team": {
+      "title": "Vårt team",
+      "description": "Vårt team består av erfarna professionella inom juridik, ekonomi och affärsutveckling. Vi har framgångsrikt hjälpt hundratals företag genom svåra ekonomiska situationer."
     },
     "values": {
       "title": "Våra värderingar",
+      "value1": {
+        "title": "Konfidentialitet",
+        "description": "Alla våra konsultationer och processer är helt konfidentiella."
+      },
+      "value2": {
+        "title": "Professionalism", 
+        "description": "Vi upprätthåller högsta professionella standarder i allt vårt arbete."
+      },
+      "value3": {
+        "title": "Resultat",
+        "description": "Vi fokuserar på att leverera konkreta resultat för våra klienter."
+      },
       "transparency": {
         "title": "Transparens",
         "description": "Vi arbetar med öppen kommunikation och tydlig prissättning genom hela processen."
@@ -211,9 +272,9 @@
       }
     },
     "cta": {
-      "title": "Redo att diskutera din situation?",
-      "description": "Kontakta oss för en konfidentiell konsultation där vi kan diskutera din specifika situation och hur vi kan hjälpa dig.",
-      "button": "Kontakta oss"
+      "title": "Redo att samarbeta med oss?",
+      "description": "Kontakta oss idag för en konfidentiell, förutsättningslös konsultation om hur vi kan hjälpa ditt företag.",
+      "button": "Få kostnadsfri konsultation"
     }
   },
   "contact": {
@@ -252,6 +313,16 @@
       "address": {
         "title": "Kontor"
       }
+    },
+    "emergency": {
+      "title": "Akut situation?",
+      "description": "Om ditt företag står inför en akut finansiell kris, kontakta oss omedelbart för konfidentiell akutkonsultation.",
+      "button": "Akutkonsultation"
+    },
+    "callback": {
+      "title": "Vill du att vi ringer upp dig?",
+      "description": "Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.",
+      "button": "Begär konfidentiell återuppringning"
     }
   },
   "bankID": {

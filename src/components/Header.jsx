@@ -40,6 +40,19 @@ function Header() {
     </svg>
   );
 
+  const PersianFlag = ({ className, ...props }) => (
+    <svg className={className} viewBox="0 0 32 20" fill="none" {...props}>
+      <rect width="32" height="20" fill="#239F40"/>
+      <rect x="0" y="0" width="32" height="7" fill="#239F40"/>
+      <rect x="0" y="7" width="32" height="6" fill="white"/>
+      <rect x="0" y="13" width="32" height="7" fill="#DA0000"/>
+      <g transform="translate(16,10)">
+        <circle cx="0" cy="0" r="2" fill="none" stroke="#DA0000" strokeWidth="0.5"/>
+        <text x="0" y="1" textAnchor="middle" fontSize="2" fill="#DA0000">الله</text>
+      </g>
+    </svg>
+  );
+
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
@@ -95,10 +108,10 @@ function Header() {
                 
                 <div className="text-left">
                   <h1 className="font-sans font-bold text-xl text-brand-black leading-tight" data-cy="site-title">
-                    {t('brand.name', 'Reconstructor')}
+                    {t('brand.name')}
                   </h1>
                   <p className="text-xs text-brand-charcoal font-medium leading-tight">
-                    {t('brand.tagline', 'Specialister på internationell företagsrekonstruktion')}
+                    {t('brand.tagline')}
                   </p>
                 </div>
               </div>
@@ -131,35 +144,35 @@ function Header() {
                 data-cy="nav-reconstruction"
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
               >
-                {t('navigation.reconstruction', 'Rekonstruktion')}
+                {t('navigation.reconstruction')}
               </Link>
               <Link 
                 to="/ackord" 
                 data-cy="nav-ackord"
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
               >
-                {t('navigation.ackord', 'Ackord')}
+                {t('navigation.ackord')}
               </Link>
               <Link 
                 to="/foretagskop" 
                 data-cy="nav-foretagskop"
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
               >
-                {t('navigation.foretagskop', 'Företagsköp')}
+                {t('navigation.foretagskop')}
               </Link>
               <Link 
                 to="/om-oss" 
                 data-cy="nav-about"
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
               >
-                {t('navigation.about', 'Om oss')}
+                {t('navigation.about')}
               </Link>
               <Link 
                 to="/kontakt" 
                 data-cy="nav-contact"
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
               >
-                {t('navigation.contact', 'Kontakt')}
+                {t('navigation.contact')}
               </Link>
               {/* Login button - commented out for now, will use later
               <Link 
@@ -167,7 +180,7 @@ function Header() {
                 data-cy="nav-authentication"
                 className="bg-brand-umber text-brand-linen px-4 py-2 font-medium hover:bg-brand-black transition-colors"
               >
-                {t('navigation.login', 'Logga in')}
+                {t('navigation.login')}
               </Link>
               */}
             </div>
@@ -187,13 +200,21 @@ function Header() {
                   />
                   <span className="text-sm font-medium text-brand-charcoal ml-2">SV</span>
                 </div>
-              ) : (
+              ) : currentLanguage === 'en' ? (
                 <div className="flex items-center">
                   <BritishFlag 
                     data-cy="current-flag-en" 
                     className="w-6 h-4 border border-brand-khaki"
                   />
                   <span className="text-sm font-medium text-brand-charcoal ml-2">EN</span>
+                </div>
+              ) : (
+                <div className="flex items-center">
+                  <PersianFlag 
+                    data-cy="current-flag-fa" 
+                    className="w-6 h-4 border border-brand-khaki"
+                  />
+                  <span className="text-sm font-medium text-brand-charcoal ml-2">فا</span>
                 </div>
               )}
               <svg className="w-4 h-4 text-brand-charcoal opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -222,6 +243,14 @@ function Header() {
                   <BritishFlag data-cy="flag-en" className="w-6 h-4 border border-brand-khaki" />
                   <span>English</span>
                 </button>
+                <button
+                  data-cy="language-option-fa"
+                  onClick={() => changeLanguage('fa')}
+                  className="flex items-center gap-2 w-full px-3 py-2 text-left hover:bg-brand-khaki hover:bg-opacity-20 text-sm text-brand-charcoal"
+                >
+                  <PersianFlag data-cy="flag-fa" className="w-6 h-4 border border-brand-khaki" />
+                  <span>فارسی</span>
+                </button>
               </div>
             )}
             </div>
@@ -238,7 +267,7 @@ function Header() {
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation.reconstruction', 'Rekonstruktion')}
+                {t('navigation.reconstruction')}
               </Link>
               <Link 
                 to="/ackord" 
@@ -246,7 +275,7 @@ function Header() {
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation.ackord', 'Ackord')}
+                {t('navigation.ackord')}
               </Link>
               <Link 
                 to="/foretagskop" 
@@ -254,7 +283,7 @@ function Header() {
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation.foretagskop', 'Företagsköp')}
+                {t('navigation.foretagskop')}
               </Link>
               <Link 
                 to="/om-oss" 
@@ -262,7 +291,7 @@ function Header() {
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation.about', 'Om oss')}
+                {t('navigation.about')}
               </Link>
               <Link 
                 to="/kontakt" 
@@ -270,7 +299,7 @@ function Header() {
                 className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation.contact', 'Kontakt')}
+                {t('navigation.contact')}
               </Link>
               {/* Mobile login button - commented out for now, will use later
               <Link 
@@ -279,14 +308,14 @@ function Header() {
                 className="bg-brand-umber text-brand-linen px-4 py-2 font-medium hover:bg-brand-black transition-colors text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                {t('navigation.login', 'Logga in')}
+                {t('navigation.login')}
               </Link>
               */}
               
               {/* Mobile Language Switcher */}
               <div data-cy="mobile-language-switcher" className="pt-2 border-t border-brand-khaki border-opacity-30">
-                <p className="text-sm text-brand-charcoal mb-2">{t('navigation.language', 'Language')}</p>
-                <div className="flex gap-4">
+                <p className="text-sm text-brand-charcoal mb-2">{t('navigation.language')}</p>
+                <div className="flex gap-2 flex-wrap">
                   <button
                     data-cy="mobile-language-sv"
                     onClick={() => changeLanguage('sv')}
@@ -303,6 +332,14 @@ function Header() {
                     <BritishFlag className="w-6 h-4 border border-brand-khaki" />
                     <span>English</span>
                   </button>
+                  <button
+                    data-cy="mobile-language-fa"
+                    onClick={() => changeLanguage('fa')}
+                    className={`flex items-center gap-2 px-3 py-2 ${currentLanguage === 'fa' ? 'bg-brand-khaki bg-opacity-30 text-brand-black font-medium' : 'bg-brand-linen text-brand-charcoal'}`}
+                  >
+                    <PersianFlag className="w-6 h-4 border border-brand-khaki" />
+                    <span>فارسی</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -316,7 +353,7 @@ function Header() {
         <button
           onClick={scrollToTop}
           className="fixed bottom-6 right-6 bg-brand-umber text-brand-linen p-3 rounded-full shadow-lg hover:bg-brand-black transition-all duration-300 z-50 hover:scale-110"
-          aria-label={t('scroll_to_top', 'Scroll to top')}
+          aria-label={t('scroll_to_top')}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
