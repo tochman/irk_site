@@ -632,6 +632,8 @@
     "name_placeholder": "Ditt namn",
     "phone_label": "Telefonnummer",
     "phone_placeholder": "070-123 45 67",
+    "phone_placeholder_international": "+XX XXX XXX XX XX",
+    "phone_help": "Inkludera landskod för internationella nummer (t.ex. +46 för Sverige)",
     "time_label": "Önskad tid för uppringning",
     "time_asap": "Så snart som möjligt",
     "time_hour": "Inom en timme",
@@ -645,6 +647,7 @@
       "name_required": "Namn är obligatoriskt",
       "phone_required": "Telefonnummer är obligatoriskt",
       "phone_invalid": "Ange ett giltigt telefonnummer",
+      "phone_invalid_international": "Ange ett giltigt telefonnummer med landskod för internationella nummer",
       "gdpr_required": "Du måste godkänna behandling av personuppgifter",
       "submit_failed": "Något gick fel. Försök igen eller ring oss direkt."
     }

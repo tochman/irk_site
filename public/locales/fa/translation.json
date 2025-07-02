@@ -556,6 +556,8 @@
     "name_placeholder": "نام شما",
     "phone_label": "شماره تلفن",
     "phone_placeholder": "۰۷۰-۱۲۳ ۴۵ ۶۷",
+    "phone_placeholder_international": "+XX XXX XXX XX XX",
+    "phone_help": "برای شماره‌های بین‌المللی کد کشور را وارد کنید (مثلاً +46 برای سوئد)",
     "time_label": "زمان مورد نظر برای تماس",
     "time_asap": "هرچه سریع‌تر",
     "time_hour": "ظرف یک ساعت",
@@ -569,6 +571,7 @@
       "name_required": "نام اجباری است",
       "phone_required": "شماره تلفن اجباری است",
       "phone_invalid": "شماره تلفن معتبر وارد کنید",
+      "phone_invalid_international": "شماره تلفن معتبر با کد کشور برای شماره‌های بین‌المللی وارد کنید",
       "gdpr_required": "باید پردازش اطلاعات شخصی را تأیید کنید",
       "submit_failed": "مشکلی پیش آمد. دوباره تلاش کنید یا مستقیماً با ما تماس بگیرید."
     }
