@@ -1,0 +1,29 @@
+{
+  "cookieConsent": {
+    "title": "Cookie-inställningar",
+    "description": "Denna webbplats använder cookies för att förbättra din upplevelse.",
+    "acceptAll": "Acceptera alla",
+    "rejectAll": "Avvisa alla",
+    "customize": "Anpassa",
+    "save": "Spara inställningar",
+    "close": "Stäng",
+    "privacyPolicy": "Integritetspolicy",
+    "settings": "Cookie-inställningar",
+    "necessary": {
+      "title": "Nödvändiga cookies",
+      "description": "Dessa cookies krävs för att webbplatsen ska fungera korrekt."
+    },
+    "preferences": {
+      "title": "Preferens-cookies",
+      "description": "Dessa cookies kommer ihåg dina preferenser och inställningar."
+    },
+    "statistics": {
+      "title": "Statistik-cookies",
+      "description": "Dessa cookies samlar information om hur du använder vår webbplats."
+    },
+    "marketing": {
+      "title": "Marknadsförings-cookies",
+      "description": "Dessa cookies spårar din online-aktivitet för att hjälpa annonsörer leverera mer relevant reklam."
+    }
+  }
+}

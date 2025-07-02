@@ -1,4 +1,115 @@
 {
+  "cookieConsent": {
+    "title": "Cookie-inställningar",
+    "description": "Denna webbplats använder cookies för att förbättra din upplevelse.",
+    "message": "Vi använder cookies för att förbättra din upplevelse på vår webbplats, personalisera innehåll och annonser, tillhandahålla funktioner för sociala medier och analysera vår trafik. Vi delar också information om din användning av vår webbplats med våra partners för sociala medier, annonsering och analys.",
+    "acceptAll": "Acceptera alla",
+    "rejectAll": "Avvisa alla",
+    "acceptNecessary": "Acceptera nödvändiga",
+    "savePreferences": "Spara preferenser",
+    "customize": "Anpassa",
+    "save": "Spara inställningar",
+    "close": "Stäng",
+    "showDetails": "Visa detaljer",
+    "hideDetails": "Dölj detaljer",
+    "cookiePolicy": "Cookie Policy",
+    "privacyPolicy": "Integritetspolicy",
+    "settings": "Cookie-inställningar",
+    "necessary": {
+      "title": "Nödvändiga cookies",
+      "description": "Dessa cookies krävs för att webbplatsen ska fungera korrekt."
+    },
+    "preferences": {
+      "title": "Preferens-cookies",
+      "description": "Dessa cookies kommer ihåg dina preferenser och inställningar."
+    },
+    "statistics": {
+      "title": "Statistik-cookies",
+      "description": "Dessa cookies samlar information om hur du använder vår webbplats."
+    },
+    "marketing": {
+      "title": "Marknadsförings-cookies",
+      "description": "Dessa cookies spårar din online-aktivitet för att hjälpa annonsörer leverera mer relevant reklam."
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "whatAreCookies": "Vad är cookies?",
+    "cookiesExplanation": "Cookies är små textfiler som lagras på din enhet när du besöker en webbplats. De hjälper webbplatsen att komma ihåg dina preferenser och hur du använder den.",
+    "howWeUse": "Hur vi använder cookies",
+    "useExplanation": "Vi använder cookies för att förbättra din upplevelse på vår webbplats och för att förstå hur du interagerar med den.",
+    "necessary": {
+      "title": "Nödvändiga cookies",
+      "description": "Dessa cookies är nödvändiga för att webbplatsen ska fungera korrekt och kan inte stängas av."
+    },
+    "preferences": {
+      "title": "Preferens-cookies",
+      "description": "Dessa cookies gör det möjligt för webbplatsen att komma ihåg val du har gjort och tillhandahålla förbättrade, mer personliga funktioner."
+    },
+    "statistics": {
+      "title": "Statistik-cookies",
+      "description": "Dessa cookies hjälper oss att förstå hur besökare interagerar med webbplatsen genom att samla in och rapportera information anonymt."
+    },
+    "marketing": {
+      "title": "Marknadsförings-cookies",
+      "description": "Dessa cookies används för att spåra besökare på olika webbplatser med syfte att visa relevanta annonser."
+    },
+    "manageTitle": "Hantera dina cookie-inställningar",
+    "manageDescription": "Du kan när som helst ändra dina cookie-inställningar genom att klicka på knappen nedan.",
+    "openSettings": "Öppna cookie-inställningar",
+    "contactTitle": "Kontakta oss",
+    "contactDescription": "Om du har frågor om vår cookie-policy, kontakta oss på info@reconstructor.se.",
+    "lastUpdated": "Senast uppdaterad"
+  },
+  "privacyPolicy": {
+    "title": "Integritetspolicy",
+    "introduction": "På Reconstructor (Communitals Labs) värnar vi om din personliga integritet och strävar efter att alltid skydda dina personuppgifter på bästa sätt. Denna integritetspolicy förklarar hur vi samlar in och använder din personliga information.",
+    "dataCollection": {
+      "title": "Insamling av information",
+      "description": "Vi samlar in information för att kunna erbjuda bättre tjänster till våra användare.",
+      "personalData": "Personuppgifter vi kan samla in",
+      "nameEmail": "Namn och e-postadress",
+      "contactInfo": "Kontaktinformation och adress",
+      "bankId": "BankID-identifiering",
+      "usage": "Information om hur du använder våra tjänster"
+    },
+    "dataPurpose": {
+      "title": "Syfte med datainsamling",
+      "description": "Vi använder den insamlade informationen för att:",
+      "services": "Tillhandahålla, underhålla och förbättra våra tjänster",
+      "improvement": "Utveckla nya tjänster och funktioner",
+      "communication": "Kommunicera med dig",
+      "legal": "Uppfylla juridiska skyldigheter"
+    },
+    "dataStorage": {
+      "title": "Lagring av data",
+      "description": "Vi lagrar personuppgifter så länge som det är nödvändigt för de ändamål de samlades in för, eller så länge som krävs enligt lag."
+    },
+    "dataSharing": {
+      "title": "Delning av information",
+      "description": "Vi delar inte personuppgifter med tredje part förutom i situationer där det är nödvändigt för att tillhandahålla våra tjänster eller när vi är skyldiga enligt lag."
+    },
+    "userRights": {
+      "title": "Dina rättigheter",
+      "description": "Du har rätt att:",
+      "access": "Få tillgång till dina personuppgifter",
+      "correction": "Begära rättelse av felaktiga uppgifter",
+      "deletion": "Begära radering av dina uppgifter",
+      "objection": "Invända mot viss behandling",
+      "portability": "Begära dataportabilitet",
+      "complain": "Lämna klagomål till Integritetsskyddsmyndigheten"
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Vår webbplats använder cookies för att förbättra din upplevelse.",
+      "readMore": "Läs mer om vår cookie-policy"
+    },
+    "contact": {
+      "title": "Kontaktuppgifter",
+      "description": "Om du har frågor om denna integritetspolicy eller vår behandling av dina personuppgifter, kontakta oss:"
+    },
+    "lastUpdated": "Senast uppdaterad"
+  },
   "navigation": {
     "home": "Hem",
     "reconstruction": "Rekonstruktion",
@@ -532,5 +643,83 @@
     "confidential": "Samtalet är helt konfidentiellt och utan förbindelser. Vi är här för att hjälpa dig hitta den bästa lösningen för ditt företag.",
     "close": "Stäng",
     "urgent": "Behöver du hjälp akut? Ring:"
+  },
+  "cookiePolicy": {
+    "title": "Cookiepolicy",
+    "whatAreCookies": "Vad är cookies?",
+    "cookiesExplanation": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. De hjälper oss att ge dig bästa möjliga upplevelse genom att komma ihåg dina preferenser, analysera hur webbplatsen används och hjälpa till med våra marknadsföringsinsatser.",
+    "howWeUse": "Hur vi använder cookies",
+    "useExplanation": "Vi använder olika typer av cookies för olika ändamål. Vissa är nödvändiga för att webbplatsen ska fungera, medan andra hjälper oss att förbättra din upplevelse.",
+    "necessary": {
+      "title": "Nödvändiga cookies",
+      "description": "Dessa cookies är nödvändiga för att webbplatsen ska fungera korrekt. De möjliggör grundläggande funktioner som sidnavigering och åtkomst till säkra områden på webbplatsen. Webbplatsen kan inte fungera korrekt utan dessa cookies."
+    },
+    "preferences": {
+      "title": "Preferens-cookies",
+      "description": "Dessa cookies gör det möjligt för webbplatsen att komma ihåg val du gjort tidigare, som ditt föredragna språk eller region. De förbättrar din användarupplevelse genom att personalisera webbplatsen."
+    },
+    "statistics": {
+      "title": "Statistik-cookies",
+      "description": "Dessa cookies samlar information om hur du använder vår webbplats, vilka sidor du besökt och vilka länkar du klickat på. All data är anonymiserad och kan inte användas för att identifiera dig."
+    },
+    "marketing": {
+      "title": "Marknadsförings-cookies",
+      "description": "Dessa cookies spårar din online-aktivitet för att hjälpa annonsörer leverera mer relevant reklam eller för att begränsa hur många gånger du ser en annons. De kan dela denna information med andra organisationer eller annonsörer."
+    },
+    "manageTitle": "Hantera dina cookie-inställningar",
+    "manageDescription": "Du kan ändra dina cookie-inställningar när som helst genom att klicka på knappen nedan. Du kan också radera cookies som redan finns lagrade på din enhet via din webbläsares inställningar.",
+    "openSettings": "Öppna cookie-inställningar",
+    "contactTitle": "Kontakta oss",
+    "contactDescription": "Om du har frågor om vår användning av cookies, vänligen kontakta oss på info@reconstructor.se.",
+    "lastUpdated": "Senast uppdaterad"
+  },
+  "privacyPolicy": {
+    "title": "Integritetspolicy",
+    "introduction": "På Reconstructor (Communitals Labs) tar vi din integritet på allvar. Denna integritetspolicy förklarar hur vi samlar in, använder och skyddar din personliga information när du använder våra tjänster.",
+    "dataCollection": {
+      "title": "Information vi samlar in",
+      "description": "Vi samlar in olika typer av information för att tillhandahålla och förbättra våra tjänster till dig.",
+      "personalData": "Personlig information kan inkludera:",
+      "nameEmail": "Namn och e-postadress",
+      "contactInfo": "Kontaktinformation som telefonnummer och adress",
+      "bankId": "BankID-information för säker autentisering",
+      "usage": "Information om hur du använder våra tjänster"
+    },
+    "dataPurpose": {
+      "title": "Hur vi använder din information",
+      "description": "Vi använder din information för olika ändamål, inklusive:",
+      "services": "För att tillhandahålla och underhålla våra tjänster",
+      "improvement": "För att förbättra och utveckla nya tjänster",
+      "communication": "För att kommunicera med dig om våra tjänster",
+      "legal": "För att uppfylla juridiska skyldigheter"
+    },
+    "dataStorage": {
+      "title": "Hur vi lagrar din information",
+      "description": "Din information lagras säkert på servrar inom Europeiska ekonomiska samarbetsområdet. Vi implementerar lämpliga tekniska och organisatoriska åtgärder för att skydda din personliga information."
+    },
+    "dataSharing": {
+      "title": "Delning av din information",
+      "description": "Vi säljer inte din personliga information. Vi kan dela din information med betrodda tredje parter som hjälper oss att driva vår webbplats, bedriva vår verksamhet eller betjäna dig, förutsatt att dessa parter går med på att hålla denna information konfidentiell."
+    },
+    "userRights": {
+      "title": "Dina rättigheter",
+      "description": "Enligt dataskyddsförordningen (GDPR) har du följande rättigheter:",
+      "access": "Rätt till tillgång till din personliga information",
+      "correction": "Rätt att korrigera felaktig personlig information",
+      "deletion": "Rätt till radering ('rätten att bli bortglömd')",
+      "objection": "Rätt att invända mot behandling",
+      "portability": "Rätt till dataportabilitet",
+      "complain": "Rätt att lämna in ett klagomål till en tillsynsmyndighet"
+    },
+    "cookies": {
+      "title": "Cookies",
+      "description": "Vi använder cookies för att förbättra din upplevelse på vår webbplats. Du kan kontrollera och hantera cookies genom din webbläsares inställningar.",
+      "readMore": "Läs vår cookiepolicy för mer information"
+    },
+    "contact": {
+      "title": "Kontakta oss",
+      "description": "Om du har några frågor om denna integritetspolicy, vänligen kontakta oss:"
+    },
+    "lastUpdated": "Senast uppdaterad"
   }
 }

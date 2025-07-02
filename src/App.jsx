@@ -7,6 +7,12 @@ import Ackord from '@/views/Ackord'
 import Foretagskop from '@/views/Foretagskop'
 import OmOss from '@/views/OmOss'
 import Kontakt from '@/views/Kontakt'
+import CookieConsent from '@/components/CookieConsent/index'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
+import PrivacyPolicy from '@/views/PrivacyPolicy'
+import Consent from '@/views/Consent'
+import Integrity from '@/views/Integrity'
+import Footer from '@/components/Footer'
 
 function App() {
   return (
@@ -21,6 +27,9 @@ function App() {
         <Route path="/foretagskop" element={<Foretagskop />} />
         <Route path="/om-oss" element={<OmOss />} />
         <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/consent" element={<Consent />} />
+        <Route path="/integrity" element={<Integrity />} />
         <Route path="/authentication" element={
           <main 
             data-cy="main-content"
@@ -30,6 +39,9 @@ function App() {
           </main>
         } />
       </Routes>
+      <Footer />
+      <GoogleAnalytics measurementId={import.meta.env.VITE_GA_MEASUREMENT_ID || "G-YOUR-MEASUREMENT-ID"} />
+      <CookieConsent />
     </div>
   )
 }

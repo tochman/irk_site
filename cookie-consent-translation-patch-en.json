@@ -1,0 +1,29 @@
+{
+  "cookieConsent": {
+    "title": "Cookie Preferences",
+    "description": "This website uses cookies to enhance your experience.",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "customize": "Customize",
+    "save": "Save Preferences",
+    "close": "Close",
+    "privacyPolicy": "Privacy Policy",
+    "settings": "Cookie Settings",
+    "necessary": {
+      "title": "Necessary Cookies",
+      "description": "These cookies are required for the website to function properly."
+    },
+    "preferences": {
+      "title": "Preference Cookies",
+      "description": "These cookies remember your preferences and settings."
+    },
+    "statistics": {
+      "title": "Statistics Cookies",
+      "description": "These cookies collect information about how you use our website."
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "description": "These cookies track your online activity to help advertisers deliver more relevant advertising."
+    }
+  }
+}
