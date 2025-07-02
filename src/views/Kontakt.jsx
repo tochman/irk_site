@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import useWeb3Forms from '@web3forms/react';
 import EmergencyConsultation from '../components/EmergencyConsultation';
 import PhoneNumber from '../components/PhoneNumber';
 
@@ -10,22 +11,65 @@ function Kontakt() {
     email: '',
     phone: '',
     company: '',
-    message: ''
+    message: '',
+    access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
   });
   const [showEmergencyModal, setShowEmergencyModal] = useState(false);
   const [showCallbackModal, setShowCallbackModal] = useState(false);
+  const [isSubmitSuccess, setIsSubmitSuccess] = useState(false);
+  const [isSubmitError, setIsSubmitError] = useState(false);
+  const formRef = useRef();
 
-  const handleSubmit = (e) => {
+  const { submit, loading } = useWeb3Forms({
+    access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+    settings: {
+      from_name: t('contact.form.from_name', 'Reconstructor Contact Form'),
+      subject: t('contact.form.subject', 'New Contact Form Submission from Reconstructor Website')
+    },
+    onSuccess: () => {
+      setIsSubmitSuccess(true);
+      setIsSubmitError(false);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: '',
+        access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+      });
+      window.scrollTo({ top: formRef.current.offsetTop - 100, behavior: 'smooth' });
+    },
+    onError: (error) => {
+      console.log(error);
+      setIsSubmitError(true);
+      window.scrollTo({ top: formRef.current.offsetTop - 100, behavior: 'smooth' });
+    }
+  });
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // You would typically send this data to your backend
+    setIsSubmitSuccess(false);
+    setIsSubmitError(false);
+    await submit(formData);
   };
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
+    });
+  };
+
+  const resetForm = () => {
+    setIsSubmitSuccess(false);
+    setIsSubmitError(false);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      company: '',
+      message: '',
+      access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
     });
   };
 
@@ -71,7 +115,7 @@ function Kontakt() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div>
+            <div ref={formRef}>
               <h2 className="text-3xl font-bold text-brand-black mb-6">
                 {t('contact.form.title')}
               </h2>
@@ -79,92 +123,148 @@ function Kontakt() {
                 {t('contact.form.subtitle')}
               </p>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.name')} *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
-                  />
+              {isSubmitSuccess ? (
+                <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-green-100 rounded-full p-2 mr-3">
+                      <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-green-800">
+                      {t('contact.form.success_title', 'Thank you for your message!')}
+                    </h3>
+                  </div>
+                  <p className="text-green-700 mb-4">
+                    {t('contact.form.success_message', 'We have received your inquiry and will get back to you as soon as possible.')}
+                  </p>
+                  <p className="text-green-700 mb-6">
+                    {t('contact.form.success_details', 'A member of our team will review your message and contact you within 24 hours.')}
+                  </p>
+                  <button 
+                    onClick={resetForm}
+                    className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition-colors"
+                  >
+                    {t('contact.form.send_another', 'Send another message')}
+                  </button>
                 </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.email')} *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.phone')}
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.company')}
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-brand-black mb-2">
-                    {t('contact.form.message')} *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    required
-                    rows={6}
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder={t('contact.form.message_placeholder')}
-                    className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
-                  />
-                </div>
-                
-                <div className="bg-brand-linen p-4 text-sm text-brand-charcoal">
-                  {t('contact.form.privacy_notice')}
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full bg-brand-umber text-brand-linen px-8 py-3 font-semibold hover:bg-brand-black transition-colors"
-                >
-                  {t('contact.form.submit')}
-                </button>
-              </form>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  {isSubmitError && (
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+                      <div className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div className="ml-3">
+                          <h3 className="text-sm font-medium text-red-800">
+                            {t('contact.form.error_title', 'There was a problem sending your message')}
+                          </h3>
+                          <p className="mt-2 text-sm text-red-700">
+                            {t('contact.form.error_message', 'Please try again or contact us directly via email or phone.')}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-brand-black mb-2">
+                      {t('contact.form.name')} *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-brand-black mb-2">
+                      {t('contact.form.email')} *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-brand-black mb-2">
+                      {t('contact.form.phone')}
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="company" className="block text-sm font-medium text-brand-black mb-2">
+                      {t('contact.form.company')}
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-brand-black mb-2">
+                      {t('contact.form.message')} *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={6}
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder={t('contact.form.message_placeholder')}
+                      className="w-full px-4 py-3 border border-brand-khaki bg-white focus:ring-2 focus:ring-brand-umber focus:border-brand-umber"
+                    />
+                  </div>
+                  
+                  <div className="bg-brand-linen p-4 text-sm text-brand-charcoal">
+                    {t('contact.form.privacy_notice')}
+                  </div>
+                  
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full bg-brand-umber text-brand-linen px-8 py-3 font-semibold hover:bg-brand-black transition-colors disabled:opacity-70"
+                  >
+                    {loading ? (
+                      <span className="flex items-center justify-center">
+                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        {t('contact.form.submitting', 'Sending...')}
+                      </span>
+                    ) : t('contact.form.submit')}
+                  </button>
+                </form>
+              )}
             </div>
 
             {/* Contact Information */}

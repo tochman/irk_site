@@ -266,7 +266,16 @@
       "message": "Message",
       "message_placeholder": "Tell us about your situation and how we can help. All information is treated confidentially...",
       "privacy_notice": "All information you provide is handled with complete confidentiality and without obligation.",
-      "submit": "Send confidential message"
+      "submit": "Send confidential message",
+      "submitting": "Sending...",
+      "success_title": "Thank you for your message!",
+      "success_message": "We have received your inquiry and will get back to you as soon as possible.",
+      "success_details": "A member of our team will review your message and contact you within 24 hours.",
+      "send_another": "Send another message",
+      "error_title": "There was a problem sending your message",
+      "error_message": "Please try again or contact us directly via email or phone.",
+      "from_name": "Reconstructor Contact Form",
+      "subject": "New Contact Form Submission from Reconstructor Website"
     },
     "info": {
       "title": "Contact Information",
@@ -283,6 +292,16 @@
       "address": {
         "title": "Offices"
       }
+    },
+    "emergency": {
+      "title": "Emergency situation?",
+      "description": "If your company is facing an acute financial crisis, contact us immediately for confidential emergency consultation.",
+      "button": "Request urgent consultation"
+    },
+    "callback": {
+      "title": "Want us to call you?",
+      "description": "Leave your phone number and we'll contact you for a confidential consultation at a time that suits you.",
+      "button": "Request callback"
     }
   },
   "bankID": {
@@ -459,7 +478,13 @@
     "callback_title": "Request callback",
     "callback_question": "Would you like us to call you?",
     "callback_description": "Leave your phone number and we'll call you shortly for an unconditional and confidential consultation. The call is confidential and without obligations.",
-    "request_callback": "Request confidential callback"
+    "request_callback": "Request confidential callback",
+    "form": {
+      "from_name": "Reconstructor Emergency Callback Form",
+      "subject": "Urgent Callback Request from Reconstructor Website",
+      "subject_emergency": "Urgent Consultation Request",
+      "subject_callback": "Callback Request"
+    }
   },
   "form": {
     "title": "Request callback",
@@ -565,7 +590,7 @@
       "description": "We use cookies to enhance your experience on our website. You can control and manage cookies through your browser settings.",
       "readMore": "Read our Cookie Policy for more information"
     },
-    "contact": {
+    "contactUs": {
       "title": "Contact Us",
       "description": "If you have any questions about this Privacy Policy, please contact us:"
     },

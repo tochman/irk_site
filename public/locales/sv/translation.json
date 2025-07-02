@@ -407,7 +407,14 @@
       "message": "Meddelande",
       "message_placeholder": "Berätta om din situation och hur vi kan hjälpa dig. Alla uppgifter behandlas konfidentiellt...",
       "privacy_notice": "All information du lämnar behandlas med fullständig konfidentialitet och utan förpliktelser.",
-      "submit": "Skicka konfidentiellt meddelande"
+      "submit": "Skicka konfidentiellt meddelande",
+      "submitting": "Skickar...",
+      "success_title": "Tack för ditt meddelande!",
+      "success_message": "Vi har mottagit din förfrågan och återkommer så snart som möjligt.",
+      "success_details": "En av våra specialister kommer att granska ditt meddelande och kontakta dig inom 24 timmar.",
+      "send_another": "Skicka ytterligare ett meddelande",
+      "error_title": "Det uppstod ett problem vid sändning av ditt meddelande",
+      "error_message": "Försök igen eller kontakta oss direkt via e-post eller telefon."
     },
     "info": {
       "title": "Kontaktuppgifter",
@@ -610,7 +617,13 @@
     "callback_title": "Begär återuppringning",
     "callback_question": "Vill du att vi ringer upp dig?",
     "callback_description": "Lämna ditt telefonnummer så ringer vi upp dig inom kort för en förutsättningslös och konfidentiell konsultation. Samtalet sker i förtroende och utan förbindelser.",
-    "request_callback": "Begär konfidentiell återuppringning"
+    "request_callback": "Begär konfidentiell återuppringning",
+    "form": {
+      "from_name": "Reconstructor Återuppringningsformulär",
+      "subject": "Begäran om återuppringning från Reconstructor-webbplats",
+      "subject_emergency": "Begäran om akutkonsultation",
+      "subject_callback": "Begäran om återuppringning"
+    }
   },
   "form": {
     "title": "Begär återuppringning",
@@ -645,81 +658,68 @@
     "urgent": "Behöver du hjälp akut? Ring:"
   },
   "cookiePolicy": {
-    "title": "Cookiepolicy",
+    "title": "Cookie-policy",
     "whatAreCookies": "Vad är cookies?",
-    "cookiesExplanation": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. De hjälper oss att ge dig bästa möjliga upplevelse genom att komma ihåg dina preferenser, analysera hur webbplatsen används och hjälpa till med våra marknadsföringsinsatser.",
+    "cookiesExplanation": "Cookies är små textfiler som placeras på din enhet när du besöker vår webbplats. De hjälper oss att ge dig den bästa upplevelsen genom att komma ihåg dina preferenser, analysera hur webbplatsen används och hjälpa till med våra marknadsföringsinsatser.",
     "howWeUse": "Hur vi använder cookies",
     "useExplanation": "Vi använder olika typer av cookies för olika ändamål. Vissa är nödvändiga för att webbplatsen ska fungera, medan andra hjälper oss att förbättra din upplevelse.",
-    "necessary": {
-      "title": "Nödvändiga cookies",
-      "description": "Dessa cookies är nödvändiga för att webbplatsen ska fungera korrekt. De möjliggör grundläggande funktioner som sidnavigering och åtkomst till säkra områden på webbplatsen. Webbplatsen kan inte fungera korrekt utan dessa cookies."
-    },
-    "preferences": {
-      "title": "Preferens-cookies",
-      "description": "Dessa cookies gör det möjligt för webbplatsen att komma ihåg val du gjort tidigare, som ditt föredragna språk eller region. De förbättrar din användarupplevelse genom att personalisera webbplatsen."
-    },
-    "statistics": {
-      "title": "Statistik-cookies",
-      "description": "Dessa cookies samlar information om hur du använder vår webbplats, vilka sidor du besökt och vilka länkar du klickat på. All data är anonymiserad och kan inte användas för att identifiera dig."
-    },
-    "marketing": {
-      "title": "Marknadsförings-cookies",
-      "description": "Dessa cookies spårar din online-aktivitet för att hjälpa annonsörer leverera mer relevant reklam eller för att begränsa hur många gånger du ser en annons. De kan dela denna information med andra organisationer eller annonsörer."
-    },
-    "manageTitle": "Hantera dina cookie-inställningar",
-    "manageDescription": "Du kan ändra dina cookie-inställningar när som helst genom att klicka på knappen nedan. Du kan också radera cookies som redan finns lagrade på din enhet via din webbläsares inställningar.",
-    "openSettings": "Öppna cookie-inställningar",
-    "contactTitle": "Kontakta oss",
-    "contactDescription": "Om du har frågor om vår användning av cookies, vänligen kontakta oss på info@reconstructor.se.",
     "lastUpdated": "Senast uppdaterad"
   },
-  "privacyPolicy": {
-    "title": "Integritetspolicy",
-    "introduction": "På Reconstructor (Communitals Labs) tar vi din integritet på allvar. Denna integritetspolicy förklarar hur vi samlar in, använder och skyddar din personliga information när du använder våra tjänster.",
-    "dataCollection": {
-      "title": "Information vi samlar in",
-      "description": "Vi samlar in olika typer av information för att tillhandahålla och förbättra våra tjänster till dig.",
-      "personalData": "Personlig information kan inkludera:",
-      "nameEmail": "Namn och e-postadress",
-      "contactInfo": "Kontaktinformation som telefonnummer och adress",
-      "bankId": "BankID-information för säker autentisering",
-      "usage": "Information om hur du använder våra tjänster"
-    },
-    "dataPurpose": {
-      "title": "Hur vi använder din information",
-      "description": "Vi använder din information för olika ändamål, inklusive:",
-      "services": "För att tillhandahålla och underhålla våra tjänster",
-      "improvement": "För att förbättra och utveckla nya tjänster",
-      "communication": "För att kommunicera med dig om våra tjänster",
-      "legal": "För att uppfylla juridiska skyldigheter"
-    },
-    "dataStorage": {
-      "title": "Hur vi lagrar din information",
-      "description": "Din information lagras säkert på servrar inom Europeiska ekonomiska samarbetsområdet. Vi implementerar lämpliga tekniska och organisatoriska åtgärder för att skydda din personliga information."
-    },
-    "dataSharing": {
-      "title": "Delning av din information",
-      "description": "Vi säljer inte din personliga information. Vi kan dela din information med betrodda tredje parter som hjälper oss att driva vår webbplats, bedriva vår verksamhet eller betjäna dig, förutsatt att dessa parter går med på att hålla denna information konfidentiell."
-    },
-    "userRights": {
-      "title": "Dina rättigheter",
-      "description": "Enligt dataskyddsförordningen (GDPR) har du följande rättigheter:",
-      "access": "Rätt till tillgång till din personliga information",
-      "correction": "Rätt att korrigera felaktig personlig information",
-      "deletion": "Rätt till radering ('rätten att bli bortglömd')",
-      "objection": "Rätt att invända mot behandling",
-      "portability": "Rätt till dataportabilitet",
-      "complain": "Rätt att lämna in ett klagomål till en tillsynsmyndighet"
-    },
-    "cookies": {
-      "title": "Cookies",
-      "description": "Vi använder cookies för att förbättra din upplevelse på vår webbplats. Du kan kontrollera och hantera cookies genom din webbläsares inställningar.",
-      "readMore": "Läs vår cookiepolicy för mer information"
-    },
-    "contact": {
+  "contact": {
+    "hero": {
       "title": "Kontakta oss",
-      "description": "Om du har några frågor om denna integritetspolicy, vänligen kontakta oss:"
+      "subtitle": "Vi är redo att hjälpa dig genom denna utmanande tid"
     },
-    "lastUpdated": "Senast uppdaterad"
+    "intro": {
+      "title": "Professionell hjälp när du behöver det som mest",
+      "description": "Vi förstår att ekonomiska svårigheter kan vara överväldigande. Därför erbjuder vi konfidentiella, förutsättningslösa konsultationer för att hjälpa dig förstå dina alternativ. Kontakta oss idag - alla samtal hanteras med fullständig sekretess."
+    },
+    "form": {
+      "title": "Skicka oss ett meddelande",
+      "subtitle": "Alla förfrågningar hanteras konfidentiellt och utan förpliktelser",
+      "name": "Namn",
+      "email": "E-post",
+      "phone": "Telefon",
+      "company": "Företag",
+      "message": "Meddelande",
+      "message_placeholder": "Berätta om din situation och hur vi kan hjälpa till. All information behandlas konfidentiellt...",
+      "privacy_notice": "All information du tillhandahåller hanteras med fullständig sekretess och utan förpliktelser.",
+      "submit": "Skicka konfidentiellt meddelande",
+      "submitting": "Skickar...",
+      "success_title": "Tack för ditt meddelande!",
+      "success_message": "Vi har mottagit din förfrågan och återkommer så snart som möjligt.",
+      "success_details": "En medlem i vårt team kommer att granska ditt meddelande och kontakta dig inom 24 timmar.",
+      "send_another": "Skicka ett nytt meddelande",
+      "error_title": "Det uppstod ett problem med att skicka ditt meddelande",
+      "error_message": "Vänligen försök igen eller kontakta oss direkt via e-post eller telefon.",
+      "from_name": "Reconstructor Kontaktformulär",
+      "subject": "Ny kontaktformulärsinlämning från Reconstructor-webbplatsen"
+    },
+    "info": {
+      "title": "Kontaktinformation",
+      "phone": {
+        "title": "Telefon",
+        "hours": "Måndag-Fredag, 08:00-20:00\nLördag-Söndag, 08:00-18:00",
+        "note": "Konfidentiell konsultation tillgänglig"
+      },
+      "email": {
+        "title": "E-post",
+        "response": "Svar inom 1 timme (måndag-söndag)",
+        "note": "Konfidentiell korrespondens"
+      },
+      "address": {
+        "title": "Kontor"
+      }
+    },
+    "emergency": {
+      "title": "Akut situation?",
+      "description": "Om ditt företag står inför en akut ekonomisk kris, kontakta oss omedelbart för konfidentiell akutkonsultation.",
+      "button": "Begär brådskande konsultation"
+    },
+    "callback": {
+      "title": "Vill du att vi ringer dig?",
+      "description": "Lämna ditt telefonnummer så ringer vi dig för en kostnadsfri och konfidentiell konsultation.",
+      "button": "Begär återuppringning"
+    }
   }
 }

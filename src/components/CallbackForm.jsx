@@ -1,18 +1,23 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import useWeb3Forms from '@web3forms/react';
 import PhoneNumber from "./PhoneNumber";
 import ConfirmationMessage from "./ConfirmationMessage";
 
-function CallbackForm({ onClose }) {
+function CallbackForm({ onClose, type = 'emergency' }) {
   const { t } = useTranslation();
+  // Make sure we have the access key
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+  console.log('Access key initialized:', !!accessKey);
+  
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     preferredTime: "asap",
     gdprConsent: false,
+    access_key: accessKey
   });
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validatePhone = (phone) => {
@@ -20,6 +25,28 @@ function CallbackForm({ onClose }) {
     const phoneRegex = /^(\+46|0)[1-9]\d{7,9}$/;
     return phoneRegex.test(phone.replace(/[\s-]/g, ""));
   };
+  
+  // Debug Web3Forms access key
+  console.log('Web3Forms access key present:', !!import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+  
+  // Setup Web3Forms hook
+  const { submit, loading: isSubmitting } = useWeb3Forms({
+    access_key: accessKey, // Use the variable we defined above
+    settings: {
+      from_name: t('emergency.form.from_name', 'Reconstructor Callback Form'),
+      subject: t('emergency.form.subject', 'Urgent Callback Request from Reconstructor Website')
+    },
+    onSuccess: (data) => {
+      console.log('Web3Forms success response:', data);
+      setIsSubmitted(true);
+    },
+    onError: (error) => {
+      console.error("Error submitting form:", error);
+      setErrors({
+        submit: t("form.errors.submit_failed")
+      });
+    }
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -50,32 +77,37 @@ function CallbackForm({ onClose }) {
       return;
     }
 
-    setIsSubmitting(true);
-
+    // Ensure we have proper formatting and all required fields for Web3Forms
+    const formDataToSubmit = {
+      access_key: accessKey,
+      name: formData.name,
+      email: 'info@reconstructor.se', // Adding default email since Web3Forms might require it
+      phone: formData.phone,
+      message: `
+Request Type: ${type === 'emergency' ? 'Emergency Consultation' : 'Callback Request'}
+Preferred Time: ${formData.preferredTime === 'asap' ? t('form.time_asap') : 
+                 formData.preferredTime === 'within_hour' ? t('form.time_hour') :
+                 formData.preferredTime === 'today' ? t('form.time_today') :
+                 formData.preferredTime === 'tomorrow' ? t('form.time_tomorrow') : formData.preferredTime}
+GDPR Consent: ${formData.gdprConsent ? 'Accepted' : 'Not Accepted (This should not happen as form validation prevents it)'}
+      `,
+      subject: type === 'emergency' 
+        ? t('emergency.form.subject_emergency', 'Urgent Consultation Request') 
+        : t('emergency.form.subject_callback', 'Callback Request')
+    };
+    
+    console.log('Submitting form with type:', type);
+    console.log('Form data being submitted:', formDataToSubmit);
+    
     try {
-      // TODO: Replace with actual API call
-      const response = await fetch("/api/emergency-callback", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      // Make sure the data is passed correctly
+      const result = await submit({
+        ...formDataToSubmit,
+        botcheck: false, // Add this to pass bot detection
       });
-
-      if (response.ok) {
-        setIsSubmitted(true);
-      } else {
-        throw new Error("Failed to submit form");
-      }
+      console.log('Form submission completed successfully', result);
     } catch (error) {
-      console.error("Error submitting form:", error);
-      setErrors({
-        submit: t(
-          "form.errors.submit_failed"
-        ),
-      });
-    } finally {
-      setIsSubmitting(false);
+      console.error('Form submission error:', error);
     }
   };
 
@@ -91,6 +123,22 @@ function CallbackForm({ onClose }) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
+  
+  // We'll keep this function commented out for now as it's not being used,
+  // but we might want to add a "Send another request" button later
+  /*
+  const resetForm = () => {
+    setFormData({
+      name: "",
+      phone: "",
+      preferredTime: "asap",
+      gdprConsent: false,
+      access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+    });
+    setErrors({});
+    setIsSubmitted(false);
+  };
+  */
 
   if (isSubmitted) {
     return <ConfirmationMessage onClose={onClose} />;
