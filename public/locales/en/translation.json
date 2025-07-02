@@ -493,6 +493,8 @@
     "name_placeholder": "Your name",
     "phone_label": "Phone number",
     "phone_placeholder": "+46 70-123 45 67",
+    "phone_placeholder_international": "+XX XXX XXX XX XX",
+    "phone_help": "Include country code for international numbers (e.g., +46 for Sweden)",
     "time_label": "Preferred time for callback",
     "time_asap": "As soon as possible",
     "time_hour": "Within an hour",
@@ -506,6 +508,7 @@
       "name_required": "Name is required",
       "phone_required": "Phone number is required",
       "phone_invalid": "Please enter a valid phone number",
+      "phone_invalid_international": "Please enter a valid phone number with country code for international numbers",
       "gdpr_required": "You must agree to the processing of personal data",
       "submit_failed": "Something went wrong. Please try again or call us directly."
     }

@@ -21,9 +21,17 @@ function CallbackForm({ onClose, type = 'emergency' }) {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validatePhone = (phone) => {
-    // Basic Swedish phone number validation
-    const phoneRegex = /^(\+46|0)[1-9]\d{7,9}$/;
-    return phoneRegex.test(phone.replace(/[\s-]/g, ""));
+    // Clean the phone number by removing spaces, dashes, and parentheses
+    const cleanedPhone = phone.replace(/[\s\-()]/g, "");
+    
+    // Validation for international phone numbers
+    // Accept:
+    // 1. International format starting with + and at least 7 digits
+    // 2. Swedish format starting with 0 and at least 7 digits
+    // 3. Any number with at least 7 digits (for various formats)
+    const phoneRegex = /^(\+\d{1,4}[0-9]{7,}|0[0-9]{7,}|[0-9]{7,})$/;
+    
+    return phoneRegex.test(cleanedPhone);
   };
   
   // Debug Web3Forms access key
@@ -63,7 +71,8 @@ function CallbackForm({ onClose, type = 'emergency' }) {
       );
     } else if (!validatePhone(formData.phone)) {
       newErrors.phone = t(
-        "form.errors.phone_invalid"
+        "form.errors.phone_invalid_international",
+        "Please enter a valid phone number with country code for international numbers"
       );
     }
     if (!formData.gdprConsent) {
@@ -198,19 +207,25 @@ GDPR Consent: ${formData.gdprConsent ? 'Accepted' : 'Not Accepted (This should n
           <label htmlFor="phone" className="block text-sm font-medium mb-2">
             {t("form.phone_label")} *
           </label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleInputChange}
-            className={`w-full px-4 py-3 text-brand-black border-2 ${
-              errors.phone ? "border-red-500" : "border-brand-khaki"
-            } focus:border-brand-linen focus:outline-none`}
-            placeholder={t("form.phone_placeholder")}
-          />
-          {errors.phone && (
+          <div className="relative">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleInputChange}
+              className={`w-full px-4 py-3 text-brand-black border-2 ${
+                errors.phone ? "border-red-500" : "border-brand-khaki"
+              } focus:border-brand-linen focus:outline-none`}
+              placeholder={t("form.phone_placeholder_international", "+XX XXX XXX XX XX")}
+            />
+          </div>
+          {errors.phone ? (
             <p className="text-red-300 text-sm mt-1">{errors.phone}</p>
+          ) : (
+            <p className="text-xs text-brand-charcoal opacity-70 mt-1">
+              {t("form.phone_help", "Include country code for international numbers (e.g., +46 for Sweden)")}
+            </p>
           )}
         </div>
 
