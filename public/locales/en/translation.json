@@ -598,5 +598,42 @@
       "description": "If you have any questions about this Privacy Policy, please contact us:"
     },
     "lastUpdated": "Last updated"
+  },
+  "seo": {
+    "default": {
+      "title": "Reconstructor - International Restructuring Specialists",
+      "description": "Professional solutions for companies facing financial difficulties. We help through reconstruction, composition or company acquisition. Give your business a second chance.",
+      "keywords": "business restructuring, company turnaround, financial difficulties, bankruptcy prevention, business recovery, company reconstruction, debt restructuring, business acquisition, insolvency help"
+    },
+    "home": {
+      "title": "Reconstructor - Solutions for Companies in Financial Difficulties",
+      "description": "International restructuring and turnaround specialists helping companies overcome financial challenges through reconstruction, composition and acquisition services.",
+      "keywords": "business restructuring, company turnaround, financial recovery, bankruptcy alternatives, debt restructuring, business rescue, insolvency solutions"
+    },
+    "contact": {
+      "title": "Contact Us - Reconstructor Restructuring Specialists",
+      "description": "Get confidential help for your company's financial difficulties. Contact our restructuring specialists for professional guidance and solutions.",
+      "keywords": "contact restructuring specialist, business help, financial crisis consultation, company rescue contact, restructuring advice"
+    },
+    "about": {
+      "title": "About Us - Reconstructor Team",
+      "description": "Learn about our team of international restructuring specialists and our mission to help companies overcome financial difficulties.",
+      "keywords": "about reconstructor, restructuring team, business turnaround experts, company recovery specialists, restructuring consultants"
+    },
+    "reconstruction": {
+      "title": "Company Reconstruction - Reconstructor",
+      "description": "Company reconstruction provides legal protection and time to recover financially. Learn how this process can save your business from bankruptcy.",
+      "keywords": "company reconstruction, business restructuring, bankruptcy protection, financial recovery, debt restructuring, legal protection"
+    },
+    "consent": {
+      "title": "Cookie Consent - Reconstructor",
+      "description": "Learn about our cookie policy and manage your consent preferences for a better browsing experience.",
+      "keywords": "cookie policy, privacy consent, data protection, GDPR compliance, cookie preferences"
+    },
+    "privacy": {
+      "title": "Privacy Policy - Reconstructor",
+      "description": "Our commitment to protecting your privacy and personal data. Learn how we collect, use and protect your information.",
+      "keywords": "privacy policy, data protection, GDPR, personal information, data security, privacy rights"
+    }
   }
 }

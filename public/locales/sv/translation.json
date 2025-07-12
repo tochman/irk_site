@@ -724,5 +724,42 @@
       "description": "Lämna ditt telefonnummer så ringer vi dig för en kostnadsfri och konfidentiell konsultation.",
       "button": "Begär återuppringning"
     }
+  },
+  "seo": {
+    "default": {
+      "title": "Reconstructor - Internationella rekonstruktionsspecialister",
+      "description": "Professionella lösningar för företag med ekonomiska svårigheter. Vi hjälper genom rekonstruktion, ackord eller företagsköp. Ge ditt företag en andra chans.",
+      "keywords": "företagsrekonstruktion, företagssanering, ekonomiska svårigheter, konkursprevention, företagsräddning, skuldrekonstruktion, företagsköp, insolvenshjälp"
+    },
+    "home": {
+      "title": "Reconstructor - Lösningar för företag med ekonomiska svårigheter",
+      "description": "Internationella rekonstruktions- och saneringsspecialister som hjälper företag att övervinna ekonomiska utmaningar genom rekonstruktion, ackord och förvärv.",
+      "keywords": "företagsrekonstruktion, företagssanering, ekonomisk återhämtning, konkursalternativ, skuldrekonstruktion, företagsräddning, insolvenslösningar"
+    },
+    "contact": {
+      "title": "Kontakta oss - Reconstructor rekonstruktionsspecialister",
+      "description": "Få konfidentiell hjälp för ditt företags ekonomiska svårigheter. Kontakta våra rekonstruktionsspecialister för professionell vägledning och lösningar.",
+      "keywords": "kontakta rekonstruktionsspecialist, företagshjälp, finanskris konsultation, företagsräddning kontakt, rekonstruktionsrådgivning"
+    },
+    "about": {
+      "title": "Om oss - Reconstructor team",
+      "description": "Lär dig mer om vårt team av internationella rekonstruktionsspecialister och vårt uppdrag att hjälpa företag att övervinna ekonomiska svårigheter.",
+      "keywords": "om reconstructor, rekonstruktionsteam, företagssaneringsexperter, företagsåterhämtningsspecialister, rekonstruktionskonsulter"
+    },
+    "reconstruction": {
+      "title": "Företagsrekonstruktion - Reconstructor",
+      "description": "Företagsrekonstruktion ger juridiskt skydd och tid att återhämta sig ekonomiskt. Lär dig hur denna process kan rädda ditt företag från konkurs.",
+      "keywords": "företagsrekonstruktion, företagssanering, konkursskydd, ekonomisk återhämtning, skuldrekonstruktion, juridiskt skydd"
+    },
+    "consent": {
+      "title": "Cookie-medgivande - Reconstructor",
+      "description": "Lär dig om vår cookie-policy och hantera dina medgivandeinställningar för en bättre surfupplevelse.",
+      "keywords": "cookie-policy, integritetsmedgivande, dataskydd, GDPR-efterlevnad, cookie-inställningar"
+    },
+    "privacy": {
+      "title": "Integritetspolicy - Reconstructor",
+      "description": "Vårt engagemang för att skydda din integritet och personuppgifter. Lär dig hur vi samlar in, använder och skyddar din information.",
+      "keywords": "integritetspolicy, dataskydd, GDPR, personlig information, datasäkerhet, integritetsrättigheter"
+    }
   }
 }

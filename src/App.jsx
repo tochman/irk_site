@@ -9,6 +9,7 @@ import OmOss from '@/views/OmOss'
 import Kontakt from '@/views/Kontakt'
 import CookieConsent from '@/components/CookieConsent/index'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import SEOHead from '@/components/SEOHead'
 import PrivacyPolicy from '@/views/PrivacyPolicy'
 import Consent from '@/views/Consent'
 import Integrity from '@/views/Integrity'
@@ -17,6 +18,7 @@ import Footer from '@/components/Footer'
 function App() {
   return (
     <div className="min-h-screen bg-brand-linen">
+      <SEOHead />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

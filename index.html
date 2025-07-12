@@ -3,6 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     
+    <!-- Basic SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Reconstructor - International restructuring and turnaround specialists helping companies through financial difficulties. Professional solutions for company reconstruction, composition and acquisition." />
+    <meta name="keywords" content="business restructuring, company turnaround, financial difficulties, bankruptcy prevention, business recovery, company reconstruction, debt restructuring, business acquisition, insolvency help" />
+    <meta name="author" content="Communitals Labs" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="language" content="en, sv, fa" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Canonical URL - will be set dynamically by React -->
+    <link rel="canonical" href="https://reconstructor.se" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Reconstructor" />
+    <meta property="og:title" content="Reconstructor - International Restructuring Specialists" />
+    <meta property="og:description" content="Professional solutions for companies facing financial difficulties. We help through reconstruction, composition or company acquisition. Give your business a second chance." />
+    <meta property="og:image" content="https://reconstructor.se/images/reconstructor_screen_en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Reconstructor - International restructuring and turnaround specialists" />
+    <meta property="og:url" content="https://reconstructor.se" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:locale:alternate" content="fa_IR" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@reconstructor" />
+    <meta name="twitter:creator" content="@reconstructor" />
+    <meta name="twitter:title" content="Reconstructor - International Restructuring Specialists" />
+    <meta name="twitter:description" content="Professional solutions for companies facing financial difficulties. Reconstruction, composition or company acquisition services." />
+    <meta name="twitter:image" content="https://reconstructor.se/images/reconstructor_screen_en.png" />
+    <meta name="twitter:image:alt" content="Reconstructor - International restructuring specialists" />
+    
+    <!-- LinkedIn -->
+    <meta property="linkedin:owner" content="Reconstructor" />
+    
+    <!-- Business/Company specific -->
+    <meta name="geo.region" content="SE" />
+    <meta name="geo.placename" content="Sweden" />
+    <meta name="geo.position" content="59.3293;18.0686" />
+    <meta name="ICBM" content="59.3293, 18.0686" />
+    
     <!-- App Icons and Favicons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
@@ -13,10 +57,127 @@
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#5e503f" />
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Reconstructor",
+      "alternateName": "Communitals Labs",
+      "description": "International restructuring and turnaround specialists helping companies through financial difficulties",
+      "url": "https://reconstructor.se",
+      "logo": "https://reconstructor.se/images/logo.svg",
+      "image": "https://reconstructor.se/images/og-image.jpg",
+      "telephone": "+46708281225",
+      "email": "info@reconstructor.se",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "SE",
+        "addressRegion": "Sweden"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "59.3293",
+        "longitude": "18.0686"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Sweden"
+        },
+        {
+          "@type": "Country", 
+          "name": "International"
+        }
+      ],
+      "serviceType": [
+        "Business Restructuring",
+        "Company Turnaround",
+        "Financial Recovery",
+        "Debt Restructuring",
+        "Business Acquisition",
+        "Insolvency Consulting"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Business Restructuring Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Company Reconstruction",
+              "description": "Legal process giving companies protection from creditors and time to recover financially"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Composition Services",
+              "description": "Agreement with creditors to pay part of debt, allowing company to continue operations"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Company Acquisition",
+              "description": "Purchasing companies to preserve operations and jobs when restructuring is not possible"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://linkedin.com/company/reconstructor",
+        "https://twitter.com/reconstructor"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+46708281225",
+        "contactType": "customer service",
+        "email": "info@reconstructor.se",
+        "availableLanguage": ["en", "sv", "fa"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      }
+    }
+    </script>
+    
+    <!-- Additional Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Reconstructor",
+      "url": "https://reconstructor.se",
+      "description": "International restructuring and turnaround specialists",
+      "inLanguage": ["en", "sv", "fa"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://reconstructor.se/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Communitals Labs",
+        "url": "https://reconstructor.se"
+      }
+    }
+    </script>
+    
     <title>Reconstructor - International Restructuring Specialists</title>
   </head>
   <body>
