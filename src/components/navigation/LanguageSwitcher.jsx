@@ -79,18 +79,7 @@ function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
               />
               <span className="text-sm font-medium text-brand-charcoal ml-2">SV</span>
             </div>
-          ) : (
-            // Default to English for any non-Swedish language (including Farsi)
-            <div className="flex items-center">
-              <BritishFlag 
-                data-cy="current-flag-en" 
-                className="w-6 h-4 border border-brand-khaki"
-              />
-              <span className="text-sm font-medium text-brand-charcoal ml-2">EN</span>
-            </div>
-          )
-          /* Temporarily disabled Farsi language display
-          : (
+          ) : currentLanguage === 'fa' ? (
             <div className="flex items-center">
               <PersianFlag 
                 data-cy="current-flag-fa" 
@@ -98,8 +87,15 @@ function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
               />
               <span className="text-sm font-medium text-brand-charcoal ml-2">فا</span>
             </div>
-          )
-          */}
+          ) : (
+            <div className="flex items-center">
+              <BritishFlag 
+                data-cy="current-flag-en" 
+                className="w-6 h-4 border border-brand-khaki"
+              />
+              <span className="text-sm font-medium text-brand-charcoal ml-2">EN</span>
+            </div>
+          )}
           <svg className="w-4 h-4 text-brand-charcoal opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
@@ -126,7 +122,6 @@ function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
               <BritishFlag data-cy="flag-en" className="w-6 h-4 border border-brand-khaki" />
               <span>English</span>
             </button>
-            {/* Temporarily disabled Farsi language option
             <button
               data-cy="language-option-fa"
               onClick={() => changeLanguage('fa')}
@@ -135,7 +130,6 @@ function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
               <PersianFlag data-cy="flag-fa" className="w-6 h-4 border border-brand-khaki" />
               <span>فارسی</span>
             </button>
-            */}
           </div>
         )}
       </div>
@@ -163,7 +157,6 @@ function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
           <BritishFlag className="w-6 h-4 border border-brand-khaki" />
           <span>English</span>
         </button>
-        {/* Temporarily disabled Farsi language option
         <button
           data-cy="mobile-language-fa"
           onClick={() => changeLanguage('fa')}
@@ -172,7 +165,6 @@ function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
           <PersianFlag className="w-6 h-4 border border-brand-khaki" />
           <span>فارسی</span>
         </button>
-        */}
       </div>
     </div>
   );
