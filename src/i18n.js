@@ -9,7 +9,6 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: "sv",
     fallbackLng: "en",
     supportedLngs: ["sv", "en", "fa"], // Add Persian/Farsi support
 
@@ -17,9 +16,15 @@ i18n
       escapeValue: false, 
     },
     
+    // Backend configuration
+    backend: {
+      loadPath: '/locales/{{lng}}/translation.json',
+    },
+    
     // Language detection configuration
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag'],
+      order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
+      lookupQuerystring: 'lang',
       lookupLocalStorage: 'i18nextLng',
       caches: ['localStorage'],
       excludeCacheFor: ['cimode'], // never cache if we are in cimode

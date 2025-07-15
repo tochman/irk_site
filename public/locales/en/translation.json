@@ -600,6 +600,7 @@
     "lastUpdated": "Last updated"
   },
   "seo": {
+    "ogImageAlt": "Reconstructor - International restructuring and turnaround specialists",
     "default": {
       "title": "Reconstructor - International Restructuring Specialists",
       "description": "Professional solutions for companies facing financial difficulties. We help through reconstruction, composition or company acquisition. Give your business a second chance.",
@@ -624,6 +625,21 @@
       "title": "Company Reconstruction - Reconstructor",
       "description": "Company reconstruction provides legal protection and time to recover financially. Learn how this process can save your business from bankruptcy.",
       "keywords": "company reconstruction, business restructuring, bankruptcy protection, financial recovery, debt restructuring, legal protection"
+    },
+    "composition": {
+      "title": "Composition Agreement - Reconstructor",
+      "description": "Composition agreements allow companies to negotiate with creditors for partial debt settlement while continuing operations.",
+      "keywords": "composition agreement, debt settlement, creditor negotiation, partial debt payment, business continuation"
+    },
+    "acquisition": {
+      "title": "Company Acquisition - Reconstructor",
+      "description": "We acquire companies in financial distress to preserve operations and jobs when restructuring is not viable.",
+      "keywords": "company acquisition, business purchase, distressed company, preserve jobs, business rescue, company buyout"
+    },
+    "authentication": {
+      "title": "Login - Reconstructor",
+      "description": "Secure login to access your account and manage your business restructuring case with Reconstructor.",
+      "keywords": "login, authentication, secure access, account management, restructuring case access"
     },
     "consent": {
       "title": "Cookie Consent - Reconstructor",

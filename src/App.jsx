@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Authentication from '@/views/authentication/Authentication'
 import Home from '@/components/Home'
 import Header from '@/components/Header'
@@ -16,6 +17,17 @@ import Integrity from '@/views/Integrity'
 import Footer from '@/components/Footer'
 
 function App() {
+  const { ready } = useTranslation();
+
+  // Show loading state while i18next is initializing
+  if (!ready) {
+    return (
+      <div className="min-h-screen bg-brand-linen flex items-center justify-center">
+        <div className="text-brand-charcoal">Loading...</div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-brand-linen">
       <SEOHead />

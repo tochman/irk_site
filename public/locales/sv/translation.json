@@ -726,6 +726,7 @@
     }
   },
   "seo": {
+    "ogImageAlt": "Reconstructor - Internationella rekonstruktions- och saneringsspecialister",
     "default": {
       "title": "Reconstructor - Internationella rekonstruktionsspecialister",
       "description": "Professionella lösningar för företag med ekonomiska svårigheter. Vi hjälper genom rekonstruktion, ackord eller företagsköp. Ge ditt företag en andra chans.",
@@ -750,6 +751,21 @@
       "title": "Företagsrekonstruktion - Reconstructor",
       "description": "Företagsrekonstruktion ger juridiskt skydd och tid att återhämta sig ekonomiskt. Lär dig hur denna process kan rädda ditt företag från konkurs.",
       "keywords": "företagsrekonstruktion, företagssanering, konkursskydd, ekonomisk återhämtning, skuldrekonstruktion, juridiskt skydd"
+    },
+    "composition": {
+      "title": "Ackord - Reconstructor",
+      "description": "Ackord gör det möjligt för företag att förhandla med fordringsägare om partiell skuldreglering samtidigt som verksamheten fortsätter.",
+      "keywords": "ackord, skuldreglering, fordringsägareförhandling, partiell skuldbetalning, verksamhetskontinuitet"
+    },
+    "acquisition": {
+      "title": "Företagsköp - Reconstructor",
+      "description": "Vi förvärvar företag i ekonomisk kris för att bevara verksamhet och arbetstillfällen när rekonstruktion inte är möjlig.",
+      "keywords": "företagsförvärv, företagsköp, nödställt företag, bevara arbetstillfällen, företagsräddning, företagsuppköp"
+    },
+    "authentication": {
+      "title": "Inloggning - Reconstructor",
+      "description": "Säker inloggning för att komma åt ditt konto och hantera ditt företagsrekonstruktionsärende hos Reconstructor.",
+      "keywords": "inloggning, autentisering, säker åtkomst, kontohantering, rekonstruktionsärende åtkomst"
     },
     "consent": {
       "title": "Cookie-medgivande - Reconstructor",

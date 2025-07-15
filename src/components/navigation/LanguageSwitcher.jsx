@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useRef, useEffect } from 'react';
+import { updateURLWithLanguage } from '../../utils/shareUtils';
 
 function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
   const { t, i18n } = useTranslation();
@@ -43,6 +44,7 @@ function LanguageSwitcher({ isDesktop = true, onLanguageChange = () => {} }) {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    updateURLWithLanguage(lng);
     setIsDropdownOpen(false);
     onLanguageChange();
   };
