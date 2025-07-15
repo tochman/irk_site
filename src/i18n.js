@@ -9,7 +9,8 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    lng: "sv", // Set Swedish as default language
+    fallbackLng: "sv", // Fallback to Swedish instead of English
     supportedLngs: ["sv", "en", "fa"], // Add Persian/Farsi support
 
     interpolation: {
@@ -21,7 +22,7 @@ i18n
       loadPath: '/locales/{{lng}}/translation.json',
     },
     
-    // Language detection configuration
+    // Language detection configuration - query parameter has highest priority for sharing
     detection: {
       order: ['querystring', 'localStorage', 'navigator', 'htmlTag'],
       lookupQuerystring: 'lang',
