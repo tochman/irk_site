@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /cypress/
+Disallow: /coverage/
+Disallow: /_redirects
+
+# Crawl delay for better indexing of React content
+Crawl-delay: 1
+
+# Special instructions for social media crawlers
+User-agent: facebookexternalhit/*
+Crawl-delay: 2
+
+User-agent: Twitterbot
+Crawl-delay: 2
+
+User-agent: LinkedInBot
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://reconstructor.se/sitemap.xml
