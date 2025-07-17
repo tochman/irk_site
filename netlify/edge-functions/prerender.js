@@ -4,11 +4,10 @@
 const CRAWLER_USER_AGENTS = [
   'facebookexternalhit',
   'Facebot',
-  'LinkedInBot', 
-  'Twitter',
-  'bot',
-  'googlebot',
-  'baiduspider',
+  'LinkedInBot',
+  'TwitterBot',
+  'WhatsApp',
+  'TelegramBot',
   'pinterest',
   'vkShare',
   'W3C_Validator',
@@ -22,6 +21,12 @@ const CRAWLER_USER_AGENTS = [
   'bing',
   'slack',
   'discord',
+  // Generic bot patterns
+  'bot',
+  'googlebot',
+  'baiduspider',
+  'crawl',
+  'spider',
 ];
 
 export default async (request, context) => {
