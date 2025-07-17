@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "node prerender.js || echo 'Prerendering skipped, continuing build'",
+    "postbuild": "node prerender.js || echo 'Prerendering skipped, continuing build without error'",
     "lint": "eslint .",
     "preview": "vite preview",
     "cypress": "DISABLE_COVERAGE=true NODE_ENV=test start-server-and-test dev http://localhost:5173 \"cypress open\"",
@@ -53,7 +53,6 @@
     "globals": "^16.0.0",
     "istanbul-lib-coverage": "^3.2.2",
     "mock-socket": "^9.3.1",
-    "netlify-plugin-prerender-spa": "^1.0.2",
     "nyc": "^17.1.0",
     "postcss": "8",
     "postcss-rtlcss": "^5.7.1",

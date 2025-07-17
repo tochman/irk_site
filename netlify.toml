@@ -48,8 +48,8 @@
   from = "/*"
   to = "/.netlify/functions/ssr"
   status = 200
-  force = true
   conditions = {Crawler = true}
+  force = true
 
 # Standard redirect rules for SPA routing
 [[redirects]]

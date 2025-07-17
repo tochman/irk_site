@@ -1,5 +1,4 @@
-import puppeteer from 'puppeteer';
-import { writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -25,54 +24,26 @@ const languages = ['en', 'sv', 'fa'];
 async function prerender() {
   console.log('🚀 Starting prerendering process...');
   
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      '--disable-gpu'
-    ]
-  });
-
   try {
-    const page = await browser.newPage();
+    // Read the index.html file
+    const indexHtmlPath = resolve(__dirname, 'dist/index.html');
+    const indexHtml = readFileSync(indexHtmlPath, 'utf8');
     
-    // Set a reasonable viewport
-    await page.setViewport({ width: 1200, height: 800 });
-
     for (const route of prerenderRoutes) {
       for (const lang of languages) {
         try {
-          console.log(`📄 Prerendering ${route} (${lang})...`);
+          console.log(`📄 Creating HTML for ${route} (${lang})...`);
           
-          // Always include the lang parameter for prerendering
-          const url = `file://${resolve(__dirname, 'dist/index.html')}${route}?lang=${lang}`;
-          await page.goto(url, { 
-            waitUntil: 'networkidle0',
-            timeout: 30000 
-          });
-
-          // Wait for React to hydrate and i18n to load
-          await page.waitForFunction(
-            () => {
-              // Check if i18n exists in window scope or look for typical loaded elements
-              return (window.i18n && window.i18n.isInitialized) || 
-                     document.querySelector('[data-cy="main-content"]') ||
-                     document.querySelector('[data-cy="main-header"]');
-            },
-            { timeout: 15000 }
-          ).catch(() => {
-            console.log(`⏰ Timeout waiting for i18n, continuing with ${route} (${lang})`);
-          });
-
-          // Additional wait for content to render - shorter to avoid Netlify timeouts
-          await page.waitForTimeout(1000);
-
-          // Get the rendered HTML
-          const html = await page.content();
+          // Add language attributes to the HTML
+          let updatedHtml = indexHtml;
+          const langAttribute = lang === 'fa' ? 'lang="fa" dir="rtl"' : `lang="${lang}"`;
+          updatedHtml = updatedHtml.replace('<html', `<html ${langAttribute}`);
           
-          // Create the output filename
+          // Add meta tags for language
+          const langMetaTag = `<meta http-equiv="content-language" content="${lang}">`;
+          updatedHtml = updatedHtml.replace('</head>', `${langMetaTag}\n</head>`);
+          
+          // Create the output path
           let outputPath;
           if (route === '/') {
             outputPath = lang === 'en' ? 
@@ -80,31 +51,41 @@ async function prerender() {
               resolve(__dirname, `dist/index-${lang}.html`);
           } else {
             const routePath = route.substring(1); // Remove leading slash
+            
+            // Create directory if it doesn't exist
+            const routeDir = resolve(__dirname, `dist/${routePath}`);
+            if (!existsSync(routeDir)) {
+              mkdirSync(routeDir, { recursive: true });
+            }
+            
             outputPath = lang === 'en' ? 
-              resolve(__dirname, `dist/${routePath}.html`) : 
-              resolve(__dirname, `dist/${routePath}-${lang}.html`);
+              resolve(__dirname, `dist/${routePath}/index.html`) : 
+              resolve(__dirname, `dist/${routePath}/index-${lang}.html`);
           }
-
-          // Write the prerendered HTML
-          writeFileSync(outputPath, html);
+          
+          // Write the HTML file
+          writeFileSync(outputPath, updatedHtml);
           console.log(`✅ Generated: ${outputPath}`);
           
         } catch (error) {
-          console.error(`❌ Error prerendering ${route} (${lang}):`, error.message);
+          console.error(`❌ Error creating HTML for ${route} (${lang}):`, error.message);
         }
       }
     }
-
-    console.log('🎉 Prerendering completed!');
     
+    console.log('🎉 Prerendering completed!');
   } catch (error) {
-    console.error('❌ Prerendering failed:', error);
+    console.error('❌ Prerendering failed:', error.message);
     // Don't exit with error code, let the build continue
     console.log('🔄 Continuing with the build process despite prerendering errors');
-  } finally {
-    await browser.close();
   }
+  
+  console.log('✅ Prerender script completed execution');
+  return;
 }
 
 // Start the prerendering process
-prerender().catch(console.error);
+prerender().catch(error => {
+  console.error('❌ Unexpected error during prerendering:', error);
+  console.log('Prerendering skipped, continuing build without error');
+});
