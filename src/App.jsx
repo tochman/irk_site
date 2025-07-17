@@ -21,6 +21,20 @@ import Footer from '@/components/Footer'
 function App() {
   const { ready, i18n } = useTranslation();
 
+  // Check for language parameter in URL and set language accordingly
+  useEffect(() => {
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const langParam = urlParams.get('lang');
+      if (langParam && ['en', 'sv', 'fa'].includes(langParam) && i18n.language !== langParam) {
+        console.log(`Setting language from URL parameter: ${langParam}`);
+        i18n.changeLanguage(langParam);
+      }
+    } catch (error) {
+      console.error("Error setting language from URL parameter:", error);
+    }
+  }, [i18n]);
+
   // Set document direction based on language
   useEffect(() => {
     const direction = i18n.language === 'fa' ? 'rtl' : 'ltr';

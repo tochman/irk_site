@@ -6,9 +6,8 @@ i18n
   .use(HttpBackend)
   .use(initReactI18next)
   .init({
-    lng: "sv",
+    lng: "sv", // Default language
     fallbackLng: "en",
-
     interpolation: {
       escapeValue: false, 
     },

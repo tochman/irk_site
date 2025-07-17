@@ -43,8 +43,34 @@
 # Prerender specific routes for better SEO
 [[plugins]]
   package = "netlify-plugin-prerender-spa"
+  
+  [plugins.inputs]
+    # Specify routes that should be prerendered
+    routes = ["/", "/rekonstruktion", "/ackord", "/konkurs-likvidation", "/kontakt", "/om-oss"]
+    # Force the crawler timeout if needed
+    renderTimeoutSeconds = 30
+    # Add support for Facebook/Meta crawler and other social media bots
+    userAgentPatterns = [
+      "facebookexternalhit",
+      "Facebot", 
+      "LinkedInBot",
+      "TwitterBot",
+      "WhatsApp", 
+      "TelegramBot", 
+      "bot", 
+      "googlebot", 
+      "baiduspider"
+    ]
 
-# Redirect rules for SPA routing
+# Special redirect for Facebook/social media crawlers
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/ssr"
+  status = 200
+  force = true
+  conditions = {Crawler = true}
+
+# Standard redirect rules for SPA routing
 [[redirects]]
   from = "/*"
   to = "/index.html"

@@ -16,6 +16,9 @@ const routes = [
   '/om-oss'
 ];
 
+// Make sure these are synchronized with your netlify.toml plugin config
+const prerenderRoutes = ['/'].concat(routes);
+
 const languages = ['en', 'sv', 'fa'];
 
 async function prerender() {
@@ -37,12 +40,12 @@ async function prerender() {
     // Set a reasonable viewport
     await page.setViewport({ width: 1200, height: 800 });
 
-    for (const route of routes) {
+    for (const route of prerenderRoutes) {
       for (const lang of languages) {
         try {
           console.log(`📄 Prerendering ${route} (${lang})...`);
           
-          // Navigate to the route with language parameter
+          // Always include the lang parameter for prerendering
           const url = `file://${resolve(__dirname, 'dist/index.html')}${route}?lang=${lang}`;
           await page.goto(url, { 
             waitUntil: 'networkidle0',
