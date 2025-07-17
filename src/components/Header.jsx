@@ -44,7 +44,7 @@ function Header() {
                 {/* R Logo */}
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img 
-                    src="/images/logo_r.svg" 
+                    src="/images/eagle_logo_2.svg" 
                     alt="Reconstructor Logo" 
                     className="w-full h-full object-contain hover:opacity-80 transition-opacity"
                   />
