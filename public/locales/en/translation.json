@@ -127,7 +127,46 @@
       "description": "We are specialists in corporate restructuring with extensive experience helping companies overcome financial difficulties.",
       "expertise": "We are particularly specialists in the area of personal board liability where we can often reduce exposure, risk and personal payment responsibility.",
       "cta": "Contact Us",
-      "team_image_alt": "Professional team working with corporate restructuring"
+      "team_image_alt": "Professional team working with corporate restructuring",
+      "approach": {
+        "title": "Our Approach",
+        "description": "We believe every company deserves a second chance. Our approach is always confidential, professional, and tailored to each client's unique situation. We work closely with our clients to develop realistic and sustainable solutions."
+      },
+      "team": {
+        "title": "Our Team",
+        "description": "Our team consists of experienced professionals in law, finance, and business development. We have successfully helped hundreds of companies through difficult financial situations."
+      },
+      "values": {
+        "title": "Our Values",
+        "value1": {
+          "title": "Confidentiality",
+          "description": "All our consultations and processes are completely confidential."
+        },
+        "value2": {
+          "title": "Professionalism",
+          "description": "We maintain the highest professional standards in all our work."
+        },
+        "value3": {
+          "title": "Results",
+          "description": "We focus on delivering concrete results for our clients."
+        },
+        "transparency": {
+          "title": "Transparency",
+          "description": "We work with open communication and clear pricing throughout the entire process."
+        },
+        "expertise": {
+          "title": "Expertise",
+          "description": "Our team consists of experienced lawyers and business advisors with deep knowledge."
+        },
+        "commitment": {
+          "title": "Commitment",
+          "description": "We are dedicated to helping companies through difficult times and creating sustainable solutions."
+        },
+        "results": {
+          "title": "Results",
+          "description": "We focus on concrete results and successful restructurings."
+        }
+      }
     },
     "liability_expertise": {
       "title": "Specialists in Personal Board Liability",
@@ -204,11 +243,12 @@
     "mission": {
       "title": "Our Mission",
       "description": "Reconstructor specializes in assisting companies across various industries facing financial crises. We understand that every situation is unique and therefore design tailored legal solutions aimed at making your business profitable again.",
-      "description2": "We are a trusted partner who works hard to achieve your goals and needs. Our mission is to reduce unnecessary bankruptcies by offering professional advice and support."
+      "description2": "We are a trusted partner who works hard to achieve your goals and needs. Our mission is to reduce unnecessary bankruptcies by offering professional advice and support.",
+      "image_alt": "Professional consultation and advisory"
     },
     "expertise": {
       "title": "Our Expertise",
-      "subtitle": "We have deep knowledge in several areas critical to successful corporate restructuring",
+      "subtitle": "Deep knowledge and many years of experience in corporate restructuring",
       "legal": {
         "title": "Legal Expertise",
         "description": "Deep knowledge in restructuring law and insolvency procedures"
@@ -217,13 +257,33 @@
         "title": "Financial Analysis",
         "description": "Comprehensive economic analysis and business restructuring"
       },
-      "business": {
-        "title": "Business Development",
-        "description": "Strategic advisory for sustainable growth and profitability"
+      "strategic": {
+        "title": "Strategic Advisory",
+        "description": "Long-term strategic planning for sustainable business recovery"
       }
+    },
+    "approach": {
+      "title": "Our Approach",
+      "description": "We believe every company deserves a second chance. Our approach is always confidential, professional, and tailored to each client's unique situation. We work closely with our clients to develop realistic and sustainable solutions."
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Our team consists of experienced professionals in law, finance, and business development. We have successfully helped hundreds of companies through difficult financial situations."
     },
     "values": {
       "title": "Our Values",
+      "value1": {
+        "title": "Confidentiality",
+        "description": "All our consultations and processes are completely confidential."
+      },
+      "value2": {
+        "title": "Professionalism", 
+        "description": "We maintain the highest professional standards in all our work."
+      },
+      "value3": {
+        "title": "Results",
+        "description": "We focus on delivering concrete results for our clients."
+      },
       "transparency": {
         "title": "Transparency",
         "description": "We work with open communication and clear pricing throughout the entire process."
