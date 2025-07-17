@@ -15,7 +15,7 @@
 
 # Enable prerendering for social media crawlers
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
 
 [[headers]]
   for = "/*"
