@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react'
 import Authentication from '@/views/authentication/Authentication'
 import Home from '@/components/Home'
 import Header from '@/components/Header'
@@ -8,6 +9,7 @@ import Ackord from '@/views/Ackord'
 import Foretagskop from '@/views/Foretagskop'
 import OmOss from '@/views/OmOss'
 import Kontakt from '@/views/Kontakt'
+import KonkursLikvidation from '@/views/KonkursLikvidation'
 import CookieConsent from '@/components/CookieConsent/index'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import SEOHead from '@/components/SEOHead'
@@ -17,7 +19,14 @@ import Integrity from '@/views/Integrity'
 import Footer from '@/components/Footer'
 
 function App() {
-  const { ready } = useTranslation();
+  const { ready, i18n } = useTranslation();
+
+  // Set document direction based on language
+  useEffect(() => {
+    const direction = i18n.language === 'fa' ? 'rtl' : 'ltr';
+    document.documentElement.setAttribute('dir', direction);
+    document.documentElement.setAttribute('lang', i18n.language);
+  }, [i18n.language]);
 
   // Show loading state while i18next is initializing
   if (!ready) {
@@ -39,6 +48,9 @@ function App() {
         <Route path="/foretagsrekonstruktion" element={<Navigate to="/rekonstruktion" replace />} />
         <Route path="/ackord" element={<Ackord />} />
         <Route path="/foretagskop" element={<Foretagskop />} />
+        <Route path="/konkurs-likvidation" element={<KonkursLikvidation />} />
+        <Route path="/konkurs" element={<Navigate to="/konkurs-likvidation" replace />} />
+        <Route path="/likvidation" element={<Navigate to="/konkurs-likvidation" replace />} />
         <Route path="/om-oss" element={<OmOss />} />
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

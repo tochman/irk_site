@@ -777,5 +777,94 @@
       "description": "Vårt engagemang för att skydda din integritet och personuppgifter. Lär dig hur vi samlar in, använder och skyddar din information.",
       "keywords": "integritetspolicy, dataskydd, GDPR, personlig information, datasäkerhet, integritetsrättigheter"
     }
+  },
+  "footer": {
+    "company": {
+      "description": "Professionell hjälp för företag i ekonomiska svårigheter. Vi erbjuder konfidentiella konsultationer och experthjälp för att rädda ditt företag."
+    },
+    "services": {
+      "title": "Våra tjänster",
+      "bankruptcy": "Konkurs",
+      "liquidation": "Likvidation"
+    },
+    "support": {
+      "title": "Support"
+    },
+    "rights": "Alla rättigheter förbehållna.",
+    "confidential": "Alla konsultationer är konfidentiella.",
+    "made_with": "Gjort med omsorg i Sverige"
+  },
+  "bankruptcyLiquidation": {
+    "hero": {
+      "title": "Konkurs & Likvidation",
+      "subtitle": "Experthjälp genom komplexa processer när andra lösningar inte är möjliga"
+    },
+    "intro": {
+      "title": "Professionellt stöd när du behöver det mest",
+      "description": "När rekonstruktion eller ackord inte är möjliga alternativ blir konkurs- och likvidationsförfaranden nödvändiga. Detta är komplexa processer som kräver specialiserad expertis för att navigeras korrekt och minimera personlig exponering."
+    },
+    "bankruptcy": {
+      "title": "Konkursförfarande",
+      "description": "Konkurs är en juridisk process där ett företags tillgångar likvideras för att betala borgenärer när företaget inte kan uppfylla sina finansiella åtaganden. Även om det ofta ses som en sista utväg kan korrekt hantering minimera skador och skydda personliga intressen.",
+      "process": "Vår expertis säkerställer att processen hanteras korrekt, effektivt och med minimal personlig exponering för styrelsemedlemmar och ledning."
+    },
+    "liquidation": {
+      "title": "Frivillig likvidation",
+      "description": "Frivillig likvidation är när företagsägare beslutar att avveckla verksamheten på ett ordnat sätt. Denna kontrollerade process möjliggör bättre tillgångsåtervinning och kan vara mer fördelaktig än ofrivillig konkurs.",
+      "process": "Vi guidar dig genom varje steg för att säkerställa efterlevnad av juridiska krav samtidigt som vi maximerar värdeåtervinning och skyddar dina intressen."
+    },
+    "liability": {
+      "badge": "Specialistkunskap",
+      "title": "Specialister på personligt styrelseansvar",
+      "subtitle": "Ett av våra viktigaste expertområden är att minimera din personliga exponering och risk.",
+      "protection": {
+        "title": "Personligt skydd",
+        "description": "Vi analyserar potentiella personliga ansvarsrisker och implementerar strategier för att skydda styrelsemedlemmar från personlig finansiell exponering."
+      },
+      "expertise": {
+        "title": "Juridisk expertis",
+        "description": "Vår djupa förståelse för ansvarslagar och regler säkerställer att korrekta procedurer följs för att minimera personlig risk genom hela processen."
+      }
+    },
+    "whenHelp": {
+      "title": "När vi kan hjälpa",
+      "complex": {
+        "title": "Komplexa förfaranden",
+        "description": "När konkurs eller likvidation involverar komplexa tillgångsstrukturer, flera jurisdiktioner eller betydande personliga ansvarsrisker."
+      },
+      "liability": {
+        "title": "Ansvarsproblem",
+        "description": "När styrelsemedlemmar står inför potentiell personlig ansvarsskyldighet och behöver expertskyddsstrategier."
+      },
+      "urgent": {
+        "title": "Brådskande situationer",
+        "description": "När omedelbar åtgärd krävs för att skydda tillgångar och minimera exponering i tidskänsliga situationer."
+      }
+    },
+    "process": {
+      "title": "Vår process",
+      "step1": {
+        "title": "Bedömning",
+        "description": "Omfattande analys av situationen och ansvarsexponering"
+      },
+      "step2": {
+        "title": "Strategi",
+        "description": "Utveckling av skyddsstrategier och processplanering"
+      },
+      "step3": {
+        "title": "Genomförande",
+        "description": "Utförande av förfaranden med kontinuerlig riskövervakning"
+      },
+      "step4": {
+        "title": "Uppföljning",
+        "description": "Efterprocessstöd och slutliga skyddsåtgärder"
+      }
+    },
+    "cta": {
+      "title": "Behöver experthjälp?",
+      "description": "Konkurs- och likvidationsförfaranden är komplexa och medför betydande personliga risker. Vår expertis kan hjälpa till att skydda dina intressen och minimera exponering.",
+      "contact": "Få konfidentiell konsultation",
+      "emergency": "Akutkonsultation"
+    }
   }
 }

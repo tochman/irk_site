@@ -651,5 +651,94 @@
       "description": "Our commitment to protecting your privacy and personal data. Learn how we collect, use and protect your information.",
       "keywords": "privacy policy, data protection, GDPR, personal information, data security, privacy rights"
     }
+  },
+  "footer": {
+    "company": {
+      "description": "Professional help for companies in financial difficulties. We offer confidential consultations and expert guidance to help save your business."
+    },
+    "services": {
+      "title": "Our Services",
+      "bankruptcy": "Bankruptcy",
+      "liquidation": "Liquidation"
+    },
+    "support": {
+      "title": "Support"
+    },
+    "rights": "All rights reserved.",
+    "confidential": "All consultations are confidential.",
+    "made_with": "Made with care in Sweden"
+  },
+  "bankruptcyLiquidation": {
+    "hero": {
+      "title": "Bankruptcy & Liquidation",
+      "subtitle": "Expert guidance through complex proceedings when other solutions are not viable"
+    },
+    "intro": {
+      "title": "Professional Support When You Need It Most",
+      "description": "When reconstruction or composition are not viable options, bankruptcy and liquidation proceedings become necessary. These are complex processes that require specialized expertise to navigate properly and minimize personal exposure."
+    },
+    "bankruptcy": {
+      "title": "Bankruptcy Proceedings",
+      "description": "Bankruptcy is a legal process where a company's assets are liquidated to pay creditors when the company cannot meet its financial obligations. While often seen as a last resort, proper handling can minimize damage and protect personal interests.",
+      "process": "Our expertise ensures the process is handled correctly, efficiently, and with minimal personal exposure for directors and board members."
+    },
+    "liquidation": {
+      "title": "Voluntary Liquidation",
+      "description": "Voluntary liquidation is when company owners decide to wind up the business in an orderly manner. This controlled process allows for better asset recovery and can be more favorable than involuntary bankruptcy.",
+      "process": "We guide you through each step to ensure compliance with legal requirements while maximizing value recovery and protecting your interests."
+    },
+    "liability": {
+      "badge": "Specialist Expertise",
+      "title": "Specialists in Personal Board Liability",
+      "subtitle": "One of our most important areas of expertise is minimizing your personal exposure and risk.",
+      "protection": {
+        "title": "Personal Protection",
+        "description": "We analyze potential personal liability risks and implement strategies to protect directors and board members from personal financial exposure."
+      },
+      "expertise": {
+        "title": "Legal Expertise",
+        "description": "Our deep understanding of liability laws and regulations ensures proper procedures are followed to minimize personal risk throughout the process."
+      }
+    },
+    "whenHelp": {
+      "title": "When We Can Assist",
+      "complex": {
+        "title": "Complex Proceedings",
+        "description": "When bankruptcy or liquidation involves complex asset structures, multiple jurisdictions, or significant personal liability risks."
+      },
+      "liability": {
+        "title": "Liability Concerns",
+        "description": "When directors or board members face potential personal liability and need expert protection strategies."
+      },
+      "urgent": {
+        "title": "Urgent Situations",
+        "description": "When immediate action is required to protect assets and minimize exposure in time-sensitive situations."
+      }
+    },
+    "process": {
+      "title": "Our Support Process",
+      "step1": {
+        "title": "Assessment",
+        "description": "Comprehensive analysis of the situation and liability exposure"
+      },
+      "step2": {
+        "title": "Strategy",
+        "description": "Development of protection strategies and process planning"
+      },
+      "step3": {
+        "title": "Implementation",
+        "description": "Execution of proceedings with continuous risk monitoring"
+      },
+      "step4": {
+        "title": "Follow-up",
+        "description": "Post-process support and final protection measures"
+      }
+    },
+    "cta": {
+      "title": "Need Expert Guidance?",
+      "description": "Bankruptcy and liquidation proceedings are complex and carry significant personal risks. Our expertise can help protect your interests and minimize exposure.",
+      "contact": "Get Confidential Consultation",
+      "emergency": "Emergency Consultation"
+    }
   }
 }
