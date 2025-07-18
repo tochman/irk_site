@@ -8,8 +8,13 @@ Disallow: /_redirects
 Crawl-delay: 1
 
 # Special instructions for social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 0
+
 User-agent: facebookexternalhit/*
-Crawl-delay: 2
+Allow: /
+Crawl-delay: 0
 
 User-agent: Twitterbot
 Crawl-delay: 2

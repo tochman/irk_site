@@ -14,6 +14,17 @@ const CACHE_TTL = 3600000; // 1 hour in milliseconds
 
 export const handler = async (event) => {
   try {
+    console.log("[SSR] Request headers:", JSON.stringify(event.headers));
+    
+    // Check if this is a Facebook crawler
+    const userAgent = event.headers['user-agent'] || '';
+    const isFacebookCrawler = userAgent.toLowerCase().includes('facebookexternalhit') || 
+                             userAgent.toLowerCase().includes('facebot');
+    
+    if (isFacebookCrawler) {
+      console.log(`[SSR] Facebook crawler detected: ${userAgent}`);
+    }
+    
     // Get the requested path and language
     const requestPath = event.path || '/';
     const language = event.headers['x-language'] || 

@@ -4,6 +4,10 @@
 const CRAWLER_USER_AGENTS = [
   'facebookexternalhit',
   'Facebot',
+  'FacebookBot',
+  'Facebook',
+  'FB',
+  'InstagramBot',
   'LinkedInBot',
   'TwitterBot',
   'WhatsApp',
@@ -41,6 +45,15 @@ export default async (request, context) => {
   // If it's a crawler, set the Crawler header for the redirect rules in netlify.toml
   if (isCrawler) {
     console.log(`[Edge] Crawler detected: ${userAgent}`);
+    
+    // Special handling for Facebook crawler
+    const isFacebookCrawler = userAgent.toLowerCase().includes('facebookexternalhit') || 
+                             userAgent.toLowerCase().includes('facebot');
+    
+    if (isFacebookCrawler) {
+      console.log(`[Edge] Facebook crawler detected: ${userAgent}`);
+      context.headers.set('Facebook-Crawler', 'true');
+    }
     
     // Add a header that will trigger the crawler condition in netlify.toml redirects
     context.headers.set('Crawler', 'true');

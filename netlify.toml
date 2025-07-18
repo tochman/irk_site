@@ -43,11 +43,20 @@
 # We are using our own prerendering script via postbuild command
 # No need for netlify-plugin-prerender-spa plugin
 
-# Special redirect for Facebook/social media crawlers
+# Special redirect for social media crawlers
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/ssr"
   status = 200
+  conditions = {Crawler = "true"}
+  
+# Extra specific rule for Facebook crawler
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/ssr"
+  status = 200
+  force = true
+  conditions = {Facebook-Crawler = "true"}
   conditions = {Crawler = true}
   force = true
 

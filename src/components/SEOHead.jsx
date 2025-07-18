@@ -69,8 +69,8 @@ function SEOHead() {
 
   const seoData = getPageSEO();
   
-  // Open Graph image - use the eagle logo SVG
-  const ogImage = 'https://reconstructor.se/images/eagle_logo_2.svg';
+  // Open Graph image - use PNG for better crawler support instead of SVG
+  const ogImage = 'https://reconstructor.se/images/eagle_logo_2.png';
   const siteName = 'Reconstructor';
   
   console.log('SEO Data:', seoData);
@@ -100,6 +100,9 @@ function SEOHead() {
       <meta property="og:image:height" content="512" />
       <meta property="og:image:alt" content="Reconstructor - International Restructuring Specialists" />
       <meta property="og:locale" content={i18n.language === 'sv' ? 'sv_SE' : i18n.language === 'fa' ? 'fa_IR' : 'en_US'} />
+      
+      {/* Facebook-specific tags */}
+      <meta property="fb:app_id" content="reconstructor" />
       
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
