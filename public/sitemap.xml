@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://reconstructor.se/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://reconstructor.se/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://reconstructor.se/?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/?lang=fa"/>
+  </url>
+  
+  <!-- Reconstruction page -->
+  <url>
+    <loc>https://reconstructor.se/rekonstruktion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://reconstructor.se/rekonstruktion?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://reconstructor.se/rekonstruktion?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/rekonstruktion?lang=fa"/>
+  </url>
+  
+  <!-- Composition page -->
+  <url>
+    <loc>https://reconstructor.se/ackord</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://reconstructor.se/ackord?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://reconstructor.se/ackord?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/ackord?lang=fa"/>
+  </url>
+  
+  <!-- Bankruptcy/Liquidation page -->
+  <url>
+    <loc>https://reconstructor.se/konkurs-likvidation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://reconstructor.se/konkurs-likvidation?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://reconstructor.se/konkurs-likvidation?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/konkurs-likvidation?lang=fa"/>
+  </url>
+  
+  <!-- Contact page -->
+  <url>
+    <loc>https://reconstructor.se/kontakt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://reconstructor.se/kontakt?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://reconstructor.se/kontakt?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/kontakt?lang=fa"/>
+  </url>
+  
+  <!-- About Us page -->
+  <url>
+    <loc>https://reconstructor.se/om-oss</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://reconstructor.se/om-oss?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://reconstructor.se/om-oss?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/om-oss?lang=fa"/>
+  </url>
+</urlset>
