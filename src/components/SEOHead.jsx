@@ -102,7 +102,7 @@ function SEOHead() {
       <meta property="og:locale" content={i18n.language === 'sv' ? 'sv_SE' : i18n.language === 'fa' ? 'fa_IR' : 'en_US'} />
       
       {/* Facebook-specific tags - providing proper Open Graph data is sufficient for basic sharing */}
-      
+      <meta name="facebook-domain-verification" content="r6c1bycmk7gdsm4dnjaiv2j2yysp8i" />
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@reconstructor" />
