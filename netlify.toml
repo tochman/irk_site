@@ -50,6 +50,13 @@
   status = 200
   conditions = {Crawler = "true"}
   
+# High priority rule specifically for Facebook crawler
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
 # Extra specific rule for Facebook crawler
 [[redirects]]
   from = "/*"

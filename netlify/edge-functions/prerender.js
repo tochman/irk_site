@@ -46,13 +46,24 @@ export default async (request, context) => {
   if (isCrawler) {
     console.log(`[Edge] Crawler detected: ${userAgent}`);
     
-    // Special handling for Facebook crawler
+    // Special handling for Facebook crawler - extensive detection
     const isFacebookCrawler = userAgent.toLowerCase().includes('facebookexternalhit') || 
-                             userAgent.toLowerCase().includes('facebot');
+                             userAgent.toLowerCase().includes('facebot') ||
+                             userAgent.toLowerCase().includes('facebook') ||
+                             userAgent.toLowerCase().includes('fb') ||
+                             userAgent.toLowerCase().includes('instagrambot');
     
     if (isFacebookCrawler) {
       console.log(`[Edge] Facebook crawler detected: ${userAgent}`);
       context.headers.set('Facebook-Crawler', 'true');
+      
+      // Special handling for robots.txt requests from Facebook
+      const url = new URL(request.url);
+      if (url.pathname === '/robots.txt') {
+        console.log(`[Edge] Facebook crawler requesting robots.txt: ${userAgent}`);
+        // Let it pass through without SSR redirection
+        return;
+      }
     }
     
     // Add a header that will trigger the crawler condition in netlify.toml redirects

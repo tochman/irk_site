@@ -4,17 +4,18 @@ Disallow: /cypress/
 Disallow: /coverage/
 Disallow: /_redirects
 
-# Crawl delay for better indexing of React content
-Crawl-delay: 1
-
-# Special instructions for social media crawlers
+# Special instructions for Facebook crawler - MUST come before the general rules
 User-agent: facebookexternalhit
 Allow: /
-Crawl-delay: 0
+Disallow:
 
-User-agent: facebookexternalhit/*
+User-agent: Facebookbot
 Allow: /
-Crawl-delay: 0
+Disallow:
+
+# Crawl delay for other crawlers
+User-agent: *
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Crawl-delay: 2
