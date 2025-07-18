@@ -15,7 +15,7 @@ Disallow:
 
 # Crawl delay for other crawlers
 User-agent: *
-Crawl-delay: 1
+Crawl-delay: 0
 
 User-agent: Twitterbot
 Crawl-delay: 2
