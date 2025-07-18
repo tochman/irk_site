@@ -50,10 +50,22 @@
   status = 200
   conditions = {Crawler = "true"}
   
-# High priority rule specifically for Facebook crawler
+# High priority rules specifically for crawlers
 [[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sitemap.txt"
+  to = "/sitemap.txt"
   status = 200
   force = true
 

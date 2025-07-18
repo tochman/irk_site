@@ -84,6 +84,7 @@ function SEOHead() {
       <meta name="author" content="Reconstructor - International Restructuring Specialists" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={currentUrl} />
+      <link rel="sitemap" type="application/xml" href="https://reconstructor.se/sitemap.xml" />
       
       {/* Language and Region */}
       <meta httpEquiv="content-language" content={i18n.language} />

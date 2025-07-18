@@ -28,6 +28,7 @@ const CRAWLER_USER_AGENTS = [
   // Generic bot patterns
   'bot',
   'googlebot',
+  'google-sitemap',
   'baiduspider',
   'crawl',
   'spider',
@@ -57,10 +58,10 @@ export default async (request, context) => {
       console.log(`[Edge] Facebook crawler detected: ${userAgent}`);
       context.headers.set('Facebook-Crawler', 'true');
       
-      // Special handling for robots.txt requests from Facebook
+      // Special handling for robots.txt and sitemap requests from Facebook
       const url = new URL(request.url);
-      if (url.pathname === '/robots.txt') {
-        console.log(`[Edge] Facebook crawler requesting robots.txt: ${userAgent}`);
+      if (url.pathname === '/robots.txt' || url.pathname === '/sitemap.xml' || url.pathname === '/sitemap.txt') {
+        console.log(`[Edge] Crawler requesting ${url.pathname}: ${userAgent}`);
         // Let it pass through without SSR redirection
         return;
       }
