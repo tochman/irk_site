@@ -102,7 +102,8 @@ function SEOHead() {
       <meta property="og:locale" content={i18n.language === 'sv' ? 'sv_SE' : i18n.language === 'fa' ? 'fa_IR' : 'en_US'} />
       
       {/* Facebook-specific tags */}
-      <meta property="fb:app_id" content="reconstructor" />
+      <meta property="fb:pages" content="reconstructor" />
+      <meta name="facebook-domain-verification" content="reconstructor-verification" />
       
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />

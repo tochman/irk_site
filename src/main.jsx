@@ -15,9 +15,27 @@ window.store = store
 try {
   const urlParams = new URLSearchParams(window.location.search);
   const langParam = urlParams.get('lang');
+  
+  // Check for Facebook or other social crawlers in user agent
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isSocialCrawler = 
+    userAgent.includes('facebookexternalhit') || 
+    userAgent.includes('twitterbot') || 
+    userAgent.includes('linkedinbot');
+  
+  // Set language from URL parameter
   if (langParam && ['en', 'sv', 'fa'].includes(langParam)) {
     console.log(`Setting initial language from URL parameter: ${langParam}`);
     i18n.changeLanguage(langParam);
+  } 
+  // For social media crawlers, default to English if no lang parameter
+  else if (isSocialCrawler) {
+    console.log('Social media crawler detected, ensuring language is set');
+    // Keep current language or set to English if none is set
+    const currentLang = i18n.language || 'en';
+    if (!['en', 'sv', 'fa'].includes(currentLang)) {
+      i18n.changeLanguage('en');
+    }
   }
 } catch (error) {
   console.error("Error pre-setting language from URL parameter:", error);

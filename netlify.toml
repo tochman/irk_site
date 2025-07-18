@@ -57,8 +57,6 @@
   status = 200
   force = true
   conditions = {Facebook-Crawler = "true"}
-  conditions = {Crawler = true}
-  force = true
 
 # Standard redirect rules for SPA routing
 [[redirects]]
