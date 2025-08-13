@@ -1439,12 +1439,6 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
-"cypress-action-cable@https://github.com/tochman/cypress-action-cable.git":
-  version "1.0.0"
-  resolved "git+ssh://git@github.com/tochman/cypress-action-cable.git#a9806b8a9a02bd668ee53d604e688dab1baa4b12"
-  dependencies:
-    mock-socket "^9.3.1"
-
 cypress@^14.4.0:
   version "14.5.0"
   resolved "https://registry.npmjs.org/cypress/-/cypress-14.5.0.tgz"

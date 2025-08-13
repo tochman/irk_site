@@ -18,4 +18,4 @@
 
 // Import commands.js using ES2015 syntax:
 import '@cypress/code-coverage/support'
-import 'cypress-action-cable'
+// import 'cypress-action-cable' // Removed due to Netlify build issues with private repo access
