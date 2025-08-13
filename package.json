@@ -46,7 +46,6 @@
     "@vitejs/plugin-react-swc": "^3.10.2",
     "autoprefixer": "10",
     "cypress": "^14.4.0",
-    "cypress-action-cable": "https://github.com/tochman/cypress-action-cable.git",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
