@@ -1,8 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import useFacebookPixel from '@/hooks/useFacebookPixel';
 
 function Ackord() {
   const { t } = useTranslation();
+  const { trackViewContent } = useFacebookPixel();
+
+  useEffect(() => {
+    // Track page view for composition service
+    trackViewContent('Composition Agreement');
+  }, [trackViewContent]);
 
   return (
     <div className="bg-white">

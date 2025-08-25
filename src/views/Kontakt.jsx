@@ -1,11 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import { useState, useRef } from 'react';
 import useWeb3Forms from '@web3forms/react';
+import useFacebookPixel from '@/hooks/useFacebookPixel';
 import EmergencyConsultation from '../components/EmergencyConsultation';
 import PhoneNumber from '../components/PhoneNumber';
 
 function Kontakt() {
   const { t } = useTranslation();
+  const { trackContactFormSubmit, trackLead } = useFacebookPixel();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -29,6 +31,21 @@ function Kontakt() {
     onSuccess: () => {
       setIsSubmitSuccess(true);
       setIsSubmitError(false);
+      
+      // Track successful contact form submission with Facebook Pixel
+      trackContactFormSubmit({
+        content_name: 'Contact Form',
+        content_category: 'Lead Generation',
+        value: 1,
+        currency: 'SEK'
+      });
+      
+      // Also track as a lead
+      trackLead({
+        content_name: 'Website Contact Form',
+        content_category: 'Contact'
+      });
+      
       setFormData({
         name: '',
         email: '',

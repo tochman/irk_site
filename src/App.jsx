@@ -12,6 +12,7 @@ import Kontakt from '@/views/Kontakt'
 import KonkursLikvidation from '@/views/KonkursLikvidation'
 import CookieConsent from '@/components/CookieConsent/index'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import FacebookPixel from '@/components/FacebookPixel'
 import SEOHead from '@/components/SEOHead'
 import PrivacyPolicy from '@/views/PrivacyPolicy'
 import Consent from '@/views/Consent'
@@ -81,6 +82,7 @@ function App() {
       </Routes>
       <Footer />
       <GoogleAnalytics measurementId={import.meta.env.VITE_GA_MEASUREMENT_ID || "G-YOUR-MEASUREMENT-ID"} />
+      <FacebookPixel />
       <CookieConsent />
     </div>
   )
