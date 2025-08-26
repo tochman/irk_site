@@ -342,7 +342,7 @@ GDPR Consent: ${formData.gdprConsent ? 'Accepted' : 'Not Accepted (This should n
       <div className="mt-6 text-center text-sm opacity-80">
         <p>
           {t("form.alternative")}{" "}
-          <strong><PhoneNumber number="+46 708 281225" /></strong>
+          <strong><PhoneNumber number="+46 722 441585" /></strong>
         </p>
       </div>
     </div>

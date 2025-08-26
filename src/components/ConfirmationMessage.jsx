@@ -40,7 +40,7 @@ function ConfirmationMessage({ onClose }) {
       </button>
       
       <div className="mt-4 text-sm opacity-80">
-        <p>{t('confirmation.urgent')} <strong><PhoneNumber number="+46 708 281225" /></strong></p>
+        <p>{t('confirmation.urgent')} <strong><PhoneNumber number="+46 722 441585" /></strong></p>
       </div>
     </div>
   );
