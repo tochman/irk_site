@@ -302,7 +302,7 @@ function Kontakt() {
                       {t('contact.info.phone.title')}
                     </h3>
                     <p className="text-brand-charcoal mb-1">
-                      <PhoneNumber number="+46 708 281225" isLink={true} className="hover:text-brand-umber" />
+                      <PhoneNumber number="+46 722 441585" isLink={true} className="hover:text-brand-umber" />
                     </p>
                     <p className="text-sm text-brand-charcoal opacity-80">
                       {t('contact.info.phone.hours')}
