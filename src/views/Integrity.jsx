@@ -64,9 +64,9 @@ function Integrity() {
             <h2 className="text-2xl text-brand-charcoal mt-8">{t('privacyPolicy.contact.title')}</h2>
             <p>{t('privacyPolicy.contact.description')}</p>
             <address className="not-italic">
-              Communitals Labs / Reconstructor<br />
+              Reconstructor<br />
               Email: info@reconstructor.se<br />
-              Telefon: +46 10 123 45 67
+              Telefon: +46 722 441585
             </address>
             
             <div className="border-t border-gray-200 pt-4 mt-8 text-sm text-gray-600">

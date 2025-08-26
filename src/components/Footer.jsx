@@ -146,7 +146,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-brand-linen opacity-70 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Communitals Labs / Reconstructor. {t('footer.rights', 'All rights reserved.')}{' '}
+              &copy; {new Date().getFullYear()} Reconstructor. {t('footer.rights', 'All rights reserved.')}{' '}
               <span className="text-brand-khaki">{t('footer.confidential', 'All consultations are confidential.')}</span>
             </div>
           </div>
