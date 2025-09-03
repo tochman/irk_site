@@ -10,6 +10,7 @@ const routes = [
   '/',
   '/rekonstruktion',
   '/ackord', 
+  '/kalkylator',
   '/konkurs-likvidation',
   '/kontakt',
   '/om-oss'

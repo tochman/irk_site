@@ -10,6 +10,10 @@ https://reconstructor.se/ackord
 https://reconstructor.se/ackord?lang=en
 https://reconstructor.se/ackord?lang=sv
 https://reconstructor.se/ackord?lang=fa
+https://reconstructor.se/kalkylator
+https://reconstructor.se/kalkylator?lang=en
+https://reconstructor.se/kalkylator?lang=sv
+https://reconstructor.se/kalkylator?lang=fa
 https://reconstructor.se/konkurs-likvidation
 https://reconstructor.se/konkurs-likvidation?lang=en
 https://reconstructor.se/konkurs-likvidation?lang=sv

@@ -141,7 +141,7 @@ function Kontakt() {
               </p>
               
               {isSubmitSuccess ? (
-                <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+                <div className="bg-green-50 border border-green-200 rounded-sm p-6 mb-8">
                   <div className="flex items-center mb-4">
                     <div className="bg-green-100 rounded-full p-2 mr-3">
                       <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -168,7 +168,7 @@ function Kontakt() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {isSubmitError && (
-                    <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+                    <div className="bg-red-50 border border-red-200 rounded-sm p-4 mb-4">
                       <div className="flex items-start">
                         <div className="flex-shrink-0">
                           <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

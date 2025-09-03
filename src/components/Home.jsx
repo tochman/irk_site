@@ -438,7 +438,7 @@ function Home() {
       {/* Personal Liability Expertise Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="bg-brand-charcoal text-brand-linen p-12 rounded-lg">
+          <div className="bg-brand-charcoal text-brand-linen p-12 rounded-sm">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 {t('landing.liability_expertise.title')}

@@ -77,6 +77,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/kalkylator" className="text-brand-linen opacity-80 hover:opacity-100 hover:text-brand-khaki transition-colors text-sm">
+                  {t('navigation.calculator')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/konkurs-likvidation" className="text-brand-linen opacity-80 hover:opacity-100 hover:text-brand-khaki transition-colors text-sm">
                   {t('footer.services.bankruptcy', 'Bankruptcy')}
                 </Link>
@@ -121,7 +126,7 @@ const Footer = () => {
         </div>
 
         {/* Emergency Contact Banner */}
-        <div className="mt-12 bg-brand-umber bg-opacity-30 border border-brand-umber border-opacity-50 rounded-lg p-6">
+        <div className="mt-12 bg-brand-umber bg-opacity-30 border border-brand-umber border-opacity-50 rounded-sm p-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
               <h4 className="text-lg font-semibold text-brand-khaki mb-2">

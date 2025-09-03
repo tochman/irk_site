@@ -115,6 +115,7 @@
     "reconstruction": "Rekonstruktion",
     "ackord": "Ackord", 
     "foretagskop": "Företagsköp",
+    "calculator": "Kalkylator",
     "about": "Om oss",
     "contact": "Kontakt",
     "login": "Logga in",
@@ -870,6 +871,74 @@
       "description": "Konkurs- och likvidationsförfaranden är komplexa och medför betydande personliga risker. Vår expertis kan hjälpa till att skydda dina intressen och minimera exponering.",
       "contact": "Få konfidentiell konsultation",
       "emergency": "Akutkonsultation"
+    }
+  },
+  "calculator": {
+    "title": "Rekonstruktion - Uppkattade kostnader",
+    "description": "Den här kalkylatorn ger en grov uppskattning av besparing och kostnad vid en företagsrekonstruktion, samt skillnaden mellan att anlita Reconstructor och en rekonstruktör/advokat.",
+    "disclaimer": "Observera att detta är en förenklad modell. Exakta värden kräver genomgång av företagets faktiska förhållanden.",
+    "fields": {
+      "num_employees": "Antal anställda",
+      "supplier_debt": "Leverantörsskulder",
+      "tax_liabilities": "Skatteskulder",
+      "vat_accounting": "Redovisning av moms",
+      "vat_previous": "Belopp företaget betalade vid senaste momsdeklaration"
+    },
+    "tooltips": {
+      "num_employees": "Ange samtliga anställda oavsett arbetstid. Ägare och närstående som är anställda räknas inte med.",
+      "supplier_debt": "Skulder till leverantörer (varor, hyra, el, försäkring, förbrukning, annonsering m.m.). Inklusive moms.",
+      "tax_liabilities": "Inkludera även skatter med anstånd som ännu inte förfallit.",
+      "vat_accounting": "Välj redovisningsperiod för moms (år/kvartal/månad). Används här för en enkel uppskattning av oreglerad moms.",
+      "vat_previous": "Om du senast fick tillbaka moms: ange det senaste beloppet du betalade i stället (en representativ periodbetalning)."
+    },
+    "help": {
+      "tax_liabilities": "Inklusive skatter med anstånd"
+    },
+    "vat_periods": {
+      "yearly": "År",
+      "quarterly": "Kvartal",
+      "monthly": "Månad"
+    },
+    "calculate_button": "Kalkylera",
+    "results": {
+      "title": "Ditt resultat",
+      "savings_description": "Genom att anlita Reconstructor sparar ditt företag",
+      "savings_more": "kr mer på en företagsrekonstruktion än om du anlitar en rekonstruktör/advokat.",
+      "cost_description": "Genom att anlita Reconstructor kan din kostnad bli",
+      "lower_cost": "lägre än om du anlitar en rekonstruktör/advokat.",
+      "higher_cost": "högre än om du anlitar en rekonstruktör/advokat.",
+      "total_savings": "Hur mycket du totalt sparar",
+      "total_cost": "Hur stor din totala kostnad är",
+      "cost_breakdown": "Kostnadsuppdelning",
+      "professional_fees": "Professionella avgifter",
+      "court_fees": "Domstolsavgifter",
+      "court_fees_details": "Ansökningsavgift (2 800 kr) + Tillsynsavgift (10 000 kr) + Kungörandeavgift (500 kr)",
+      "lawyer_label": "Rekonstruktör/advokat",
+      "features_title": "Detta ingår",
+      "rb_note": "Detta ingår när du anlitar Reconstructor",
+      "lawyer_note": "Detta ingår när du anlitar en rekonstruktör/advokat",
+      "estimated_note": "Samtliga resultat är uppskattade",
+      "book_meeting": "Boka ett möte med oss",
+      "new_calculation": "Gör en ny kalkyl"
+    },
+    "features": {
+      "documents": "Upprätta handlingar och inge ansökan till domstol",
+      "creditor_contact": "Hjälp i kontakten med borgenärer",
+      "experienced_help": "Kompetent och erfaren hjälp",
+      "your_interests": "Ombud som ser till dina intressen",
+      "keep_control": "Du behåller kontroll över konto och företag",
+      "fixed_price": "Fast pris där allt ingår",
+      "optimization": "Optimering av utfall",
+      "guarantee": "Lyckas-eller-pengarna-tillbaka-garanti"
+    },
+    "assumptions": {
+      "title": "Antaganden i modellen",
+      "debt_reduction": "Skuldreduktion (ackord) antas vara 50% på osäkrade skulder.",
+      "vat_estimation": "Oreglerad moms uppskattas med multiplikatorer: år = 0,25×, kvartal = 0,5×, månad = 1× av senaste betalning.",
+      "rb_fees": "Reconstructor: fast grundavgift + pris per anställd + domstolsavgifter.",
+      "lawyer_fees": "Rekonstruktör/advokat: högre grundavgift + högre pris per anställd + domstolsavgifter.",
+      "court_fees_note": "Domstolsavgifter (13 300 kr totalt) är samma för båda alternativen och inkluderar ansöknings-, tillsyns- och kungörandeavgifter.",
+      "savings_calculation": "Besparing = (bruttobesparing) − (avgift). Samma ackordsnivå antas oavsett leverantör; skillnaden drivs av avgifter."
     }
   }
 }

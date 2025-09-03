@@ -35,6 +35,14 @@ function MobileNavigation({ isOpen, onClose }) {
           {t('navigation.foretagskop')}
         </Link>
         <Link 
+          to="/kalkylator" 
+          data-cy="mobile-nav-calculator"
+          className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
+          onClick={onClose}
+        >
+          {t('navigation.calculator')}
+        </Link>
+        <Link 
           to="/om-oss" 
           data-cy="mobile-nav-about"
           className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"

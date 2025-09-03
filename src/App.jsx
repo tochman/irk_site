@@ -10,6 +10,7 @@ import Foretagskop from '@/views/Foretagskop'
 import OmOss from '@/views/OmOss'
 import Kontakt from '@/views/Kontakt'
 import KonkursLikvidation from '@/views/KonkursLikvidation'
+import Kalkylator from '@/views/Kalkylator'
 import CookieConsent from '@/components/CookieConsent/index'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import FacebookPixel from '@/components/FacebookPixel'
@@ -63,6 +64,7 @@ function App() {
         <Route path="/foretagsrekonstruktion" element={<Navigate to="/rekonstruktion" replace />} />
         <Route path="/ackord" element={<Ackord />} />
         <Route path="/foretagskop" element={<Foretagskop />} />
+        <Route path="/kalkylator" element={<Kalkylator />} />
         <Route path="/konkurs-likvidation" element={<KonkursLikvidation />} />
         <Route path="/konkurs" element={<Navigate to="/konkurs-likvidation" replace />} />
         <Route path="/likvidation" element={<Navigate to="/konkurs-likvidation" replace />} />

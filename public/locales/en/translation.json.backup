@@ -32,11 +32,90 @@
       "description": "These cookies track your online activity to help advertisers deliver more relevant advertising."
     }
   },
+  "calculator": {
+    "title": "Reconstruction Calculator",
+    "description": "This calculator provides a rough estimate of savings and costs in a company reconstruction, as well as the difference between hiring Reconstructor and a restructuring lawyer/attorney.",
+    "disclaimer": "Note that this is a simplified model. Exact values require a review of the company's actual circumstances.",
+    "fields": {
+      "num_employees": "Number of employees",
+      "supplier_debt": "Supplier debts",
+      "tax_liabilities": "Tax liabilities",
+      "vat_accounting": "VAT accounting period",
+      "vat_previous": "Amount the company paid in the last VAT declaration"
+    },
+    "tooltips": {
+      "num_employees": "Enter all employees regardless of working hours. Owners and related parties who are employees are not counted.",
+      "supplier_debt": "Debts to suppliers (goods, rent, electricity, insurance, consumption, advertising, etc.). Including VAT.",
+      "tax_liabilities": "Also include taxes with deferrals that have not yet fallen due.",
+      "vat_accounting": "Select VAT accounting period (year/quarter/month). Used here for a simple estimate of unpaid VAT.",
+      "vat_previous": "If you last received VAT refund: enter the last amount you paid instead (a representative period payment)."
+    },
+    "help": {
+      "tax_liabilities": "Including taxes with deferrals"
+    },
+    "vat_periods": {
+      "yearly": "Year",
+      "quarterly": "Quarter",
+      "monthly": "Month"
+    },
+    "calculate_button": "Calculate",
+    "results": {
+      "title": "Your Result",
+      "savings_description": "By hiring Reconstructor, your company saves",
+      "savings_more": "SEK more on a company reconstruction than if you hire a restructuring lawyer/attorney.",
+      "cost_description": "By hiring Reconstructor, your cost can be",
+      "lower_cost": "lower than if you hire a restructuring lawyer/attorney.",
+      "higher_cost": "higher than if you hire a restructuring lawyer/attorney.",
+      "total_savings": "How much you save in total",
+      "total_cost": "What your total cost is",
+      "lawyer_label": "Restructuring lawyer/attorney",
+      "features_title": "This is included",
+      "rb_note": "This is included when you hire Reconstructor",
+      "lawyer_note": "This is included when you hire a restructuring lawyer/attorney",
+      "estimated_note": "All results are estimates",
+      "book_meeting": "Book a meeting with us",
+      "new_calculation": "Make a new calculation"
+    },
+    "features": {
+      "documents": "Prepare documents and submit application to court",
+      "creditor_contact": "Help in contact with creditors",
+      "experienced_help": "Competent and experienced help",
+      "your_interests": "Representative who looks after your interests",
+      "keep_control": "You retain control over account and company",
+      "fixed_price": "Fixed price where everything is included",
+      "optimization": "Optimization of outcome",
+      "guarantee": "Success-or-money-back guarantee"
+    },
+    "assumptions": {
+      "title": "Model Assumptions",
+      "debt_reduction": "Debt reduction (composition) is assumed to be 50% on unsecured debts.",
+      "vat_estimation": "Unpaid VAT is estimated with multipliers: year = 0.25×, quarter = 0.5×, month = 1× of last payment.",
+      "rb_fees": "Reconstructor: fixed base fee + price per employee.",
+      "lawyer_fees": "Restructuring lawyer/attorney: higher base fee + higher price per employee.",
+      "savings_calculation": "Savings = (gross savings) − (fee). Same composition level assumed regardless of provider; difference driven by fees."
+    }
+  }
+    "necessary": {
+      "title": "Necessary Cookies",
+      "description": "These cookies are required for the website to function properly."
+    },
+    "preferences": {
+      "title": "Preference Cookies",
+      "description": "These cookies remember your preferences and settings."
+    },
+    "statistics": {
+      "title": "Statistics Cookies",
+      "description": "These cookies collect information about how you use our website."
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "description": "These cookies track your online activity to help advertisers deliver more relevant advertising."
+    }
+  },
   "navigation": {
     "reconstruction": "Restructuring",
     "ackord": "Composition",
     "foretagskop": "Company Acquisition",
-    "calculator": "Calculator",
     "about": "About Us",
     "contact": "Contact",
     "login": "Login",
@@ -733,74 +812,6 @@
     "rights": "All rights reserved.",
     "confidential": "All consultations are confidential.",
     "made_with": "Made with care in Sweden"
-  },
-  "calculator": {
-    "title": "Reconstruction Calculator",
-    "description": "This calculator provides a rough estimate of savings and costs in a company reconstruction, as well as the difference between hiring Reconstructor and a restructuring lawyer/attorney.",
-    "disclaimer": "Note that this is a simplified model. Exact values require a review of the company's actual circumstances.",
-    "fields": {
-      "num_employees": "Number of employees",
-      "supplier_debt": "Supplier debts",
-      "tax_liabilities": "Tax liabilities",
-      "vat_accounting": "VAT accounting period",
-      "vat_previous": "Amount the company paid in the last VAT declaration"
-    },
-    "tooltips": {
-      "num_employees": "Enter all employees regardless of working hours. Owners and related parties who are employees are not counted.",
-      "supplier_debt": "Debts to suppliers (goods, rent, electricity, insurance, consumption, advertising, etc.). Including VAT.",
-      "tax_liabilities": "Also include taxes with deferrals that have not yet fallen due.",
-      "vat_accounting": "Select VAT accounting period (year/quarter/month). Used here for a simple estimate of unpaid VAT.",
-      "vat_previous": "If you last received VAT refund: enter the last amount you paid instead (a representative period payment)."
-    },
-    "help": {
-      "tax_liabilities": "Including taxes with deferrals"
-    },
-    "vat_periods": {
-      "yearly": "Year",
-      "quarterly": "Quarter",
-      "monthly": "Month"
-    },
-    "calculate_button": "Calculate",
-    "results": {
-      "title": "Your Result",
-      "savings_description": "By hiring Reconstructor, your company saves",
-      "savings_more": "SEK more on a company reconstruction than if you hire a restructuring lawyer/attorney.",
-      "cost_description": "By hiring Reconstructor, your cost can be",
-      "lower_cost": "lower than if you hire a restructuring lawyer/attorney.",
-      "higher_cost": "higher than if you hire a restructuring lawyer/attorney.",
-      "total_savings": "How much you save in total",
-      "total_cost": "What your total cost is",
-      "cost_breakdown": "Cost Breakdown",
-      "professional_fees": "Professional fees",
-      "court_fees": "Court fees",
-      "court_fees_details": "Application fee (2,800 SEK) + Supervision fee (10,000 SEK) + Publication fee (500 SEK)",
-      "lawyer_label": "Restructuring lawyer/attorney",
-      "features_title": "This is included",
-      "rb_note": "This is included when you hire Reconstructor",
-      "lawyer_note": "This is included when you hire a restructuring lawyer/attorney",
-      "estimated_note": "All results are estimates",
-      "book_meeting": "Book a meeting with us",
-      "new_calculation": "Make a new calculation"
-    },
-    "features": {
-      "documents": "Prepare documents and submit application to court",
-      "creditor_contact": "Help in contact with creditors",
-      "experienced_help": "Competent and experienced help",
-      "your_interests": "Representative who looks after your interests",
-      "keep_control": "You retain control over account and company",
-      "fixed_price": "Fixed price where everything is included",
-      "optimization": "Optimization of outcome",
-      "guarantee": "Success-or-money-back guarantee"
-    },
-    "assumptions": {
-      "title": "Model Assumptions",
-      "debt_reduction": "Debt reduction (composition) is assumed to be 50% on unsecured debts.",
-      "vat_estimation": "Unpaid VAT is estimated with multipliers: year = 0.25×, quarter = 0.5×, month = 1× of last payment.",
-      "rb_fees": "Reconstructor: fixed base fee + price per employee + court fees.",
-      "lawyer_fees": "Restructuring lawyer/attorney: higher base fee + higher price per employee + court fees.",
-      "court_fees_note": "Court fees (13,300 SEK total) are the same for both options and include application, supervision, and publication fees.",
-      "savings_calculation": "Savings = (gross savings) − (fee). Same composition level assumed regardless of provider; difference driven by fees."
-    }
   },
   "bankruptcyLiquidation": {
     "hero": {

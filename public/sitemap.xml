@@ -34,6 +34,17 @@
     <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/ackord?lang=fa"/>
   </url>
   
+  <!-- Calculator page -->
+  <url>
+    <loc>https://reconstructor.se/kalkylator</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://reconstructor.se/kalkylator?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://reconstructor.se/kalkylator?lang=sv"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://reconstructor.se/kalkylator?lang=fa"/>
+  </url>
+  
   <!-- Bankruptcy/Liquidation page -->
   <url>
     <loc>https://reconstructor.se/konkurs-likvidation</loc>

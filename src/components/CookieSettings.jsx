@@ -75,7 +75,7 @@ const CookieSettings = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="relative bg-white dark:bg-gray-800 rounded-lg w-full max-w-md mx-4 p-6 shadow-xl">
+      <div className="relative bg-white dark:bg-gray-800 rounded-sm w-full max-w-md mx-4 p-6 shadow-xl">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold">{t('cookieConsent.settings')}</h2>
           <button 

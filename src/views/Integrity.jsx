@@ -7,7 +7,7 @@ function Integrity() {
   return (
     <div className="bg-brand-linen min-h-screen pt-24 pb-16">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <div className="max-w-3xl mx-auto bg-white p-8 rounded-sm shadow-md">
           <h1 className="text-3xl md:text-4xl font-heading text-brand-umber mb-6">{t('privacyPolicy.title')}</h1>
           
           <div className="prose prose-lg max-w-none">
