@@ -31,13 +31,6 @@ function DesktopNavigation() {
           {t('navigation.foretagskop')}
         </Link>
         <Link 
-          to="/kalkylator" 
-          data-cy="nav-calculator"
-          className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"
-        >
-          {t('navigation.calculator')}
-        </Link>
-        <Link 
           to="/om-oss" 
           data-cy="nav-about"
           className="text-brand-charcoal hover:text-brand-black font-medium transition-colors"

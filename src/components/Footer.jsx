@@ -77,11 +77,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/kalkylator" className="text-brand-linen opacity-80 hover:opacity-100 hover:text-brand-khaki transition-colors text-sm">
-                  {t('navigation.calculator')}
-                </Link>
-              </li>
-              <li>
                 <Link to="/konkurs-likvidation" className="text-brand-linen opacity-80 hover:opacity-100 hover:text-brand-khaki transition-colors text-sm">
                   {t('footer.services.bankruptcy', 'Bankruptcy')}
                 </Link>
