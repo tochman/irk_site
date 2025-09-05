@@ -45,9 +45,9 @@ function Home() {
             </div>
             <div className="hidden md:block">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/images/poster_boy_1.jpg"
                 alt={t('landing.hero.image_alt')}
-                className="shadow-xl object-cover h-96 w-full"
+                className="shadow-xl object-cover h-96 w-full rounded-lg"
               />
             </div>
           </div>
@@ -251,9 +251,9 @@ function Home() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/images/poster_boy_1.jpg"
                 alt={t('landing.about.team_image_alt')}
-                className="shadow-lg object-cover h-80 w-full"
+                className="shadow-lg object-cover h-80 w-full rounded-lg"
               />
             </div>
           </div>
