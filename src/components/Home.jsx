@@ -435,6 +435,47 @@ function Home() {
         </div>
       </section>
 
+      {/* Operational Support Section - Standalone Service */}
+      <section className="py-16 bg-gradient-to-r from-brand-khaki/10 to-brand-umber/5">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
+              {t('operationalSupport.title')}
+            </h2>
+            <p className="text-brand-charcoal text-lg max-w-3xl mx-auto">
+              {t('operationalSupport.description')}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {['finance', 'supply_chain', 'marketing', 'sales', 'operations', 'hr'].map((service) => (
+              <div key={service} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                <div className="bg-brand-khaki bg-opacity-20 w-14 h-14 flex items-center justify-center mb-4 rounded-lg">
+                  <svg className="w-7 h-7 text-brand-umber" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-bold text-lg mb-3 text-brand-black">
+                  {t(`operationalSupport.areas.${service}.title`)}
+                </h3>
+                <p className="text-brand-charcoal text-sm leading-relaxed">
+                  {t(`operationalSupport.areas.${service}.description`)}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              to="/kontakt"
+              className="inline-block bg-brand-charcoal text-brand-linen px-8 py-3 font-semibold hover:bg-brand-umber transition-colors rounded-lg"
+            >
+              {t('operationalSupport.cta')}
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Personal Liability Expertise Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6">

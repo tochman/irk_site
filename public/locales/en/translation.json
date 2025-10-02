@@ -127,7 +127,13 @@
       "human_factor": "We understand. It's tough being an entrepreneur, especially during difficult times. We can help and take over a large part of the burden.",
       "description": "We are specialists in corporate restructuring with extensive experience helping companies overcome financial difficulties.",
       "expertise": "We are particularly specialists in the area of personal board liability where we can often reduce exposure, risk and personal payment responsibility.",
-      "cta": "Contact Us",
+          "cta": "Contact us for operational support",
+    "benefits": {
+      "expertise": "Access to specialist competence across various areas",
+      "flexibility": "Flexible solution adapted to your needs",
+      "cost_effective": "Cost-effective alternative to full-time employment"
+    },
+    "services_title": "Our areas of expertise",
       "team_image_alt": "Professional team working with corporate restructuring",
       "approach": {
         "title": "Our Approach",
@@ -874,5 +880,45 @@
       "contact": "Get Confidential Consultation",
       "emergency": "Emergency Consultation"
     }
+  },
+  "operationalSupport": {
+    "title": "Operational Support",
+    "subtitle": "Our areas of expertise",
+    "description": "We offer operational expertise and support to strengthen your organization across various functions. A flexible way to access specialist competence when you need it.",
+    "areas": {
+      "finance": {
+        "title": "Finance & Controller",
+        "description": "Financial planning, budgeting and financial reporting"
+      },
+      "supply_chain": {
+        "title": "Supply Chain Management",
+        "description": "Optimization of supply chains and logistics processes"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Strategic marketing and brand positioning"
+      },
+      "sales": {
+        "title": "Sales",
+        "description": "Sales strategy and customer relationship management"
+      },
+      "operations": {
+        "title": "Operations Management",
+        "description": "Optimization of business processes and operational efficiency"
+      },
+      "hr": {
+        "title": "HR & Personnel",
+        "description": "HR strategy and organizational development"
+      },
+      "strategy": {
+        "title": "Strategic Planning",
+        "description": "Business strategy and long-term planning"
+      },
+      "controller": {
+        "title": "Controller Services",
+        "description": "Financial control and reporting"
+      }
+    },
+    "cta": "Contact us for operational support"
   }
 }

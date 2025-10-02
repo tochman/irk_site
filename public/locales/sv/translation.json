@@ -940,5 +940,45 @@
       "court_fees_note": "Domstolsavgifter (13 300 kr totalt) är samma för båda alternativen och inkluderar ansöknings-, tillsyns- och kungörandeavgifter.",
       "savings_calculation": "Besparing = (bruttobesparing) − (avgift). Samma ackordsnivå antas oavsett leverantör; skillnaden drivs av avgifter."
     }
+  },
+  "operationalSupport": {
+    "title": "Operativt stöd",
+    "subtitle": "Våra expertområden",
+    "description": "Vi erbjuder operativ expertis och stöd för att förstärka din organisation inom olika funktioner. Ett flexibelt sätt att få tillgång till specialistkompetens när du behöver det.",
+    "areas": {
+      "finance": {
+        "title": "Ekonomi & Controller",
+        "description": "Finansiell planering, budgetering och ekonomisk rapportering"
+      },
+      "supply_chain": {
+        "title": "Supply Chain Management",
+        "description": "Optimering av leverantörskedjor och logistikprocesser"
+      },
+      "marketing": {
+        "title": "Marknadsföring",
+        "description": "Strategisk marknadsföring och varumärkespositionering"
+      },
+      "sales": {
+        "title": "Försäljning",
+        "description": "Försäljningsstrategi och kundrelationshantering"
+      },
+      "operations": {
+        "title": "Verksamhetsledning",
+        "description": "Optimering av affärsprocesser och operativ effektivitet"
+      },
+      "hr": {
+        "title": "Personal & HR",
+        "description": "Personalstrategi och organisationsutveckling"
+      },
+      "strategy": {
+        "title": "Strategisk planering",
+        "description": "Affärsstrategi och långsiktig planering"
+      },
+      "controller": {
+        "title": "Controller-tjänster",
+        "description": "Finansiell kontroll och rapportering"
+      }
+    },
+    "cta": "Kontakta oss för operativt stöd"
   }
 }
