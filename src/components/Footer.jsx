@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { openCookieSettings } from '@/components/CookieConsent/cookieConsentUtil';
+import { useEmergencyModal } from '@/contexts/EmergencyModalContext';
 import PhoneNumber from './PhoneNumber';
 
 /**
@@ -9,6 +10,7 @@ import PhoneNumber from './PhoneNumber';
  */
 const Footer = () => {
   const { t } = useTranslation();
+  const { openEmergencyModal } = useEmergencyModal();
 
   return (
     <footer className="bg-brand-charcoal text-brand-linen">
@@ -131,12 +133,12 @@ const Footer = () => {
                 {t('contact.emergency.description')}
               </p>
             </div>
-            <Link
-              to="/kontakt"
+            <button
+              onClick={() => openEmergencyModal('emergency')}
               className="bg-brand-khaki text-brand-black px-6 py-3 font-semibold hover:bg-opacity-90 transition-colors whitespace-nowrap"
             >
               {t('contact.emergency.button')}
-            </Link>
+            </button>
           </div>
         </div>
       </div>
