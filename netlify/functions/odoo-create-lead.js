@@ -3,9 +3,9 @@
  * 
  * This function proxies requests to Odoo's XML-RPC API to avoid CORS issues
  * and keeps API credentials secure on the server side.
+ * 
+ * Uses built-in fetch (Node 18+)
  */
-
-import fetch from 'node-fetch';
 
 /**
  * Create XML-RPC request

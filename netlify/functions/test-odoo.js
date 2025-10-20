@@ -1,8 +1,7 @@
 /**
  * Simple test function to verify Odoo connectivity
+ * Uses built-in fetch (Node 18+)
  */
-
-import fetch from 'node-fetch';
 
 export const handler = async (event) => {
   const ODOO_URL = process.env.VITE_ODOO_URL;
