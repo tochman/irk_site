@@ -82,25 +82,40 @@ function parseXMLRPCResponse(xml) {
 }
 
 /**
- * Make XML-RPC call to Odoo
+ * Make XML-RPC call to Odoo with timeout
  */
-async function callOdoo(endpoint, method, params, odooUrl) {
+async function callOdoo(endpoint, method, params, odooUrl, timeoutMs = 8000) {
   const xmlBody = createXMLRPCRequest(method, params);
   
-  const response = await fetch(`${odooUrl}${endpoint}`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'text/xml',
-    },
-    body: xmlBody,
-  });
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  
+  try {
+    const response = await fetch(`${odooUrl}${endpoint}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'text/xml',
+      },
+      body: xmlBody,
+      signal: controller.signal
+    });
 
-  if (!response.ok) {
-    throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+    clearTimeout(timeout);
+
+    if (!response.ok) {
+      const text = await response.text().catch(() => 'Unable to read response');
+      throw new Error(`HTTP ${response.status}: ${text.substring(0, 200)}`);
+    }
+
+    const xmlText = await response.text();
+    return parseXMLRPCResponse(xmlText);
+  } catch (error) {
+    clearTimeout(timeout);
+    if (error.name === 'AbortError') {
+      throw new Error(`Odoo API timeout after ${timeoutMs}ms`);
+    }
+    throw error;
   }
-
-  const xmlText = await response.text();
-  return parseXMLRPCResponse(xmlText);
 }
 
 /**
@@ -120,7 +135,18 @@ function getRevenueLabel(revenue) {
  * Main handler
  */
 export const handler = async (event) => {
-  // Only allow POST requests
+  // Allow GET for health check
+  if (event.httpMethod === 'GET') {
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ 
+        status: 'ok',
+        message: 'Odoo integration function is running'
+      })
+    };
+  }
+
+  // Only allow POST requests for lead creation
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
@@ -135,7 +161,12 @@ export const handler = async (event) => {
   const ODOO_API_KEY = process.env.VITE_ODOO_API_KEY || process.env.VITE_CRM_API_KEY;
 
   if (!ODOO_URL || !ODOO_DATABASE || !ODOO_USERNAME || !ODOO_API_KEY) {
-    console.error('Missing Odoo configuration');
+    console.error('Missing Odoo configuration:', {
+      hasUrl: !!ODOO_URL,
+      hasDb: !!ODOO_DATABASE,
+      hasUsername: !!ODOO_USERNAME,
+      hasApiKey: !!ODOO_API_KEY
+    });
     return {
       statusCode: 500,
       body: JSON.stringify({ 
@@ -148,21 +179,23 @@ export const handler = async (event) => {
   try {
     // Parse request body
     const leadData = JSON.parse(event.body);
-    console.log('Creating lead in Odoo:', leadData.companyName);
+    console.log('Starting Odoo lead creation for:', leadData.companyName);
+    console.log('Odoo URL:', ODOO_URL);
 
-    // Step 1: Authenticate
+    // Step 1: Authenticate with 5 second timeout
+    console.log('Step 1: Authenticating...');
     const uid = await callOdoo('/xmlrpc/2/common', 'authenticate', [
       ODOO_DATABASE,
       ODOO_USERNAME,
       ODOO_API_KEY,
       {}
-    ], ODOO_URL);
+    ], ODOO_URL, 5000);
 
     if (!uid) {
-      throw new Error('Authentication failed');
+      throw new Error('Authentication failed - no UID returned');
     }
 
-    console.log('Authenticated with Odoo, UID:', uid);
+    console.log('✓ Authenticated with Odoo, UID:', uid);
 
     // Step 2: Prepare lead data
     const odooLeadData = {
@@ -183,7 +216,8 @@ ${leadData.additionalNotes || 'N/A'}
       `.trim(),
     };
 
-    // Step 3: Create lead in Odoo
+    // Step 3: Create lead in Odoo with 5 second timeout
+    console.log('Step 2: Creating lead...');
     const leadId = await callOdoo('/xmlrpc/2/object', 'execute_kw', [
       ODOO_DATABASE,
       uid,
@@ -192,9 +226,9 @@ ${leadData.additionalNotes || 'N/A'}
       'create',
       [[odooLeadData]],
       {}
-    ], ODOO_URL);
+    ], ODOO_URL, 5000);
 
-    console.log('Lead created successfully with ID:', leadId);
+    console.log('✓ Lead created successfully with ID:', leadId);
 
     // Return success response
     return {
