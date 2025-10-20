@@ -266,7 +266,7 @@ GDPR Godkänt: Ja
             autoPlay
             muted
             playsInline
-            className="w-full rounded-lg shadow-lg"
+            className="w-full rounded-sm shadow-lg"
             poster="/KONKURS-poster.jpg"
           >
             <source src="/KONKURS-compressed.mp4" type="video/mp4" />
@@ -307,7 +307,7 @@ GDPR Godkänt: Ja
         </div>
 
         {/* Form Card */}
-        <div className="bg-white rounded-lg shadow-lg p-8">
+        <div className="bg-white rounded-sm shadow-lg p-8">
           <form onSubmit={handleSubmit}>
             {/* Step 1: Personal Information */}
             {currentStep === 1 && (
@@ -489,7 +489,7 @@ GDPR Godkänt: Ja
                   {t('lead.step4.heading', 'Välj Datum och Tid')}
                 </h2>
 
-                <div className="bg-brand-linen p-4 rounded-lg mb-6">
+                <div className="bg-brand-linen p-4 rounded-sm mb-6">
                   <div className="flex items-center space-x-2 text-brand-charcoal">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

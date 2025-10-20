@@ -81,7 +81,7 @@ END:VCALENDAR`;
         </p>
 
         {appointmentDate && appointmentTime && (
-          <div className="bg-brand-umber bg-opacity-10 p-4 rounded-lg mb-4">
+          <div className="bg-brand-umber bg-opacity-10 p-4 rounded-sm mb-4">
             <p className="font-semibold text-brand-charcoal mb-2">
               {t('confirmation.appointment_scheduled', 'Din konsultation är schemalagd:')}
             </p>
