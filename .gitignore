@@ -111,3 +111,6 @@ bundle-analyzer-report.html
 
 # Large video files (original uncompressed)
 public/KONKURS.mp4
+
+# Local Netlify folder
+.netlify

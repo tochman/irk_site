@@ -5,7 +5,7 @@
  * and keeps API credentials secure on the server side.
  */
 
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 /**
  * Create XML-RPC request
@@ -119,7 +119,7 @@ function getRevenueLabel(revenue) {
 /**
  * Main handler
  */
-exports.handler = async (event) => {
+export const handler = async (event) => {
   // Only allow POST requests
   if (event.httpMethod !== 'POST') {
     return {
