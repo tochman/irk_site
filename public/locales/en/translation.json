@@ -581,12 +581,20 @@
     }
   },
   "confirmation": {
-    "title": "Thank you for your request!",
+    "title": "Thank you for your request",
     "message": "We have received your callback request.",
     "next_steps": "One of our specialists will contact you shortly for a confidential consultation. Please keep your phone available.",
     "confidential": "The call is completely confidential and without obligations. We are here to help you find the best solution for your company.",
     "close": "Close",
-    "urgent": "Need urgent help? Call:"
+    "urgent": "Need urgent help? Call:",
+    "appointment_scheduled": "Your consultation is scheduled:",
+    "at_time": "At",
+    "duration_note": "(45 minutes)",
+    "add_to_calendar": "Add to calendar:",
+    "download_ics": "Download (.ics)",
+    "calendar_title": "Consultation with Reconstructor",
+    "calendar_description": "Confidential consultation regarding business reconstruction. We will contact you at the phone number you provided.",
+    "calendar_location": "Phone call"
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
@@ -920,5 +928,63 @@
       }
     },
     "cta": "Contact us for operational support"
+  },
+  "lead": {
+    "step1": {
+      "title": "Personal Info",
+      "heading": "Personal Information",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "revenue": "What is your company's revenue?",
+      "revenue_less_than_10": "< 10 million/year",
+      "revenue_10_to_30": "10-30 million/year",
+      "revenue_30_to_50": "30-50 million/year",
+      "revenue_more_than_100": "> 100 million/year"
+    },
+    "step2": {
+      "title": "Contact",
+      "heading": "Contact Information",
+      "email": "Email",
+      "phone": "Phone Number"
+    },
+    "step3": {
+      "title": "Company",
+      "heading": "Company Information",
+      "company_name": "What is your company name?",
+      "org_number": "Org. Number"
+    },
+    "step4": {
+      "title": "Book Time",
+      "heading": "Choose Date and Time",
+      "duration": "Consultation length: 45 minutes",
+      "date": "Date",
+      "time": "Time",
+      "additional_notes": "Is there anything you'd like to tell us before the meeting?",
+      "additional_notes_placeholder": "E.g. specific questions or areas you'd like to discuss...",
+      "additional_notes_help": "Optional - helps us prepare better for the conversation"
+    },
+    "button": {
+      "next": "Next",
+      "previous": "Previous",
+      "submit": "Submit"
+    },
+    "errors": {
+      "first_name_required": "First name is required",
+      "last_name_required": "Last name is required",
+      "revenue_required": "Please select revenue",
+      "email_required": "Email is required",
+      "email_invalid": "Invalid email address",
+      "phone_required": "Phone number is required",
+      "phone_invalid": "Invalid phone number",
+      "company_name_required": "Company name is required",
+      "org_number_required": "Organization number is required",
+      "org_number_invalid": "Invalid organization number",
+      "date_required": "Please select a date",
+      "time_required": "Please select a time"
+    },
+    "form": {
+      "from_name": "Reconstructor Lead Form",
+      "subject": "New Lead - Consultation Request"
+    }
   }
 }

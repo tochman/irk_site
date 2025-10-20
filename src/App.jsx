@@ -11,6 +11,7 @@ import OmOss from '@/views/OmOss'
 import Kontakt from '@/views/Kontakt'
 import KonkursLikvidation from '@/views/KonkursLikvidation'
 import Kalkylator from '@/views/Kalkylator'
+import LeadWizard from '@/components/LeadWizard'
 import CookieConsent from '@/components/CookieConsent/index'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import FacebookPixel from '@/components/FacebookPixel'
@@ -70,6 +71,7 @@ function App() {
         <Route path="/likvidation" element={<Navigate to="/konkurs-likvidation" replace />} />
         <Route path="/om-oss" element={<OmOss />} />
         <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/leads" element={<LeadWizard />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/consent" element={<Consent />} />
         <Route path="/integrity" element={<Integrity />} />

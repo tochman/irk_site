@@ -654,12 +654,20 @@
     }
   },
   "confirmation": {
-    "title": "Tack för din förfrågan!",
+    "title": "Tack för din förfrågan",
     "message": "Vi har mottagit din begäran om återuppringning.",
     "next_steps": "En av våra specialister kommer att kontakta dig inom kort för en konfidentiell konsultation. Håll telefonen tillgänglig.",
     "confidential": "Samtalet är helt konfidentiellt och utan förbindelser. Vi är här för att hjälpa dig hitta den bästa lösningen för ditt företag.",
     "close": "Stäng",
-    "urgent": "Behöver du hjälp akut? Ring:"
+    "urgent": "Behöver du hjälp akut? Ring:",
+    "appointment_scheduled": "Din konsultation är schemalagd:",
+    "at_time": "Kl.",
+    "duration_note": "(45 minuter)",
+    "add_to_calendar": "Lägg till i kalender:",
+    "download_ics": "Ladda ner (.ics)",
+    "calendar_title": "Konsultation med Reconstructor",
+    "calendar_description": "Konfidentiell konsultation angående företagsrekonstruktion. Vi kommer att kontakta dig på det telefonnummer du angav.",
+    "calendar_location": "Telefonsamtal"
   },
   "cookiePolicy": {
     "title": "Cookie-policy",
@@ -980,5 +988,63 @@
       }
     },
     "cta": "Kontakta oss för operativt stöd"
+  },
+  "lead": {
+    "step1": {
+      "title": "Personuppgifter",
+      "heading": "Personuppgifter",
+      "first_name": "Förnamn",
+      "last_name": "Efternamn",
+      "revenue": "Hur mycket omsätter ditt företag?",
+      "revenue_less_than_10": "< 10 miljoner/år",
+      "revenue_10_to_30": "10-30 miljoner/år",
+      "revenue_30_to_50": "30-50 miljoner/år",
+      "revenue_more_than_100": "100 < miljoner/år"
+    },
+    "step2": {
+      "title": "Kontakt",
+      "heading": "Kontaktuppgifter",
+      "email": "E-post",
+      "phone": "Telefonnummer"
+    },
+    "step3": {
+      "title": "Företag",
+      "heading": "Företagsinformation",
+      "company_name": "Vad heter ditt företag?",
+      "org_number": "Org.nr"
+    },
+    "step4": {
+      "title": "Boka tid",
+      "heading": "Välj Datum och Tid",
+      "duration": "Konsultationslängd: 45 minuter",
+      "date": "Datum",
+      "time": "Tid",
+      "additional_notes": "Finns det något du vill berätta innan mötet?",
+      "additional_notes_placeholder": "T.ex. specifika frågor eller områden du vill diskutera...",
+      "additional_notes_help": "Valfritt - hjälper oss att förbereda oss bättre för samtalet"
+    },
+    "button": {
+      "next": "Nästa",
+      "previous": "Föregående",
+      "submit": "Skicka In"
+    },
+    "errors": {
+      "first_name_required": "Förnamn krävs",
+      "last_name_required": "Efternamn krävs",
+      "revenue_required": "Välj omsättning",
+      "email_required": "E-post krävs",
+      "email_invalid": "Ogiltig e-postadress",
+      "phone_required": "Telefonnummer krävs",
+      "phone_invalid": "Ogiltigt telefonnummer",
+      "company_name_required": "Företagsnamn krävs",
+      "org_number_required": "Organisationsnummer krävs",
+      "org_number_invalid": "Ogiltigt organisationsnummer",
+      "date_required": "Välj datum",
+      "time_required": "Välj tid"
+    },
+    "form": {
+      "from_name": "Reconstructor Lead Form",
+      "subject": "New Lead - Consultation Request"
+    }
   }
 }
