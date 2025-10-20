@@ -182,42 +182,50 @@ export const handler = async (event) => {
     console.log('Starting Odoo lead creation for:', leadData.companyName);
     console.log('Odoo URL:', ODOO_URL);
 
-    // Step 1: Authenticate with 5 second timeout
+    // Step 1: Authenticate with 8 second timeout
     console.log('Step 1: Authenticating...');
+    const startAuth = Date.now();
     const uid = await callOdoo('/xmlrpc/2/common', 'authenticate', [
       ODOO_DATABASE,
       ODOO_USERNAME,
       ODOO_API_KEY,
       {}
-    ], ODOO_URL, 5000);
+    ], ODOO_URL, 8000);
 
     if (!uid) {
       throw new Error('Authentication failed - no UID returned');
     }
 
-    console.log('✓ Authenticated with Odoo, UID:', uid);
+    console.log('✓ Authenticated with Odoo, UID:', uid, 'in', Date.now() - startAuth, 'ms');
 
-    // Step 2: Prepare lead data
+    // Step 2: Prepare lead data with only valid CRM fields
     const odooLeadData = {
-      name: `${leadData.companyName} - ${leadData.firstName} ${leadData.lastName}`,
+      name: `${leadData.companyName} - Web Lead`,
       contact_name: `${leadData.firstName} ${leadData.lastName}`,
+      partner_name: leadData.companyName,
       email_from: leadData.email,
       phone: leadData.phone,
-      partner_name: leadData.companyName,
-      type: 'opportunity',
-      description: `
-Appointment Date: ${leadData.appointmentDate}
-Appointment Time: ${leadData.appointmentTime}
-Company Revenue: ${getRevenueLabel(leadData.revenue)}
+      description: `Lead from Website Form
+
+Contact: ${leadData.firstName} ${leadData.lastName}
+Email: ${leadData.email}
+Phone: ${leadData.phone}
+Company: ${leadData.companyName}
 Organization Number: ${leadData.orgNumber}
+Revenue: ${getRevenueLabel(leadData.revenue)}
+
+Appointment Requested:
+Date: ${leadData.appointmentDate}
+Time: ${leadData.appointmentTime}
 
 Additional Notes:
-${leadData.additionalNotes || 'N/A'}
+${leadData.additionalNotes || 'None'}
       `.trim(),
     };
 
-    // Step 3: Create lead in Odoo with 5 second timeout
-    console.log('Step 2: Creating lead...');
+    // Step 3: Create lead in Odoo with 8 second timeout
+    console.log('Step 2: Creating lead with data:', JSON.stringify(odooLeadData, null, 2));
+    const startCreate = Date.now();
     const leadId = await callOdoo('/xmlrpc/2/object', 'execute_kw', [
       ODOO_DATABASE,
       uid,
@@ -226,9 +234,9 @@ ${leadData.additionalNotes || 'N/A'}
       'create',
       [[odooLeadData]],
       {}
-    ], ODOO_URL, 5000);
+    ], ODOO_URL, 8000);
 
-    console.log('✓ Lead created successfully with ID:', leadId);
+    console.log('✓ Lead created successfully with ID:', leadId, 'in', Date.now() - startCreate, 'ms');
 
     // Return success response
     return {
