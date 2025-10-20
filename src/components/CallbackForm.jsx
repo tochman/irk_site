@@ -115,6 +115,49 @@ GDPR Consent: ${formData.gdprConsent ? 'Accepted' : 'Not Accepted (This should n
         botcheck: false, // Add this to pass bot detection
       });
       console.log('Form submission completed successfully', result);
+      
+      // Also create lead in Odoo CRM
+      try {
+        console.log('Creating lead in Odoo CRM...');
+        const { createOdooLead } = await import('../services/odooClient');
+        
+        const preferredTimeLabels = {
+          asap: 'As soon as possible',
+          within_hour: 'Within 1 hour',
+          today: 'Today',
+          tomorrow: 'Tomorrow'
+        };
+        
+        const odooLeadData = {
+          firstName: formData.name.split(' ')[0] || formData.name,
+          lastName: formData.name.split(' ').slice(1).join(' ') || '-',
+          email: 'info@reconstructor.se', // Using default since callback form doesn't collect email
+          phone: formData.phone,
+          companyName: type === 'emergency' ? 'Emergency Callback Request' : 'Callback Request',
+          orgNumber: '-',
+          revenue: '-',
+          appointmentDate: preferredTimeLabels[formData.preferredTime] || formData.preferredTime,
+          appointmentTime: new Date().toLocaleString('sv-SE'),
+          additionalNotes: `
+Request Type: ${type === 'emergency' ? 'EMERGENCY CONSULTATION' : 'Callback Request'}
+Preferred Time: ${preferredTimeLabels[formData.preferredTime] || formData.preferredTime}
+Source: Website Callback Form
+Submitted: ${new Date().toLocaleString('sv-SE')}
+          `.trim()
+        };
+        
+        const odooResult = await createOdooLead(odooLeadData);
+        
+        if (odooResult.success) {
+          console.log('✓ Lead created in Odoo with ID:', odooResult.leadId);
+        } else {
+          console.error('✗ Failed to create lead in Odoo:', odooResult.error);
+        }
+      } catch (odooError) {
+        console.error('✗ Odoo integration error:', odooError.message);
+        // Don't fail the whole submission if Odoo fails - email still went through
+      }
+      
     } catch (error) {
       console.error('Form submission error:', error);
     }
