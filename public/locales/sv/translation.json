@@ -990,6 +990,11 @@
     "cta": "Kontakta oss för operativt stöd"
   },
   "lead": {
+    "hero": {
+      "main_heading": "Vill du ge företaget en andra chans?",
+      "sub_heading": "Boka in 1 timmes fri telefonkonsultation",
+      "tagline": "Helt kostnadsfritt & konfidentiellt"
+    },
     "step1": {
       "title": "Personuppgifter",
       "heading": "Personuppgifter",

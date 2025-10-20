@@ -930,6 +930,11 @@
     "cta": "Contact us for operational support"
   },
   "lead": {
+    "hero": {
+      "main_heading": "Do you want to give your company a second chance?",
+      "sub_heading": "Book 1 hour free phone consultation",
+      "tagline": "Completely free & confidential"
+    },
     "step1": {
       "title": "Personal Info",
       "heading": "Personal Information",

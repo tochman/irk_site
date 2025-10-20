@@ -259,6 +259,19 @@ GDPR Godkänt: Ja
   return (
     <div className="min-h-screen bg-brand-linen py-12">
       <div className="container mx-auto px-4 max-w-2xl">
+        {/* Heading above video */}
+        <div className="mb-6 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-brand-charcoal mb-3">
+            {t('lead.hero.main_heading', 'Vill du ge företaget en andra chans?')}
+          </h1>
+          <p className="text-xl md:text-2xl text-brand-umber font-semibold mb-2">
+            {t('lead.hero.sub_heading', 'Boka in 1 timmes fri telefonkonsultation')}
+          </p>
+          <p className="text-lg text-brand-charcoal">
+            {t('lead.hero.tagline', 'Helt kostnadsfritt & konfidentiellt')}
+          </p>
+        </div>
+
         {/* Video - Placed above step indicators */}
         <div className="mb-8">
           <video 
