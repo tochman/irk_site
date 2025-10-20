@@ -108,3 +108,6 @@ bundle-analyzer-report.html
 
 # Sentry
 .sentryclirc
+
+# Large video files (original uncompressed)
+public/KONKURS.mp4

@@ -939,7 +939,8 @@
       "revenue_less_than_10": "< 10 million/year",
       "revenue_10_to_30": "10-30 million/year",
       "revenue_30_to_50": "30-50 million/year",
-      "revenue_more_than_100": "> 100 million/year"
+      "revenue_more_than_100": "> 100 million/year",
+      "video_not_supported": "Your browser does not support video playback."
     },
     "step2": {
       "title": "Contact",

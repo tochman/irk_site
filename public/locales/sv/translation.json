@@ -999,7 +999,8 @@
       "revenue_less_than_10": "< 10 miljoner/år",
       "revenue_10_to_30": "10-30 miljoner/år",
       "revenue_30_to_50": "30-50 miljoner/år",
-      "revenue_more_than_100": "100 < miljoner/år"
+      "revenue_more_than_100": "100 < miljoner/år",
+      "video_not_supported": "Din webbläsare stödjer inte videouppspelning."
     },
     "step2": {
       "title": "Kontakt",

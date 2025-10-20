@@ -259,43 +259,50 @@ GDPR Godkänt: Ja
   return (
     <div className="min-h-screen bg-brand-linen py-12">
       <div className="container mx-auto px-4 max-w-2xl">
+        {/* Video - Placed above step indicators */}
+        <div className="mb-8">
+          <video 
+            controls
+            autoPlay
+            muted
+            playsInline
+            className="w-full rounded-lg shadow-lg"
+            poster="/KONKURS-poster.jpg"
+          >
+            <source src="/KONKURS-compressed.mp4" type="video/mp4" />
+            {t('lead.step1.video_not_supported', 'Din webbläsare stödjer inte videouppspelning.')}
+          </video>
+        </div>
+
         {/* Progress Indicator */}
         <div className="mb-8">
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between mb-4">
             {[1, 2, 3, 4].map((step) => (
               <div key={step} className="flex items-center flex-1">
-                <div
-                  className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${
-                    step <= currentStep
-                      ? 'bg-brand-umber text-brand-linen'
-                      : 'bg-brand-khaki text-brand-charcoal'
-                  }`}
-                >
-                  {step}
+                <div className="flex flex-col items-center flex-1">
+                  <div
+                    className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg ${
+                      step <= currentStep
+                        ? 'bg-brand-umber text-brand-linen'
+                        : 'bg-brand-khaki text-brand-charcoal'
+                    }`}
+                  >
+                    {step}
+                  </div>
+                  <span className={`mt-3 text-sm text-center text-brand-charcoal ${currentStep === step ? 'font-bold' : ''}`}>
+                    {t(`lead.step${step}.title`, ['Personuppgifter', 'Kontakt', 'Företag', 'Boka tid'][step - 1])}
+                  </span>
                 </div>
                 {step < 4 && (
                   <div
-                    className={`flex-1 h-1 mx-2 ${
+                    className={`h-1 mx-2 flex-shrink-0 ${
                       step < currentStep ? 'bg-brand-umber' : 'bg-brand-khaki'
                     }`}
+                    style={{ width: '60px' }}
                   />
                 )}
               </div>
             ))}
-          </div>
-          <div className="flex justify-between text-sm text-brand-charcoal">
-            <span className={currentStep === 1 ? 'font-bold' : ''}>
-              {t('lead.step1.title', 'Personuppgifter')}
-            </span>
-            <span className={currentStep === 2 ? 'font-bold' : ''}>
-              {t('lead.step2.title', 'Kontakt')}
-            </span>
-            <span className={currentStep === 3 ? 'font-bold' : ''}>
-              {t('lead.step3.title', 'Företag')}
-            </span>
-            <span className={currentStep === 4 ? 'font-bold' : ''}>
-              {t('lead.step4.title', 'Boka tid')}
-            </span>
           </div>
         </div>
 
