@@ -211,11 +211,24 @@ GDPR Godkänt: Ja
     console.log('Submitting lead form:', formDataToSubmit);
     
     try {
+      // Submit to Web3Forms for email notification
       await submit({
         ...formDataToSubmit,
         botcheck: false,
       });
-      console.log('Lead form submitted successfully');
+      console.log('✓ Lead form submitted successfully to Web3Forms');
+
+      // Create lead in Odoo CRM via Netlify function
+      try {
+        const { createOdooLead } = await import('../services/odooClient');
+        
+        console.log('Creating lead in Odoo CRM...');
+        const result = await createOdooLead(formData);
+        console.log('✓ Lead created in Odoo with ID:', result.leadId);
+      } catch (odooError) {
+        console.error('✗ Failed to create lead in Odoo:', odooError.message);
+        // Non-blocking - form was still submitted to Web3Forms
+      }
     } catch (error) {
       console.error('Lead form submission error:', error);
     }
@@ -259,34 +272,6 @@ GDPR Godkänt: Ja
   return (
     <div className="min-h-screen bg-brand-linen py-12">
       <div className="container mx-auto px-4 max-w-2xl">
-        {/* Heading above video */}
-        <div className="mb-6 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-brand-charcoal mb-3">
-            {t('lead.hero.main_heading', 'Vill du ge företaget en andra chans?')}
-          </h1>
-          <p className="text-xl md:text-2xl text-brand-umber font-semibold mb-2">
-            {t('lead.hero.sub_heading', 'Boka in 1 timmes fri telefonkonsultation')}
-          </p>
-          <p className="text-lg text-brand-charcoal">
-            {t('lead.hero.tagline', 'Helt kostnadsfritt & konfidentiellt')}
-          </p>
-        </div>
-
-        {/* Video - Placed above step indicators */}
-        <div className="mb-8">
-          <video 
-            controls
-            autoPlay
-            muted
-            playsInline
-            className="w-full rounded-sm shadow-lg"
-            poster="/KONKURS-poster.jpg"
-          >
-            <source src="/KONKURS-compressed.mp4" type="video/mp4" />
-            {t('lead.step1.video_not_supported', 'Din webbläsare stödjer inte videouppspelning.')}
-          </video>
-        </div>
-
         {/* Progress Indicator */}
         <div className="mb-8">
           <div className="flex items-center justify-between mb-4">
@@ -325,6 +310,34 @@ GDPR Godkänt: Ja
             {/* Step 1: Personal Information */}
             {currentStep === 1 && (
               <div className="space-y-6">
+                {/* Heading */}
+                <div className="mb-6 text-center">
+                  <h1 className="text-3xl md:text-4xl font-bold text-brand-charcoal mb-3">
+                    {t('lead.hero.main_heading', 'Vill du ge företaget en andra chans?')}
+                  </h1>
+                  <p className="text-xl md:text-2xl text-brand-umber font-semibold mb-2">
+                    {t('lead.hero.sub_heading', 'Boka in 1 timmes fri telefonkonsultation')}
+                  </p>
+                  <p className="text-lg text-brand-charcoal">
+                    {t('lead.hero.tagline', 'Helt kostnadsfritt & konfidentiellt')}
+                  </p>
+                </div>
+
+                {/* Video */}
+                <div className="mb-6">
+                  <video 
+                    controls
+                    autoPlay
+                    muted
+                    playsInline
+                    className="w-full rounded-sm shadow-lg"
+                    poster="/KONKURS-poster.jpg"
+                  >
+                    <source src="/KONKURS-compressed.mp4" type="video/mp4" />
+                    {t('lead.step1.video_not_supported', 'Din webbläsare stödjer inte videouppspelning.')}
+                  </video>
+                </div>
+
                 <h2 className="text-2xl font-bold text-brand-charcoal mb-6">
                   {t('lead.step1.heading', 'Personuppgifter')}
                 </h2>
